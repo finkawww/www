@@ -32,4 +32,3 @@ include './FrontPage/page.php';
 
 //wysyla bufor do przegldarki i wylacza buforowanie
 ob_end_flush();
-echo "modtest";
