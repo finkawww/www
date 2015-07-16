@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/translation/" targetNamespace="http://www.example.org/translation/"?>
+<translation module="Config">
+
+	<language value="pl">
+		<tagValue name="usrGridTitle" value="Wybór użytkownika do zmiany uprawnień" />
+		<tagValue name="usrGridColName" value="Imię" />
+		<tagValue name="usrGridColShortName" value="Nazwisko" />
+		<tagValue name="usrGridColLogin" value="Login" />
+		<tagValue name="usrGridColActive" value="Aktywna" />		
+	</language>
+
+	<language value="en">
+		<tagValue name="title" value="Title" />
+		<tagValue name="defaultLanguage" value="Default language" />
+		<tagValue name="langGridTitle" value="Lista dostępnych języków" />
+	</language>
+</translation>

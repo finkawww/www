@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation module="Kontakt">
+	<language value="PL">
+		<tagValue name="txtDaneZamowienia" value="Dane zamówienia" />
+		<tagValue name="txtNumerZam" value="Numer zamówienia" />
+		<tagValue name="txtPozycjeZam" value="Pozycje zamówienia" />
+		<tagValue name="txtFormaPlatnosci" value="FormaPlatnosci" />
+		<tagValue name="txtCenaDostawy" value="Cena dostawy" />
+		<tagValue name="txtDaneDoFaktury" value="Dane do faktury" />
+		<tagValue name="txtDaneDostawy" value="Dane adresowe dostawy" />
+		
+		<tagValue name="txtNazwaTow" value="Nazwa" />
+		<tagValue name="txtCenaTow" value="Cena" />
+		<tagValue name="txtIloscStan" value="Ilość stan." />
+		<tagValue name="txtIloscFirm" value="Ilość firm" />
+		
+						
+		<tagValue name="txtImie" value="Imię" />
+		<tagValue name="txtNazwisko" value="Nazwisko" />
+		<tagValue name="txtNazwa" value="Nazwa firmy" />
+		<tagValue name="txtNIP" value="NIP" />
+		<tagValue name="txtKraj" value="Kraj" />
+		<tagValue name="txtKodPocztowy" value="Kod pocztowy" />
+		<tagValue name="txtMiasto" value="Miasto" />
+		<tagValue name="txtUlica" value="Ulica" />
+		<tagValue name="txtNrDomu" value="Nr. domu" />
+		<tagValue name="txtNrMieszkania" value="Nr. mieszkania" />
+		<tagValue name="txtEmail" value="Email" />
+		<tagValue name="txtNrTel" value="Nr. tel." />
+		
+		<tagValue name="txtFormaDostawy" value="Forma dostawy"/>
+		
+		<tagValue name="txtRazem" value="Razem"/>
+		<tagValue name="txtWartoscZam" value="Wartość zamówienia"/>
+	</language>
+	
+	<language value="ENG">
+		<tagValue name="txtDaneZamowienia" value="Dane zamówienia" />
+		<tagValue name="txtNumerZam" value="Numer zamówienia" />
+		<tagValue name="txtPozycjeZam" value="Pozycje zamówienia" />
+		<tagValue name="txtFormaPlatnosci" value="FormaPlatnosci" />
+		<tagValue name="txtCenaDostawy" value="Cena dostawy" />
+		<tagValue name="txtDaneDoFaktury" value="Dane do faktury" />
+		<tagValue name="txtDaneDostawy" value="Dane adresowe dostawy" />
+		
+		<tagValue name="txtNazwaTow" value="Nazwa" />
+		<tagValue name="txtCenaTow" value="Cena" />
+		<tagValue name="txtIloscStan" value="Ilość stan." />
+		<tagValue name="txtIloscFirm" value="Ilość firm" />
+						
+		<tagValue name="txtImie" value="Imię" />
+		<tagValue name="txtNazwisko" value="Nazwisko" />
+		<tagValue name="txtNazwa" value="Nazwa firmy" />
+		<tagValue name="txtNIP" value="NIP" />
+		<tagValue name="txtKraj" value="Kraj" />
+		<tagValue name="txtKodPocztowy" value="Kod pocztowy" />
+		<tagValue name="txtMiasto" value="Miasto" />
+		<tagValue name="txtUlica" value="Ulica" />
+		<tagValue name="txtNrDomu" value="Nr. domu" />
+		<tagValue name="txtNrMieszkania" value="Nr. mieszkania" />
+		<tagValue name="txtEmail" value="Email" />
+		<tagValue name="txtNrTel" value="Nr. tel." />
+		
+		<tagValue name="txtFormaDostawy" value="Forma dostawy"/>
+		
+		<tagValue name="txtRazem" value="Razem"/>
+		<tagValue name="txtWartoscZam" value="Wartość zamówienia"/>
+
+	</language>
+</translation>

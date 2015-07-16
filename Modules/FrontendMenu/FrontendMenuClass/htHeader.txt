@@ -1,0 +1,25 @@
+
+<IfModule mod_php5.c>
+php_value include_path ".:/usr/lib/php:/usr/local/lib/php:/home4/finka/php"
+</IfModule>
+
+SecFilterEngine Off
+
+RewriteEngine on
+
+
+RewriteCond %{HTTP_HOST} ^www\.finka\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.finka\.com\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tiksoft\.com\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tiksoft\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^tiksoft\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^tiksoft\.com\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^finka\.com\.pl$
+RewriteRule ^/?$ "http\:\/\/finka\.pl" [R=301,L]
+RewriteCond %{HTTP_HOST} ^finka\.eu$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.finka\.eu$
+RewriteRule ^/?$ "http\:\/\/finka\.pl" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^tiksoft\.eu$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tiksoft\.eu$
+RewriteRule ^/?$ "http\:\/\/finka\.pl" [R=301,L]

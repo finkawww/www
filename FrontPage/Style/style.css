@@ -1,0 +1,603 @@
+﻿@CHARSET "UTF-8";
+A.link {
+
+	font-family: Tahoma;
+
+	font-size: 12px;
+
+	text-decoration: underline;
+
+	color: #484848; 
+
+	margin: 0px;
+
+}
+
+
+A.more:visited {
+
+	font-family: Tahoma;
+
+	font-size: 12px;
+
+	color: blue;
+	
+	text-decoration: underline;
+
+	margin: 5px;
+
+	font-style: italic;
+}
+A.link:hover {
+
+	font-family: Tahoma;
+
+	font-size: 12px;
+
+	text-decoration: underline;
+
+	color: #a50021;
+
+	margin: 5px;
+
+}
+
+
+
+A.link:visited {
+
+	font-family: Tahoma;
+
+	font-size: 12px;
+
+	text-decoration: underline;
+
+	color: #484848;
+
+	margin: 5px;
+
+}
+
+.pics {
+   /* warto�ci te powinny by� conajmniej takie jak rozmiary zdj�� */
+   
+   width: 30px; /* szerokoscelementu HTML gdzie osadzone s� zdj�cia */
+   height: 80px;
+   padding: 0;
+   margin: 0;
+}
+
+.pics img {
+   padding: 0px;
+   border: 0px solid #ccc;
+   background-color: #eee;
+   /* rozmiary zdj�� */
+   top: 0;
+   left: 0
+} 
+
+
+table.Content {
+	clear: both;
+	border: 0px solid #000000;
+	padding: 0px;
+}
+
+
+table.rightMenuContainer {
+	border: 1px; 
+	border-style: solid; 
+	border-color: #dddddd; 
+	padding: 23px; 
+	width: 210px; 
+	background: #d6e4e9;
+	border-bottom-left-radius:10px 10px;
+	border-bottom-right-radius:10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius:5px 5px;	
+}
+
+table.leftMenuContainer {
+	border: 1px; 
+	border-style: solid; 
+	border-color: #dddddd; 
+	padding: 3px; 
+	width: 210px; 
+	background: #d6e4e9; 
+	border-bottom-left-radius:10px 10px;
+	border-bottom-right-radius:10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius:10px 10px;
+} 
+`
+table.MainTbl {
+	clear: both;
+	border: 0px solid #000000;
+	padding: 0px;
+}
+td.QuickFormHeader {
+	position: relative;
+	width: 99%;
+	border: 0px; /*background-color: #000088;*/
+	background-color: #666666;
+	padding: 2px;
+	text-align: left;
+	font: bold;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+table.QuickFormWindow {
+	width: 100%;
+	position: relative;
+	clear: both; /*border: 1px solid #000088; tak bylo*/
+	border: 1px solid #000000;
+	/*background-color: #DDDDFF; tak bylo*/
+	background: #E8E8E8
+		url('http://www.galeria.h2.pl/FrontPage/Files/Img/bckstrip.jpg')
+		repeat-x;
+	padding: 0px;
+	margin: 3px;
+	spacing: 0px;
+}
+
+td.QuickFormAlert {
+	background-color: transparent;
+	padding: 2px;
+	clear: both;
+	text-align: left;
+	font: normal;
+	color: #000000;
+	font-size: 12px;
+	text-ident: 20px;
+}
+
+td.QuickFormLabel {
+	position: relative;
+	width: 50%;
+	background-color: transparent;
+	padding: 2px;
+	text-align: right;
+	font: normal;
+	color: #3f3f3f;
+	font-size: 12px;
+	clear: both;
+	font-family: Tahoma;
+}
+
+td.QuickFormButtons {
+	position: relative;
+	background-color: transparent;
+	padding: 0px;
+	text-align: center;
+	clear: both;
+}
+
+td.QuickFormElem {
+	position: relative;
+	background-color: transparent;
+	padding: 1px;
+	float: left;
+	text-align: left;
+	font: normal;
+	color: #000066;
+	font-size: 12px;
+	font-family:Tahoma;
+}
+
+
+#wrapper {
+	margin: 0 auto;
+	width: 922px;
+	background: #000000;
+}
+
+#header {
+	color: #000000;
+	width: 900px;
+	float: left;
+	padding: 10px;
+	border: 0px solid #ccc;
+	height: 150px;
+	margin: 10px 0px 5px 0px;
+	background: #000000;
+}
+
+#topmenu {
+	color: #000000;
+	width: 900px;
+	float: left;
+	padding: 10px;
+	border: 0px solid #ccc;
+	height: 30px;
+	margin: 10px 0px 5px 0px;
+	background: #000000;
+	text-align: center;
+}
+
+#leftcolumn {
+	color: #000000;
+	border: 1px solid #000000;
+	background: #000000;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 195px;
+	float: left;
+}
+
+#rightcolumn {
+	float: right;
+	color: #dfdede;
+	border: 1px solid #000000;
+	background: #000000;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	height: 350px;
+	width: 678px;
+	display: inline;
+}
+
+#footer {
+	width: 900px;
+	clear: both;
+	color: #000000;
+	border: 1px solid #000000;
+	background: #000000;
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+}
+
+#logo {
+	float: left;
+	width: 140px;
+}
+
+#baner {
+	float: right;
+	text-align: ceneter;
+	width: 730px;
+}
+
+.txt {
+	color: #093;
+}
+
+/* UKLAD STRONY */
+div.font {
+	font-family: Tahoma !important;
+	font-size: 12px !important;
+	color: #222121 !important;
+	font-weight: none !important;
+	line-height: 16px !important;; 
+}
+span.font
+{
+	font-family: Tahoma !important;
+	font-size: 12px !important;
+	color: #222121 !important;
+	font-weight: none !important;
+	line-height: 16px !important;; 
+}
+div.font_cm {
+	font-family: Tahoma !important;
+	font-size: 14px !important;
+	color: #126671 !important;
+	font-weight: none !important;
+}
+
+div.font_jm {
+	font-family: Tahoma !important;
+	font-size: 14px !important;
+	color: #e2f4f6 !important;
+	font-weight: none !important;
+}
+
+
+
+div.font_sm{
+	border-bottom-left-radius:10px 10px;
+	border-bottom-right-radius:10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius:10px 10px;
+	border:0px solid #000000;
+	font-family: Tahoma;        
+	font-size: 14;
+	font-weight: bold;
+	text-decoration:bold;
+
+	color: #006097;
+	text-align: center;
+	background-color: #d6e4e9;
+	padding: 5px;
+	text-decoration:bold;
+	vertical-align: middle;
+	margin-top:auto;
+	margin-bottom:auto; 	
+}	
+
+
+div.font_sm_left{
+	border-bottom-left-radius:10px 10px;
+	border-bottom-right-radius:10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius:10px 10px;
+	border:0px solid #000000;
+	font-family: Tahoma;        
+	font-size: 14;
+	font-weight: bold;
+	text-decoration:bold;
+
+	color: #006097;
+	text-align: left;
+	background-color: #d6e4e9;
+	padding: 5px;
+	text-decoration:bold;
+	vertical-align: middle;
+	margin-top:auto;
+	margin-bottom:auto; 	
+}
+
+div.font_sm_left_small{
+	border-bottom-left-radius:10px 10px;
+	border-bottom-right-radius:10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius:10px 10px;
+	border:0px solid #000000;
+	font-family: Tahoma;        
+	font-size: 13;
+	font-weight: none;
+	text-decoration:none;
+
+	color: #006097;
+	text-align: left;
+	background-color: #d6e4e9;
+	padding: 15px;
+	text-decoration:none;
+	vertical-align: left;
+	margin-top:auto;
+	margin-bottom:auto;
+	list-style-type: square
+	 	
+}	
+
+div.font_kontakt{
+	border-bottom-left-radius:10px 10px;
+	border-bottom-right-radius:10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius:10px 10px;
+	border: 0px solid #113aa3;
+	font-family: Tahoma;        
+	font-size: 12;
+	font-weight: none;
+	text-decoration:none;
+
+	color: #006097;
+	text-align: center;
+	background-color: #d6e4e9;
+	padding: 7px;
+	text-decoration:bold;
+	vertical-align: middle;
+	margin-top:auto;
+	margin-bottom:auto; 	
+}
+
+
+
+div.font_b {
+	font-family: Tahoma !important;
+	font-size: 13px !important;
+	color: #393939 !important;
+	font-weight: bold !important;
+	line-height: 16px !important;; 
+}
+div.granat {
+	font-family: Tahoma !important;
+	font-size: 14px !important;
+	color: #006097; important;
+	font-weight: bold !important;
+	line-height: 16px !important;; 
+}
+
+h1 {
+	font-family: Tahoma !important;
+	font-size: 14px !important;
+	color: #bc010a !important;
+	font-weight: bold !important;
+	line-height: 16px !important;;	
+}
+
+div.bordo {
+	font-family: Tahoma !important;
+	font-size: 14px !important;
+	color: #bc010a !important;
+	font-weight: bold !important;
+	line-height: 16px !important;;	
+}
+.cennik_header_DOS{
+	font-family: Tahoma;
+	font-size: 12;
+	font-weight: bolder;
+	padding-left: 5;
+	font-color: #333399;
+	text-align: center;
+	background-color: #d6e4e9;
+	height: 30;
+	padding: 4;
+}
+.cennik_header_WIN{
+	font-family: Tahoma;
+	font-size: 12;
+	font-weight: bolder;
+	padding-left: 5;
+	text-align: center;
+	background-color: #D3E9F8;
+	height: 30;
+	padding: 4;
+}
+.program_opis_row1{
+	border: 1px solid #e1e1e1;
+}
+
+list-style-type: none
+
+.
+{
+color
+:
+ 
+white
+;
+ 
+font-size
+:
+ 
+15
+px
+;
+ 
+font-family
+:
+ 
+Helvetica
+}
+span.inactiveMenu {
+	font-family: Tahoma;
+	font-size: 15px;
+	text-decoration: bold;
+	font-weight: bold;
+	color: #454545;
+	margin: 5px;
+}
+
+span.activeMenu {
+	font-family: Tahoma;
+	font-size: 15px;
+	text-decoration: bold;
+	font-weight: bold;
+	color: #454545;
+	margin: 5px;
+}
+
+a:link {
+	text-decoration: none;
+	border: 0px sold #000000;
+}
+
+a:visited {
+	text-decoration: none;
+	border: 0px sold #000000
+}
+
+a:hover {
+	text-decoration: none;
+	border: 0px sold #000000
+}
+
+a.inactiveMenu {
+	font-family: Tahoma;
+	font-size: 17px;
+	text-decoration: bold;
+	color: #bc010a;
+	margin: 8px;
+} 
+a.activeMenu {
+	font-family: Tahoma;
+	font-size: 17px;
+	text-decoration: none;
+	color: #474747;
+	margin: 8px;
+}
+a.inactiveMenuLeft {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: bold;
+	color: #bc010a;
+	margin: 10px;
+} 
+a.activeMenuLeft {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: bold;
+	color: #222121;
+	margin: 5px;
+}
+
+A.faq {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: bold;
+	color: #484848; 
+	margin: 0px;
+}
+
+A.faq:hover {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	color: #a50021;
+	margin: 5px;
+}
+
+A.faq:visited {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	color: #484848;
+	margin: 5px;
+}
+
+A.menuItem {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: #222121; 
+	margin: 0px;
+}
+
+A.menuItem:hover {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: #e30606;
+	margin: 5px;
+}
+
+A.menuItem:visited {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: #222121;
+	margin: 5px;
+}
+span.groupTitle {
+	font-family: Tahoma;
+	font-size: 15px;
+	text-decoration: bold;
+	color: #006097; 
+	margin: 5px;
+}
+
+A.jump {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: underline;
+	color: blue; 
+	margin: 0px;
+}
+
+A.jump:hover {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: underline;
+	color: blue;
+	margin: 0px;
+}
+
+A.jump:visited {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: underline;
+	color: blue;
+	margin: 0px;
+}

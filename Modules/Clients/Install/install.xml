@@ -1,0 +1,9 @@
+<module name="Users" ver="1.0">
+  <path>/FinkaCms/Modules/Users</path>  
+  <Actions>
+    <Action Name="Dodaj" Action="AddUser" Admin="1" /> - dla admina
+    <Action Name="Wyswietl" Action="ShowUsers" Admin="1" />
+    <Action Name="Check" Action="CheckUser" Admin="10" /> - dla admina i usera
+    <Action Name="Delete" Action="DelUser" Admin="10" /> - dla admina i usera
+  </Actions>
+</module>

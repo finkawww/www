@@ -1,0 +1,2 @@
+/*tu klasa przechowujaca parametry konfiguracyjne. To raczej w Singletone
+Do przemyslenia czy stosowac*/

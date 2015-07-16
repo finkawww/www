@@ -1,0 +1,205 @@
+
+/*QuickForm style*/
+td.QuickFormHeader 
+	{
+	position: relative;	width: 99%;	border: 0px;/*background-color: #000088;*/background-color: #666666;
+	padding: 2px; text-align: left; font: bold; color: #FFFFFF;	font-size: 14px;
+	}
+table.QuickFormWindow
+	{
+	width: 100%; position: relative; clear: both; /*border: 1px solid #000088; tak bylo*/ border: 1px solid #000000;
+	/*background-color: #DDDDFF; tak bylo*/	background: #E8E8E8 url('../Files/Img/bckstrip.jpg') repeat-x;
+	padding: 0px; margin: 3px;
+	}
+	
+td.QuickFormAlert
+	{
+	background-color: transparent; padding: 2px; clear: both; text-align: left; font: normal; color: #000000; 
+	font-size: 12px; text-ident: 20px;
+	}
+td.QuickFormLabel
+	{
+	position: relative;	width: 120px; background-color: transparent; padding: 2px;	text-align: right; font: normal;
+	color: #000066;	font-size: 12px; clear: both;
+	}
+td.QuickFormButtons
+	{
+	position: relative;	background-color: transparent; padding: 0px; text-align: center; clear: both;
+	}
+td.QuickFormElem
+	{
+	position: relative;	background-color: transparent; padding: 3px; float: left; text-align: left; font: normal;
+	color: #000066;	font-size: 12px;	
+	}
+
+/*Dialog */
+
+td.DialogHeader 
+	{
+	position: relative;	width: 99%; height: 20px; border: 0px; /*background-color: #000088;*/ background-color: #666666; 
+	padding: 2px; text-align: left;	font: bold;	color: #FFFFFF;	font-size: 14px;
+	}
+table.DialogWindow
+	{
+	clear: both; border: 1px solid #000000;	background: #E8E8E8 url('../Files/Img/bckstrip.jpg') repeat-x; padding: 0px;
+	}
+	
+td.DialogContent
+	{
+	background-color: transparent; padding: 2px; font: normal; color: #000066; font-size: 12px; clear: both;
+	}
+td.DialogButtons 
+	{
+	position: relative;	width: 99%;	border: 0px; background-color: #666666; text-align: right; font: bold; color: #FFFFFF; font-size: 14px;
+	}
+
+
+/*Table exception*/
+table.tblPageFrm 
+	{
+	border: 1px; border-style: solid; border-color: #000000; padding: 0px; width: 1024px; margin-left: auto; 
+	margin-right: auto;	background-color: #E0DEEF;
+	}
+table.tblTitle 
+	{
+	border: 0px; padding: 0 px;	width: 1024 px;	border-style: solid; valign: top;
+	}
+table.tblLeftMenu
+	{
+	border: 1px; border-style: solid; border-color: #000000; padding: 3px; width: 200px; background-color: #DDDDDD;
+	}
+table.tblLeftMenu tr.header
+	{
+	background: #E8E8E8 url('../Files/Img/ccc.jpg') repeat-x; color: #FFFFFF; border: 1px; border-style: solid; border-color: #000000;
+	}
+	
+table.tblContent
+	{
+	border: 1px; border-style: solid; border-color: #000000; padding: 2px; width: 100%; height: 100%; valign: top; background-color: #DDDDDD;
+	}
+table.tblContent tr.header
+	{
+	text-align: center; background: #E8E8E8 url('../Files/Img/ccc.jpg') repeat-x;
+	color: #FFFFFF; border: 0px; border-style: solid; border-color: #000000;
+	height: 20px; text-align: left; valign: top;
+	}
+/* tabela - potwierdzneie - potwierdznie danych wprowadzonych w formularzu */	
+table.tblPotwierdzenie
+	{
+	border: 1px; border-style: solid; border-color: #000001; padding: 2px; valign: top; background-color: #000000;
+	}
+table.tblPotwierdzenie tr.header
+	{
+	text-align: center; background-color: #000088; color: #FFFFFF; border: 1px; border-style: solid; border-color: #000000;
+	height: 20px; text-align: left;
+	}	
+
+/* tabela - Grid */
+
+
+table.Grid
+	{
+	border: 1px; border-style: solid; border-color: #000001; padding: 0px; valign: center; 
+	background: #E8E8E8 url('../Files/Img/bckstrip.jpg') repeat-x; margin: 3px;
+	/*background-color: #BBBBBA;*/ align: center;
+	}
+
+table.Grid tr.gridHeader	
+	{
+	background-color: #000088; height: 15px; border: 1px; border-style: solid; border-color: #000000; color: #FFFFFF;
+	}
+table.Grid tr.gridTitle	
+	{
+	background-color: #000088; height: 8px; border: 1px; border-style: solid; background-color: #666666;color: #FFFFFF;
+	}
+
+table.Grid tr.rowdark	
+	{
+	background-color: #E0DEEF; height: 20px; font: normal; font-size: 11px; border: 1px; border-style: solid; border-color: #000000;
+	}
+table.Grid tr.rowlight	
+	{
+	background-color: #FFFFFF; height: 20px; font: normal; font-size: 11px; border: 1px; border-style: solid; border-color: #000000;
+	}
+table.Grid td
+	{
+	height: 10px; font: normal;	font-size: 11px;
+	}
+
+table.exceptionTable 
+	{
+	align: center; border: 1px;	border-style: dashed; border-color: #000088; padding: 0px;
+	}
+
+/*th.exceptionheader {background-color:#000000; border: 1px; border-style: solid;}*/
+
+thead.exceptionhead 
+	{
+	background-color:#000088; border: 0px; border-style: solid;	font: bold;	color: #FFFFFF;
+	}
+tbody.exceptionbody 
+	{
+	background-color:#C0C0C0;
+	}
+tfoot.exceptionfoot 
+	{
+	background-color:#000088; color: #FFFFFF;
+	}
+A.leftmenu:link 
+	{
+	text-decoration: none;font-weight:normal; color: #5F5F5F; font-family:Arial; font-size:12px;
+	}
+A.leftmenu:visited 
+	{
+	text-decoration: none;font-weight:normal; color: #5F5F5F; font-family:Arial; font-size:12px;
+	}
+A.leftmenu:active 
+	{
+	text-decoration:none;font-weight:normal; color: #000000; font-family:Arial; font-size:12px;
+	}
+A.leftmenu:hover 
+	{
+	text-decoration: none;font-weight:normal; color: #000000; font-family:Arial; font-size:12px; 
+	}
+/* Other tables */
+table.CenterSingleBorder
+	{
+	border: 1px; border-style: solid; border-color: #000000; padding: 0 px;	align: center;
+	}	
+div.defaultText
+{
+	text-decoration: none;font-weight:normal; color: #5F5F5F; font-family:Arial; font-size:12px;
+}
+div.boldText
+{
+	text-decoration: none;font-weight:bold; color: #5F5F5F; font-family:Arial; font-size:12px;
+}
+div.leftmenu
+{
+	border: 0px; border-style: solid; border-color: #000000; background-color: #DDDDDD;
+}
+div.leftmenuBold
+{
+	border: 0px; border-style: solid; border-color: #000000; background-color: #DDDDDD;	font-weight:bold;
+}
+
+div.loginInfo
+{
+	text-decoration: none;font-weight:normal; color: #5F5F5F; font-family:Arial; font-size:12px;
+}
+
+div.loginInfoBold
+{
+	text-decoration: none;font-weight:bold; color: #5F5F5F; font-family:Arial; font-size:12px;
+}
+
+
+button.defaultButton
+{
+	font-size:5px;
+}
+
+button.gridButton
+{
+	background-color:transparent; border: 0px;
+}

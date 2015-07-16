@@ -1,0 +1,3 @@
+<tr>
+			<td colspan="3" valign="middle" align="right">{$PokazLangStatus}{$PokazKlientStatus}{$PokazKoszykStatus}</td>
+		</tr>

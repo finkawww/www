@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="ExmapleInstall" version="1.0">
+	<path></path>
+	<mainFile></mainFile>
+	
+	<dbObjects>
+		<tables>
+			<table name="tblName">
+				Create table...
+			</table>
+		</tables>
+		
+		<views>
+			<view name="">
+			</view>
+		</views>
+		
+		<procedures>
+			<procedure name="">
+			</procedure>
+		</procedures>
+		
+		<triggers>
+			<trigger name="">
+			</trigger>
+		</triggers>
+		<indexes>
+			<index name="">
+			</index>
+		</indexes>
+	</dbObjects>
+	
+	<actions>
+		<action name="" shortName="">
+			<admin>T</admin>
+			<authorization>N</authorization>
+			<active>T</active>
+		</action>
+		<action>
+			...	
+			...
+		</action>
+	</actions>
+		
+	<sections>
+		<section name="">
+			<content type="M" action=""> <!-- tu jezeli tpy Module to action wypelnione, jezeli nie to action puste a wypelnione content -->
+					<html><head></head><body></body></html>
+			</content>
+		</section>
+	</sections>
+	
+	<pages>
+		<page name="">
+			<sections>
+				<section idx="1"></section>
+			</sections>
+		</page>
+	</pages>
+	
+	<menu>
+		<menuItem path="www/12/www" page="" admin="" />
+		<menuItem path="www/12/www" action="" admin="" />
+	</menu>
+</module>

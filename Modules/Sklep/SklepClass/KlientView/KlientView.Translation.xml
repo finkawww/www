@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation module="KlientView">
+	<language value="PL">
+		<tagValue name="textZal" value="Zaloguj się" />
+		<tagValue name="textWyl" value="Wyloguj" />
+		
+		<tagValue name="textPowitanie" value="Witamy na stornie Galeriatinita.pl" />
+		<tagValue name="textZmianaDanych" value="Zmiana danych" />
+		<tagValue name="textZmianaHasla" value="Zmiana hasła" />
+		<tagValue name="textZamowienia" value="Zamówienia niezrealizowane" />
+		<tagValue name="textNumerZam" value="Numer zamówienia" />
+		<tagValue name="textStatus" value="Status" />
+		<tagValue name="textNazwa" value="Nazwa" />
+		<tagValue name="textOpis" value="Opis" />
+		<tagValue name="textAutor" value="Autor" />
+		<tagValue name="textTechnika" value="Technika" />
+		<tagValue name="textRok" value="Rok" />
+		<tagValue name="textRozmiar" value="Rozmiar" />
+		<tagValue name="textIlosc" value="Ilość" />
+		<tagValue name="textCena" value="Cena" />
+	</language>
+
+	<language value="ENG">
+		<tagValue name="textZal" value="Sign in" />
+		<tagValue name="textWyl" value="Log out" />
+		
+		<tagValue name="textPowitanie" value="Witamy na stornie Galeriatinita.pl" />
+		<tagValue name="textZmianaDanych" value="Zmiana danych" />
+		<tagValue name="textZmianaHasla" value="Zmiana hasła" />
+		<tagValue name="textZamowienia" value="Zamówienia niezrealizowane" />
+		<tagValue name="textNumerZam" value="Numer zamówienia" />
+		<tagValue name="textStatus" value="Status" />
+		<tagValue name="textNazwa" value="Nazwa" />
+		<tagValue name="textOpis" value="Opis" />
+		<tagValue name="textAutor" value="Autor" />
+		<tagValue name="textTechnika" value="Technika" />
+		<tagValue name="textRok" value="Rok" />
+		<tagValue name="textRozmiar" value="Rozmiar" />
+		<tagValue name="textIlosc" value="Ilość" />
+		<tagValue name="textCena" value="Cena" />
+	</language>
+</translation>

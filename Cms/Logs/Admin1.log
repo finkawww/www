@@ -1,0 +1,201 @@
+17h:3m:51s|28:May:2008|Action: updatePrivileges; Params: 2
+10h:47m:8s|29:May:2008|Action: updatePrivileges; Params: 2
+13h:51m:56s|29:May:2008|Action: updatePrivileges; Params: 2
+13h:45m:29s|3:June:2008|Action: updatePrivileges; Params: 5
+13h:45m:36s|3:June:2008|Action: updatePrivileges; Params: 5
+13h:45m:42s|3:June:2008|Action: updatePrivileges; Params: 5
+13h:55m:39s|3:June:2008|Action: updatePrivileges; Params: 5
+10h:10m:43s|4:June:2008|Action: updatePrivileges; Params: 5
+12h:53m:17s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: ; [DESCRIPTION]: 2
+12h:53m:17s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+12h:53m:32s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: ; [DESCRIPTION]: 2
+12h:53m:32s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:31m:15s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: ; [DESCRIPTION]: 2
+13h:31m:15s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:33m:51s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: ; [DESCRIPTION]: 2
+13h:33m:51s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:35m:54s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:40m:37s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:40m:41s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:41m:11s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:42m:22s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:55m:8s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+13h:55m:16s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:6m:42s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:8m:48s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:10m:4s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:10m:45s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:10m:53s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:10m:59s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:11m:7s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:11m:29s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:11m:35s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:11m:47s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+14h:12m:6s|4:June:2008|[ACTION]: updatePrivileges; [PARAMS]: Udana zmiana uprawnień dlaa; [DESCRIPTION]: none
+10h:54m:4s|5:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikab
+10h:54m:34s|5:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikab
+10h:54m:58s|5:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikab
+10h:55m:14s|5:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikab
+10h:55m:22s|5:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikab
+13h:18m:44s|5:June:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:33m:12s|6:June:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:35m:3s|6:June:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:37m:2s|6:June:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: Config
+10h:37m:31s|6:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 1; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaAdmin
+10h:37m:47s|6:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 1; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaAdmin
+10h:38m:0s|6:June:2008|[ACTION]: adminDelete; [PARAMS]: (userId)id=2; [DESCRIPTION]: Usuniecie użytkownika a
+11h:0m:29s|6:June:2008|[ACTION]: adminDelete; [PARAMS]: (userId)id=2; [DESCRIPTION]: Usuniecie użytkownika a
+13h:37m:21s|12:June:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:26m:48s|12:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Udana zmiana hasła dla użytkownikaa
+14h:26m:57s|12:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 3; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaa
+14h:29m:28s|12:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 1; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaAdmin
+15h:40m:58s|17:June:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+15h:42m:30s|17:June:2008|[ACTION]: adminPassEdit; [PARAMS]: 4; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaddfffff
+15h:45m:28s|7:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+16h:10m:9s|7:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: Config
+16h:10m:16s|7:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: CmsInfo
+15h:59m:22s|10:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:29m:42s|11:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:30m:12s|11:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:55m:26s|11:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: Pages
+11h:5m:58s|11:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: Pages
+11h:6m:12s|11:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: AdminUsr
+11h:6m:20s|11:July:2008|[ACTION]: adminDelete; [PARAMS]: (userId)id=3; [DESCRIPTION]: Usuniecie użytkownika a
+12h:24m:15s|11:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 4; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaddfffff
+12h:25m:28s|11:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 4; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaddfffff
+12h:25m:34s|11:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 4; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaddfffff
+12h:25m:45s|11:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 7; [DESCRIPTION]: Udana zmiana hasła dla użytkownikaa
+12h:44m:20s|14:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+13h:42m:55s|14:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+13h:45m:42s|14:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+13h:47m:37s|14:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+13h:48m:17s|14:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+9h:44m:53s|15:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:7m:29s|15:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+15h:59m:57s|15:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+16h:24m:1s|15:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+16h:39m:4s|15:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 1; [DESCRIPTION]: Udana zmiana hasła dla użytkownikaAdmin
+16h:39m:35s|15:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+16h:39m:55s|15:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 1; [DESCRIPTION]: Nieudana zmiana hasła dla użytkownikaadmin
+16h:41m:42s|15:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: AdminUsr
+12h:15m:52s|16:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+12h:56m:33s|16:July:2008|[ACTION]: adminPassEdit; [PARAMS]: 2; [DESCRIPTION]: Udana zmiana hasła dla użytkownikas
+13h:38m:22s|16:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:7m:9s|16:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:8m:29s|16:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:19m:0s|16:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+12h:57m:6s|17:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:29m:39s|18:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:39m:8s|18:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:18m:35s|18:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+14h:20m:56s|18:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+15h:44m:59s|18:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+11h:21m:39s|21:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+13h:16m:41s|21:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: CmsInfo
+10h:8m:13s|22:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:30m:44s|22:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: CmsInfo
+10h:37m:28s|22:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: CmsInfo
+10h:43m:29s|22:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: a w module: CmsInfo
+10h:4m:8s|23:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+15h:14m:2s|23:July:2008|[ACTION]: updatePrivileges; [PARAMS]: none; [DESCRIPTION]: Udana zmiana uprawnień dla użytkownika: p w module: CmsModules
+15h:15m:33s|23:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+10h:1m:48s|24:July:2008|[ACTION]: adminLogin; [PARAMS]: Admin; [DESCRIPTION]: Udane logowanie
+12h:49m:53s|28:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:37m:39s|28:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:9m:18s|29:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+15h:4m:25s|30:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:53m:46s|30:July:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: a w module: Config</DESCRIPTION>
+16h:54m:24s|30:July:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: a w module: AdminUsr</DESCRIPTION>
+16h:55m:20s|30:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:55m:35s|30:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:56m:17s|30:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+8h:22m:5s|31:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+8h:34m:51s|31:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+8h:42m:13s|31:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+8h:42m:38s|31:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+8h:47m:59s|31:July:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:45m:36s|1:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:18m:36s|5:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:52m:44s|7:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:42m:31s|7:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:25m:56s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:5m:48s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:26m:39s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:48m:18s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:51m:29s|8:August:2008|<ACTION>adminDelete</ACTION><PARAMS>(userId)id=2</PARAMS><DESCRIPTION>Usuniecie użytkownika a</DESCRIPTION>
+11h:51m:33s|8:August:2008|<ACTION>adminDelete</ACTION><PARAMS>(userId)id=2</PARAMS><DESCRIPTION>Usuniecie użytkownika </DESCRIPTION>
+11h:57m:32s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:47m:57s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:50m:19s|8:August:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: Piotrek w module: AdminUsr</DESCRIPTION>
+14h:50m:26s|8:August:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: Piotrek w module: CmsInfo</DESCRIPTION>
+14h:50m:30s|8:August:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: Piotrek w module: CmsInfo</DESCRIPTION>
+14h:50m:42s|8:August:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: Piotrek w module: FrontendMenu</DESCRIPTION>
+14h:51m:26s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+15h:50m:20s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+15h:51m:40s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+20h:33m:11s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+20h:35m:35s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+21h:52m:17s|8:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+22h:15m:5s|10:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:28m:51s|11:August:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:34m:13s|11:August:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: a w module: CmsModules</DESCRIPTION>
+10h:23m:16s|2:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:27m:22s|3:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:41m:15s|3:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: FrontendMenu</DESCRIPTION>
+13h:41m:30s|3:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: Pages</DESCRIPTION>
+13h:41m:39s|3:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: Sections</DESCRIPTION>
+13h:42m:44s|3:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:44m:4s|3:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: AdminUsr</DESCRIPTION>
+13h:44m:52s|3:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:45m:28s|3:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:13m:31s|3:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: 12 w module: Config</DESCRIPTION>
+14h:13m:39s|3:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: 12 w module: CmsModules</DESCRIPTION>
+14h:17m:24s|3:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:17m:50s|3:September:2008|<ACTION>adminDelete</ACTION><PARAMS>(userId)id=2</PARAMS><DESCRIPTION>Usuniecie użytkownika 12</DESCRIPTION>
+9h:55m:34s|10:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:53m:36s|12:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:48m:15s|17:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:55m:56s|17:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+12h:6m:57s|17:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:51m:12s|18:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:37m:8s|18:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:38m:12s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:41m:24s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:43m:42s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:38m:7s|19:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: CmsInfo</DESCRIPTION>
+13h:38m:24s|19:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: Pages</DESCRIPTION>
+13h:50m:46s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:25m:47s|19:September:2008|<ACTION>updatePrivileges</ACTION><PARAMS>none</PARAMS><DESCRIPTION>Udana zmiana uprawnień dla użytkownika: p w module: FrontendMenu</DESCRIPTION>
+15h:23m:46s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:14m:39s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:25m:10s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:43m:36s|19:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:6m:45s|22:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+12h:39m:59s|22:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+12h:34m:26s|23:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+11h:26m:46s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+12h:29m:27s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+12h:34m:38s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:19m:26s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:42m:42s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:43m:56s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+13h:51m:22s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:19m:19s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:21m:3s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:21m:50s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:22m:25s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:43m:41s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:47m:52s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:54m:45s|24:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:54m:12s|25:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:54m:31s|25:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:56m:3s|25:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+10h:59m:52s|25:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+14h:16m:3s|25:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+15h:35m:6s|25:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:7m:12s|26:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+12h:41m:15s|26:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:36m:41s|26:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+16h:40m:25s|26:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:24m:41s|29:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>
+9h:40m:58s|29:September:2008|<ACTION>adminLogin</ACTION><PARAMS>Admin</PARAMS><DESCRIPTION>Udane logowanie</DESCRIPTION>

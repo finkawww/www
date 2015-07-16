@@ -1,0 +1,2 @@
+RewriteRule ^faq$ index.php?mp=95 [L]
+RewriteRule ^aktualnosci.htm$ index.php?mp=278 [L]

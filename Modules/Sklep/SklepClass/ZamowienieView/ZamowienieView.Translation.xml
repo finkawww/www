@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<translation module="ZamowienieView">
+	<language value="PL">
+		<tagValue name="txtHdr" value="Dane korespondencyjne" />
+		
+		<tagValue name="txtImie" value="Imię" />
+		<tagValue name="txtNazwisko" value="Nazwisko" />
+		<tagValue name="txtNazwa" value="Nazwa firmy" />
+		<tagValue name="txtNIP" value="NIP" />
+		<tagValue name="txtKraj" value="Kraj" />
+		<tagValue name="txtKodPocztowy" value="Kod pocztowy" />
+		<tagValue name="txtMiasto" value="Miasto" />
+		<tagValue name="txtUlica" value="Ulica" />
+		<tagValue name="txtNrDomu" value="Nr. domu" />
+		<tagValue name="txtNrMieszkania" value="Nr. mieszkania" />
+		<tagValue name="txtEmail" value="Email" />
+		<tagValue name="txtEmail2" value="Email - powtórzone" />
+		<tagValue name="txtNrTel" value="Nr. tel." />
+		<tagValue name="txtFakturaTyt" value="Dane do faktury" />
+		<tagValue name="txtFakturaVal1" value="Dane faktury wpisane wyżej" />
+		<tagValue name="txtFakturaVal2" value="Inne dane - osoba" />
+		<tagValue name="txtFakturaVal3" value="Inne dane - firma" />
+		<tagValue name="txtWyczysc" value="Wyczyść" />
+		<tagValue name="txtDalej" value="Dalej" />
+		<tagValue name="txtRuleImie" value="Proszę wypełnić pole imię!" />
+		<tagValue name="txtRuleNazwisko" value="Proszę wypełnić pole nazwisko!" />
+		<tagValue name="txtRuleNazwa" value="Proszę wypełnić pole nazwa!" />
+		<tagValue name="txtRuleNIP" value="Proszę wypełnić pole NIP!" />
+		<tagValue name="txtRuleLogin" value="Proszę wypełnić pole Login!" />
+		<tagValue name="txtRuleMiasto" value="Proszę wypełnić pole Miasto" />
+		<tagValue name="txtRuleUlica" value="Proszę wypełnić pole Ulica!" />
+		<tagValue name="txtRuleEmail" value="Proszę wypełnić pole Email!" />
+		<tagValue name="txtRuleNrDomu" value="Proszę wypełnić pole Nr domu!" />
+		<tagValue name="txtRuleKodPocztowy" value="Proszę wypełnić pole Kod pocztowy!" />
+		
+		<tagValue name="txtRuleEmail2" value="Wpisano nieprawidłowy adres e-mail" />
+		<tagValue name="txtRuleEmail3" value="Wartości pól e-mial i e-mail powtórone muszą być identyczne" />
+		<tagValue name="txtError" value="Wystąpił nieoczekiwany błąd. Zamówienie nie zostało zrealizowane. Prosimy dokonać zamówienia drogą telefoniczną. Przepraszamy!" />
+		<tagValue name="txtRuleZgoda" value="Musisz wyrazic zgode na przetwarzanie danych adresowych" />
+		<tagValue name="txtRuleTel" value="Numer telefonu jest wymagany" />
+		<tagValue name="txtFormaDostawy" value="Forma dostawy"/>
+		
+		<tagValue name="txtRazem" value="Razem (netto)"/>
+		<tagValue name="txtVat" value="VAT"/>
+		<tagValue name="txtRazemBrutto" value="Razem (brutto)"/>
+		<tagValue name="txtWartoscZam" value="Wartość zamówienia"/>
+		<tagValue name="txtNazwaTow" value="Nazwa"/>
+		<tagValue name="txtCenaTow" value="Cena"/>
+		<tagValue name="txtCena" value="Cena dostawy"/>
+		<tagValue name="txtIloscTow" value="Ilość stan."/>
+		<tagValue name="txtIloscFirm" value="Ilość firm"/>
+		<tagValue name="txtZdjecieTow" value="Zdjęcie"/>
+		<tagValue name="txtUwagi" value="Uwagi"/>
+		<tagValue name="txtZatwierdz" value="Zatwierdź"/>
+		<tagValue name="txtAnuluj" value="Anunluj"/>
+		<tagValue name="txtPopraw" value="Popraw"/>
+		
+		<tagValue name="txtChkZgoda" value="Wyrażam zgodę na przetwarzanie danych, w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych (Dz. U. Nr 133 poz. 883 z 1997 roku), dla celów marketingowych TIK-SOFT Sp. zoo. Przysługuje Pani/Panu prawo do wglądu i poprawiania danych. TIK-SOFT Sp.z o.o. oświadcza, że podane dane nie zostaną w żadnej formie udostępnione osobom trzecim."/>
+		
+<!-- KONIEC DaneOsob		-->
+	</language>
+	<language value="ENG">
+		<tagValue name="txtHdr" value="Dane do wysyłki" />
+		
+		<tagValue name="txtImie" value="Imię" />
+		<tagValue name="txtNazwisko" value="Nazwisko" />
+		<tagValue name="txtNazwa" value="Nazwa firmy" />
+		<tagValue name="txtNIP" value="NIP" />
+		<tagValue name="txtKraj" value="Kraj" />
+		<tagValue name="txtKodPocztowy" value="Kod pocztowy" />
+		<tagValue name="txtMiasto" value="Miasto" />
+		<tagValue name="txtUlica" value="Ulica" />
+		<tagValue name="txtNrDomu" value="Nr. domu" />
+		<tagValue name="txtNrMieszkania" value="Nr. mieszkania" />
+		<tagValue name="txtEmail" value="Email" />
+		<tagValue name="txtNrTel" value="Nr. tel." />
+		<tagValue name="txtFakturaTyt" value="Dane do faktury" />
+		<tagValue name="txtFakturaVal1" value="Dane faktury wpisane wyżej" />
+		<tagValue name="txtFakturaVal2" value="Inne dane - osoba" />
+		<tagValue name="txtFakturaVal3" value="Inne dane - firma" />
+		<tagValue name="txtWyczysc" value="Wyczyść" />
+		<tagValue name="txtDalej" value="Dalej" />
+		<tagValue name="txtRuleImie" value="Proszę wypełnić pole imię!" />
+		<tagValue name="txtRuleNazwisko" value="Proszę wypełnić pole nazwisko!" />
+		<tagValue name="txtRuleNazwa" value="Proszę wypełnić pole nazwa!" />
+		<tagValue name="txtRuleNIP" value="Proszę wypełnić pole NIP!" />
+		<tagValue name="txtRuleLogin" value="Proszę wypełnić pole Login!" />
+		<tagValue name="txtRuleMiasto" value="Proszę wypełnić pole Miasto" />
+		<tagValue name="txtRuleUlica" value="Proszę wypełnić pole Ulica!" />
+		<tagValue name="txtRuleEmail" value="Proszę wypełnić pole Email!" />
+		<tagValue name="txtRuleEmail2" value="Wpisano nieprawidłowy adres e-mail" />
+		<tagValue name="txtError" value="Wystąpił nieoczekiwany błąd. Zamówienie nie zostało zrealizowane. Prosimy dokonać zamówienia drogą telefoniczną. Przepraszamy!" />
+		<tagValue name="txtRuleZgoda" value="Musisz wyrazic zgode na przetwarzanie danych adresowych" />
+		<tagValue name="txtRuleTel" value="Numer telefonu jest wymagany" />
+		<tagValue name="txtFormaDostawy" value="Forma dostawy"/>
+		
+		<tagValue name="txtRazem" value="Razem (netto)"/>
+		<tagValue name="txtVat" value="VAT"/>
+		<tagValue name="txtRazemBrutto" value="Razem (brutto)"/>
+		<tagValue name="txtWartoscZam" value="Wartość zamówienia"/>
+		<tagValue name="txtNazwaTow" value="Nazwa"/>
+		<tagValue name="txtCenaTow" value="Cena"/>
+		<tagValue name="txtCena" value="Cena dostawy"/>
+		<tagValue name="txtIloscTow" value="Ilość stan."/>
+		<tagValue name="txtIloscFirm" value="Ilość firm"/>
+		<tagValue name="txtZdjecieTow" value="Zdjęcie"/>
+		<tagValue name="txtUwagi" value="Uwagi"/>
+		<tagValue name="txtZatwierdz" value="Zatwierdź"/>
+		<tagValue name="txtAnuluj" value="Anunluj"/>
+		<tagValue name="txtPopraw" value="Popraw"/>
+		<tagValue name="txtChkZgoda" value="Wyrażam zgodę na przetwarzanie danych, w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych (Dz. U. Nr 133 poz. 883 z 1997 roku), dla celów marketingowych TIK-SOFT Sp. zoo. Przysługuje Pani/Panu prawo do wglądu i poprawiania danych. TIK-SOFT Sp.z o.o. oświadcza, że podane dane nie zostaną w żadnej formie udostępnione osobom trzecim."/>
+<!-- KONIEC DaneOsob		-->
+	</language>
+</translation>

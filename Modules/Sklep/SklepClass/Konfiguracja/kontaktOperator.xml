@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smtp_server>
+	<host>poczta.finka.pl</host>
+	<port>26</port>
+	<user>sklep+finka.pl</user>
+	<pass>wirt#$252</pass>
+	<sender>sklep@finka.pl</sender>		
+</smtp_server>

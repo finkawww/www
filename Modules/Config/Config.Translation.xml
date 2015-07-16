@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<translation module="Config">
+
+	<language value="PL">
+		<tagValue name="title" value="Tytuł" />
+		<tagValue name="defaultLanguage" value="Język domyślny strony" />
+		<tagValue name="langGridTitle" value="Lista dostępnych języków" />
+		<tagValue name="langGridColName" value="Nazwa" />
+		<tagValue name="langGridColShortName" value="Kod języka" />
+		<tagValue name="langGridColIcon" value="Ikona" />
+		<tagValue name="langGridColActive" value="Aktywna" />		
+	</language>
+
+	<language value="ENG">
+		<tagValue name="title" value="Title" />
+		<tagValue name="defaultLanguage" value="Default language" />
+		<tagValue name="langGridTitle" value="Languages list" />
+		<tagValue name="langGridColName" value="Name" />
+		<tagValue name="langGridColShortName" value="Language code" />
+		<tagValue name="langGridColIcon" value="Icon" />
+		<tagValue name="langGridColActive" value="Active" />
+	</language>
+</translation>

@@ -1,0 +1,10 @@
+<!-- Moduly do zainstalowania -->
+<?xml version="1.0" encoding="UTF-8"?>
+<installedModules>
+  <module name = "Clients" path = "../../" />
+  <module name = "Pages" path = "../../../"/>
+  <module name = "Sections" path = "./../../" />
+  <module name = "SectionsToPages" path = "./../../" />
+  <module name = "..." path = "./../../" />
+  <module name = "..." path = "./../../" />
+</installedModules>

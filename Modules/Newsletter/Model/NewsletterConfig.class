@@ -1,0 +1,75 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of NewsletterConfig
+ *
+ * @author pb
+ */
+class NewsletterConfig
+{
+    private $test = false;
+    
+    private $smtp="";
+    private $port="";
+    private $user="";
+    private $pass="";
+    private $from="";
+    
+
+    public function __construct($isTest)
+    {
+        $this->test = $isTest;
+    }
+    
+    public function Load()
+    {
+        $sql = "SELECT * FROM NewsletterConfig";
+        if($this->test)
+        {
+            $sql .= " WHERE UPPER(test)='T'";
+        }
+        else
+        {
+            $sql .= " WHERE UPPER(test)='N'";
+        }
+        
+        $DBInt = DBSIngleton::getInstance();
+    	$qResult = $DBInt->ExecQuery($sql);
+    	
+        $data = $qResult->fetchRow(DB_FETCHMODE_ASSOC);
+        $this->smtp = $data["smtp"];
+        $this->port = $data["port"];
+        $this->user = $data["user"];
+        $this->pass = $data["pass"];
+        $this->from = $data["from"];
+    }
+
+    public function GetSmtpAdress()
+    {
+        return $this->smtp;
+    }
+    public function GetPort()
+    {
+        return $this->port;
+    }
+    public function GetSmtpUser()
+    {
+        return $this->user;
+    }
+    public function GetSmtpPass()
+    {
+        return $this->pass;
+    }
+    
+    public function GetFrom()
+    {
+        return $this->from;
+    }
+    
+}

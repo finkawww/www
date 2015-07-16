@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation module="Szukanie">
+	<language value="PL">
+		<tagValue name="text" value="Szukaj" />
+	</language>
+
+	<language value="ENG">
+		<tagValue name="text" value="Search" />
+	</language>
+</translation>

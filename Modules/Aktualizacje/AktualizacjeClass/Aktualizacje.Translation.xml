@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation module="Aktualnosci">
+	<language value="PL">
+		<tagValue name="textTytul" value="Aktualności" />		
+	</language>
+
+	<language value="ENG">
+		<tagValue name="textTytul" value="News" />
+	</language>
+</translation>

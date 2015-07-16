@@ -1,0 +1,12 @@
+<!-- 
+tu wymagane pluginy
+np: Users - jak nie ma to wyswietla fatal error
+-->
+<Config>
+  <RequiredModules>
+     <Module>
+       <Name></Name>
+       <Version></Version>
+     </Module>
+  </RequiredModules>
+</Config>

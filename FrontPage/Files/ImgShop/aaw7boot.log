@@ -1,0 +1,710 @@
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-02 19:06
+[~] Preparing to execute queued commands
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\datamngr.dll
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\datamngrUI.exe
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\FirefoxExtension\chrome.manifest
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\FirefoxExtension\components\DataMngrHlp.dll
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\FirefoxExtension\components\DataMngrHlp.xpt
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\FirefoxExtension\content\overlay.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\FirefoxExtension\content\overlay.xul
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\FirefoxExtension\install.rdf
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr\IEBHO.dll
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\BearshareMediabarDx.dll
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\BearshareMediabarTb.dll
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\bearshare.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\data\search\engines.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\data\search\search.xsl
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\about.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\dtxpanelwin.xul
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\dtxprefwin.xul
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\dtxwin.xul
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\emailnotifierproviders.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\external.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\neterror.xhtml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\lib\wmpstreamer.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\modules\datastore.jsm
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\preferences.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\toolbar.htm
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\toolbar.xul
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\bg-scalable-mdl.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\bg-scalable-tl.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\bg-scalable-tr.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-dragresize.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-close-down.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-close-over.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-close.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-maximize-down.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-maximize-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-maximize.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-minimize-down.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-minimize-over.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btn-wide-minimize.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btnarrow-next-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btnarrow-next.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btnarrow-previous-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\btnarrow-previous.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\navico-home.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\panel.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\powered-mystart.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\tb_icon.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\widget.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.Twitter.1227\widget.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\bg-scalable-mdl.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\bg-scalable-tl.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\bg-scalable-tr.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-dragresize.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-close-down.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-close-over.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-close.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-maximize-down.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-maximize-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-maximize.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-minimize-down.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-minimize-over.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btn-wide-minimize.PNG
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btnarrow-next-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btnarrow-next.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btnarrow-previous-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\btnarrow-previous.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\navico-home.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\panel.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\powered-mystart.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\tb_icon.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\widget.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\content\widgets\net.vmn.www.3.YouTube.1217\widget.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\bearshare.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\bluelite.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\bluesky.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn-search-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn-search.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn-settings-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn-settings.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn-widgets-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn-widgets.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\btn_settings.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-down-back-ff.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-down-back.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-down-left.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-down-right.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-down-splitter.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-drop-back.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-drop-left.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-drop-right.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-drop-splitter.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-hover-back-ff.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-hover-back.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-hover-left.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-hover-right.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\button-hover-splitter.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\ca.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\dictionary.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\divider.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\downloadcom.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\dtxlogo.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\email.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\email_on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\games.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\graphred0.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\graphred0_5.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\grey.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\headsup.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\ico-shield.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\images.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\add.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\aol.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\arrow-dn.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\arrow-right.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\arrow-up.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btn-end.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btn-mdl.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btn-mdl_ff.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btn-start.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btnover-end.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btnover-mdl.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btnover-mdl_ff.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\bg-btnover-start.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\blank.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\btnback-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\btnback-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\btnleft-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\btnleft-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\btnright-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\btnright-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\button-splitter-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\button-splitter-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\checkmark.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\chevron.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\collapse.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\comcast.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\dtx.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\edit-back-hot.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\edit-back.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\expand.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\found.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\gmail.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\highlight.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\highlight_blue.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\highlight_cyan.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\highlight_lime.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\highlight_magenta.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\highlight_yellow.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\hotmail.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\imap.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\lastsearch-thumb-back.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\loadingMid.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\lock.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\mailcom.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitem-splitter.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitemback-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitemback-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitemleft-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitemleft-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitemright-down-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menuitemright-vista.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menu_bg-basic.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menu_separator_bar.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\menu_separator_white.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\modify.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\move.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\movetarget.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\css\popupAbout.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\css\popupGames.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\css\popupWidgets.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\footer.htm
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\gamecategory.xsl
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\gameData.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\gameList.xsl
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\gametype.xsl
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\arrow-sml-drop.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\arrow-sml.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\arrowr-bluew5.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\bg-aboutbox.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\bg-btnover.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\bg-pnl520x390.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-close-grey.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-close-greyover.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-drag.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-next-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-next.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-previous-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-previous.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-search-pnlbtm-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\btn-search-pnlbtm.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\gamethumb-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\gamethumb2-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\ico-calendar.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\ico-download.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\ico-joystick24.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\ico-play.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\ico-tags.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\icon-Add.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\icon-download.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\icon-Info.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\icon-play.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\icon-shop.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\menul-bgon.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\menul-bgover.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\panel-botm-noscroll.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scroll-bg-206.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scroll-bg.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scroll-topwin.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollb-disable.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollb-down.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollb-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollb.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollt-disable.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollt-down.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollt-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\scrollt.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\searchbox-pnlbtm.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\star_x_grey.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\star_x_orange.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\TRUSTe_about.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\view-detailed-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\view-detailed-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\view-thumb-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\view-thumb-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\widgets-square-16px.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\images\widgets-square-24px.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\popupGames.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\panels\popupWidgets.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\pop.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\css\manager.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\css\slider.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\bg-pnl.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\btn-close-grey.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\btn-close-greyover.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\collapsed_button.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\expanded_button.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\ico-playstation-down.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\ico-playstation-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\ico-playstation.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\ico-radio.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\music-note.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-btn-pause-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-btn-pause.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-btn-play-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-btn-play.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-eq-bg.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-eq-busy.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-eq-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-eq-on.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-eq-warning.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-options-design-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-options-design.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-options-on.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-options.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-volume-0.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-volume-1.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-volume-2.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-volume-3.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\radio-volume-mute.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\scrollbar-handle.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\scrollbar-track.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\slider.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\slideron.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\images\track.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\managerpanel.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio\volumeslider.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\radio.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\reload.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\remove.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\rename.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\resize-box.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\rss.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\rsschannelback.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\RSSLogo.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\rsstabdivider.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\scroll-left.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\scroll-right.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\search-go.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\search.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\text-ellipsis.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\toolbarsplitter.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\transparent_1px.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_02.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_03.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_04.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_06.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_07.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_08.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_09.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_10.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_11.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_12.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_13.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_14.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_15.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_16.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_18.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_19.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_20.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\border_21.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\btn-close-grey.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\btn-close-greyover.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\close-hot.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\close-normal.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\loadingMid.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\proxy.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\template.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\template.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\templateFF.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\uwa\throbber.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\icons\cond999.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\icons\icons.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\icons\na-s.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\icons\na.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\icons\weather.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\add.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\arrowr-bluew5.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\bg-pnl.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\bg-pnl520x350blue-whitebg.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\bg-pnl520x350blue.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\box-check.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\box-uncheck.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btn-close-grey.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btn-close-greyover.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btn-delete.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btn-search-pnlbtm.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btnarrow-next-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btnarrow-next.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btnarrow-previous-off.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\btnarrow-previous.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\ico-check.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\ico-hotandhumid-s.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\ico-hotandhumid.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\options-weather.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\over-blue.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\over-orange.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\powered-by-weatherbug.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\powered-by-weatherbug2.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\radio-checked.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\radio-unchecked.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\searchbox-pnlbtm.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\images\weather-contour.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\popupWeather.css
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\weatherbutton\panels\popupWeather.html
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lib\yahoo.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\lichen.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\logo-about.jpg
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\logo-about.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\logo-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\logo.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\logo_old.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\maps.bmp
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\menuseparatorback.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\modify-save.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\modify.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\modifyhot.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\music.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\news.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\options\options-main.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\options\options-search.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\options\options-weather.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\options\options-widgets.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\orange.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\pixsy.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\relatedlinks.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-collapse.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-delete.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-expand.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-feed.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-folder-remove.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-folder-rename.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-folder.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-found.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-reload.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss-subscribe.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rss.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rssback.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\rsstopback.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\search-over.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\search.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\searchbar\searchbar-background-left.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\searchbar\searchbar-background-middle.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\searchbar\searchbar-background-right.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\settings.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\shopping.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\siteinfo.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\skin-bluelite.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\skin-bluesky.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\skin-grey.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\skin-lichen.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\skin-orange.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\skin-yellow.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\technorati.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\throbber.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\toolbarsplitter.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\video.bmp
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\weather.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\web.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widgets-square-16px.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widgets.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_allocine.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_bliptv.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_calcal.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_calculator.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_gservices.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_sudoku.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_todo.jpg
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_todo.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_trio.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\widget_uconverter.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\wikipedia.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\yahoosearch.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\yellow.gif
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\youtube.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\chrome\skin\zoom.png
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\components\windowmediator.js
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\manifest.xml
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\ToolBar\uninstall.exe
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\uninstall.exe
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar\Datamngr
+[~] Deleting file: C:\Program Files\BearShare Applications\Mediabar
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\dtx.ini
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\games\560c7201755c679869eea910b6fd1eb7
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\games\c3f22b13df8b8baa8e724cb076f76e87
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\games\d5b2c3ce52b4fc55ef8dfa8715f33189
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\games\GameCategories.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\games\GameTypes.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\guid.dat
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\preferences.dat
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\stats.dat
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\uninstallIE.dat
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\version.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\weather\064c2b39f3a192e560cecab91a0ab451
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\weather\f732359399bf572789c565737746101e
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\weather\forecasts_cache.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\weather\observations_cache.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\weatherbutton_prefs.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\widgets_cache\9f9d921adaa38d5368da64c4eca671a7
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\widgets_cache\c2aa2d5455a96425c82f2c63f7bc461e
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\widgets_cache\category_cache.xml
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\bearsharemediabartb\widgets_cache\widget_cache.xml
+[~] Deleting file: c:\progra~1\bearsh~1\mediabar\datamngr\datamn~1.exe
+[~] Deleting file: C:\Program Files\BearShare Applications\MediaBar\Datamngr\datamngrUI.exe
+[~] Deleting file: C:\Program Files\BearShare Applications\MediaBar\ToolBar\BearshareMediabarDx.dll
+[~] Deleting file: C:\Documents and Settings\Administrator\Ustawienia lokalne\Temp\BearShare_DM\BearShareMediaBar.exe
+[~] Deleting file: c:\progra~1\bearsh~1\mediabar\toolbar\bearsharemediabardx.dll
+[~] Finished processing queued commands
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-03 19:47
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-06 18:04
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-07 17:19
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-08 20:36
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-09 19:08
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-09 20:23
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-09 20:52
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-10 06:57
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-10 08:10
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-10 18:41
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-10 20:36
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-11 10:56
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-11 10:57
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-11 17:48
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 09:28
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 12:42
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 12:48
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 13:15
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 13:21
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 13:33
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 14:07
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 14:20
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 15:14
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 15:19
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 15:23
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 15:24
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 15:30
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-12 16:14
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-14 07:53
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-15 15:16
+[~] Preparing to execute queued commands
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP72\A0027065.exe
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP79\A0039679.exe
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\Mozilla\Firefox\Profiles\5w0uyau1.default\extensions\{E84D42CA-64EB-11DE-A65F-8C3656D89593}\chrome\content\bearshare.js
+[~] Deleting file: C:\Documents and Settings\Administrator\Dane aplikacji\Mozilla\Firefox\Profiles\5w0uyau1.default\extensions\{E84D42CA-64EB-11DE-A65F-8C3656D89593}\components\windowmediator.js
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP72\A0027058.dll
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP72\A0027059.dll
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP72\A0027062.exe
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP79\A0039672.dll
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP79\A0039673.dll
+[~] Deleting file: C:\System Volume Information\_restore{80DF92E9-8DE4-45F1-B719-5E0F8C751354}\RP79\A0039676.exe
+[~] Finished processing queued commands
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-18 09:15
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-18 16:26
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-21 21:01
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-21 21:07
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-22 18:11
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-23 19:10
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-24 21:21
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-26 11:29
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-26 16:51
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-27 12:09
+
+
+================================================================================
+Boot Cleaner
+================================================================================
+[~] Cleaning started at 2011-02-27 16:53
