@@ -52,4 +52,4 @@ class Konfiguracja
 		return $res=='T';
 	}
 }
-?>
+

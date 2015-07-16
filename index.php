@@ -12,7 +12,7 @@ ob_start();
 //require_once('DB.php');
 
 if (!DEFINED('rootPath'))
-   DEFINE('rootPath', '/home4/finka/public_html/dev/');
+   DEFINE('rootPath', '/home4/finka/public_html/dev');
 
 require_once rootPath.'/Modules/Sklep/SklepClass/PrzegladanieKoszyka.class.php';
 require_once rootPath.'/Modules/Sklep/SklepClass/PrzegladanieGrupOfert.php';
