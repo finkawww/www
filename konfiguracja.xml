@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<rezerwacje>N</rezerwacje>
+	<towarowNaStronie>12</towarowNaStronie>
+	<vat>23</vat>
+	<rabaty>T</rabaty>
+</config>
