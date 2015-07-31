@@ -1,29 +1,28 @@
-﻿
-<HTML>
-	<HEAD>
-    	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" />
-    	<META NAME="Keywords" CONTENT="{$keywords}" />
-    	<META HTTP-EQUIV="Content-Language" CONTENT="PL" />
-    	<META NAME="Author" CONTENT="{$author}" />
-    	<META NAME="Robots" CONTENT="{$robots}" />
-    	<META HTTP-EQUIV="Pragma" CONTENT="{$cache}" />
-    	<META NAME="Description" CONTENT="{$desc}" />
+﻿<!DOCTYPE HTML>
+<html lang="PL-pl">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="keywords" content="{$keywords}" />
+    	<meta name="author" content="{$author}" />
+    	<meta name="robots" content="{$robots}" />
+    	<meta http-equiv="pragma" content="{$cache}" />
+    	<meta name="description" content="{$desc}" />
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
-    	<LINK REL="Stylesheet" HREF="/FrontPage/Style/style.css" TYPE="text/css" />
-    	<TITLE>{$title}</TITLE>
+
+    	<link rel="stylesheet" href="/FrontPage/Style/newstyle.css" type="text/css" />
+		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
+    	<title>{$title}</title>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
-
-		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
 		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-    	<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
-<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>	
-    </HEAD>
-	<BODY  bgcolor="white">
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
+	</head>
+	<body>
 		{literal}
 	<!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TH7HWQ"
@@ -36,31 +35,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 {/literal}
 
+	<div id="wrapper" class="oferta-main">
+<div id="logo">
+			<div id="main-logo"><a href="/"><img src="/FrontPage/Files/Img/finka_logo.jpg" border="0"/></a></div>
+			<div id="facebook-top"><a href="https://www.facebook.com/programyFINKA"><img src="/FrontPage/Files/Img/fb_finka.png" border="0" title="Dołącz do fanów Tik-Soft na FaceBook'u"></a></div>
+		</div>
+		<div id="menu-box">
+			<div id="topmenu">{$topMenu}</div>
+			<div id="topcart">{$PokazKoszykStatus}</div>
+		</div>
+	<div style="float:left">	
 <table class="Content" width="100%" align="center">
 <tr><td width="100%">
 	
 	<table class="MainTbl" bgcolor="#FFFFFF"  width="1000px" align="center">
-		
-		<tr>
-			<td colspan="2" width="100%" align="left" valign="middle">
-			<table width="100%">
-				<tr>
-				<td align="left">				
-					 <a href="/"><img src="/FrontPage/Files/Img/finka_logo.jpg" border="0"/></a> 	
-				</td>
-				<td align="center">				
-					<a href="https://www.facebook.com/programyFINKA"><img src="/FrontPage/Files/Img/fb_finka.png" border="0" title="Docz do fanw Tik-Soft na FaceBook'u"></a>	
-				</td>
-				</tr>
-				<tr>
-					<td colspan="2">				
-						{$topMenu}<font face="Tahoma" font color="#454545">{$PokazKoszykStatus}
-					</td>
-				</tr>
-				</table>
-			</td>
-		</tr>
-		
 
 		<tr><td></td></tr>
 		<tr><td></td></tr>
@@ -123,13 +111,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </tr>
 <tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
 </table>
-
-{literal}
-<script type="text/javascript">$('#banerSlider').cycle({fx:'fade',random:1,delay:-300,width:1000,height:300});</script> 
-{/literal}
-							
-   	</BODY>
-</HTML>
+</div>
+	</div>
+	{literal}
+		<script type="text/javascript">$('#banerSlider').cycle({fx:'fade',random:1,delay:-300,width:800,height:266});</script> 
+	{/literal}
+	</body>
+</html>
 
 
 

@@ -342,6 +342,7 @@ class FrontPage
 			unset($moduleTmp);
 				
 			$content = $this->contentRnd->renderContent($this->m, $this->a, $params);
+			
 			$smarty->assign('content', $content);
 			$templateName = $this->getTemplateById($this->templateId);
 			$smarty->display($templateName);

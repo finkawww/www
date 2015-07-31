@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2014-10-29 11:18:55
+<?php /* Smarty version 2.6.17, created on 2015-07-22 09:50:54
          compiled from modules/KontaktHeader.tpl */ ?>
 ﻿<?php echo '
 <script type="text/javascript">
@@ -135,8 +135,8 @@ $(document).ready(
 '; ?>
 
 
-<div id="kontener" style="width: 200px;">
-	<div id="form" border="1" style="width: 200px;">
+<div id="kontener" style="width: 100%;">
+	<div id="form" border="1" style="width: 100%;">
 		<form id="khForm" name="KontaktHeader" action="" >
 			<div class="KontaktHeaderRow" height="0">
 				<input id="khAp" type="hidden" value="<?php echo $this->_tpl_vars['action']; ?>

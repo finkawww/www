@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-03-16 23:30:30
+<?php /* Smarty version 2.6.17, created on 2015-07-30 14:55:59
          compiled from menuBottom.tpl */ ?>
 <hr/>
 <?php $_from = $this->_tpl_vars['menuBottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['menuBottom'] = array('total' => count($_from), 'iteration' => 0);
@@ -30,18 +30,13 @@ if ($this->_foreach['menuBottom']['total'] > 0):
 }(document, \'script\', \'facebook-jssdk\'));</script>
 '; ?>
 
-<table>
-	<tr>
-		<td>
-			<div class="granat">
+	<div id="bottom-wrap">
+			<div class="granat-bottom">
 			<img src="./FrontPage/Files/Img/logo_tiksoft.jpg">&nbsp;&nbsp;
 			E-mail: <a href="mailto:finka@finka.pl">finka@finka.pl</a>&nbsp;&nbsp; 
 			tel.22 408 48 00&nbsp;&nbsp;
 			Copyright 1990-2015&nbsp;&nbsp;<br>
 			</div>
-		</td>
-		<td>	
+
 			<div class="fb-like-box" data-href="https://www.facebook.com/programyFINKA" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
-		</td>
-	</tr>
-</table>	
+	</div>

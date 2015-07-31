@@ -132,8 +132,8 @@ $(document).ready(
 </script>
 {/literal}
 
-<div id="kontener" style="width: 200px;">
-	<div id="form" border="1" style="width: 200px;">
+<div id="kontener" style="width: 100%;">
+	<div id="form" border="1" style="width: 100%;">
 		<form id="khForm" name="KontaktHeader" action="" >
 			<div class="KontaktHeaderRow" height="0">
 				<input id="khAp" type="hidden" value="{$action}"  />

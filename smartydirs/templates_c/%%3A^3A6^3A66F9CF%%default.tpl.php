@@ -1,75 +1,65 @@
-<?php /* Smarty version 2.6.17, created on 2015-07-13 09:37:05
+<?php /* Smarty version 2.6.17, created on 2015-07-31 10:46:44
          compiled from default.tpl */ ?>
-<HTML>
-	<HEAD>
-    	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" />
-    	<META NAME="Keywords" CONTENT="<?php echo $this->_tpl_vars['keywords']; ?>
+<!DOCTYPE HTML>
+<html lang="PL-pl">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="keywords" content="<?php echo $this->_tpl_vars['keywords']; ?>
 " />
-    	<META HTTP-EQUIV="Content-Language" CONTENT="PL" />
-    	<META NAME="Author" CONTENT="<?php echo $this->_tpl_vars['author']; ?>
+    	<meta name="author" content="<?php echo $this->_tpl_vars['author']; ?>
 " />
-    	<META NAME="Robots" CONTENT="<?php echo $this->_tpl_vars['robots']; ?>
+    	<meta name="robots" content="<?php echo $this->_tpl_vars['robots']; ?>
 " />
-    	<META HTTP-EQUIV="Pragma" CONTENT="<?php echo $this->_tpl_vars['cache']; ?>
+    	<meta http-equiv="pragma" content="<?php echo $this->_tpl_vars['cache']; ?>
 " />
-    	<META NAME="Description" CONTENT="<?php echo $this->_tpl_vars['desc']; ?>
+    	<meta name="description" content="<?php echo $this->_tpl_vars['desc']; ?>
 " />
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
-    	<LINK REL="Stylesheet" HREF="/FrontPage/Style/style.css" TYPE="text/css" />
-    	<TITLE><?php echo $this->_tpl_vars['title']; ?>
-</TITLE>
+    	<link rel="stylesheet" href="/FrontPage/Style/newstyle.css" type="text/css" />
+		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
+    	<title><?php echo $this->_tpl_vars['title']; ?>
+aaa</title>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
-
-		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
 		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-    	<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
-<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>	
-    </HEAD>
-	<BODY  bgcolor="white">
-	<?php echo '
-	<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TH7HWQ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':
-new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
-\'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,\'script\',\'dataLayer\',\'GTM-TH7HWQ\');</script>
-<!-- End Google Tag Manager -->
-'; ?>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
+	</head>
+	<body>
+		<?php echo '
+		<!-- Google Tag Manager -->
+			<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TH7HWQ"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':
+			new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
+			\'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,\'script\',\'dataLayer\',\'GTM-TH7HWQ\');</script>
+			<!-- End Google Tag Manager -->
+		'; ?>
 
-<center>
+	<div id="wrapper" class="baza">
+		<div id="logo">
+			<div id="main-logo"><a href="/"><img src="/FrontPage/Files/Img/finka_logo.jpg" border="0"/></a></div>
+			<div id="facebook-top"><a href="https://www.facebook.com/programyFINKA"><img src="/FrontPage/Files/Img/fb_finka.png" border="0" title="Dołącz do fanów Tik-Soft na FaceBook'u"></a></div>
+		</div>
+		<div id="menu-box">
+			<div id="topmenu"><?php echo $this->_tpl_vars['topMenu']; ?>
+</div>
+			<div id="topcart"><?php echo $this->_tpl_vars['PokazKoszykStatus']; ?>
+</div>
+		</div>
+		<div style="float:left">
+	<center>
 <table class="Content" width="100%" align="center">
 <tr><td width="100%">
 	<center>
 	<table class="MainTbl" bgcolor="#FFFFFF" align="center" width="1000px">
-		
-		<tr>
-			<td colspan="2" width="100%" align="left" valign="middle">
-			<table width="100%">
-				<tr>
-				<td align="left">				
-					 <a href="/"><img src="/FrontPage/Files/Img/finka_logo.jpg" border="0"/></a> 	
-				</td>
-				<td align="center">				
-					<a href="https://www.facebook.com/programyFINKA"><img src="/FrontPage/Files/Img/fb_finka.png" border="0" title="Do��cz do fan�w Tik-Soft na FaceBook'u"></a>	
-				</td>
-				</tr>
-				<tr>
-					<td colspan="2">				
-						<?php echo $this->_tpl_vars['topMenu']; ?>
-<font face="Tahoma" font color="#454545"><?php echo $this->_tpl_vars['PokazKoszykStatus']; ?>
 
-					</td>
-				</tr>
-				</table>
-			</td>
-		</tr>
 <!--
 		<tr>
 			<td colspan="3" >
@@ -122,10 +112,11 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 <tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
 </table>
 </center>
-<?php echo '
-<script type="text/javascript">$(\'#banerSlider\').cycle({fx:\'fade\',random:1,delay:-300,width:1000,height:300});</script> 
-'; ?>
+	<?php echo '
+		<script type="text/javascript">$(\'#banerSlider\').cycle({fx:\'fade\',random:1,delay:-300,width:800,height:266});</script> 
+	'; ?>
 
-							
-   	</BODY>
-</HTML>
+	</div>
+	</div>
+	</body>
+</html>

@@ -19,18 +19,13 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 {/literal}
-<table>
-	<tr>
-		<td>
-			<div class="granat">
+	<div id="bottom-wrap">
+			<div class="granat-bottom">
 			<img src="./FrontPage/Files/Img/logo_tiksoft.jpg">&nbsp;&nbsp;
 			E-mail: <a href="mailto:finka@finka.pl">finka@finka.pl</a>&nbsp;&nbsp; 
 			tel.22 408 48 00&nbsp;&nbsp;
 			Copyright 1990-2015&nbsp;&nbsp;<br>
 			</div>
-		</td>
-		<td>	
+
 			<div class="fb-like-box" data-href="https://www.facebook.com/programyFINKA" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
-		</td>
-	</tr>
-</table>	
+	</div>

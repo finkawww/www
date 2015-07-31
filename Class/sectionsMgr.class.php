@@ -214,8 +214,6 @@ class sectionsMgr
 	{
 		try
 		{
-			$content = '<table class="tblSection" width="100%">';
-			$content .= '<tr><td valign="top">';
 			/*
 			jezeli zawartosc sekcji to strona statyczna to zwracam zawartosc strony
 			jezeli zawartosc to modul - pobieram DefaultAction i wykonuje modulesMgrmoduleExecuteAction()
@@ -233,7 +231,7 @@ class sectionsMgr
 							
 				$result = $this->dbInt->ExecQuery($query);
 				$data = $result->fetchRow(DB_FETCHMODE_ASSOC);
-				$content .= $data['Content'];
+				$content = $data['Content'];
 				
 				
 			}
@@ -256,13 +254,11 @@ class sectionsMgr
 				$acnName = $module->getModuleActionNameById($moduleActionId);
 				$params = array();
 				$params[] = $data['Content'];
-				$content .= $module->moduleExecuteAction($acnName, $params);
+				$content = $module->moduleExecuteAction($acnName, $params);
 					
 			//	$content = ''; 
 			}
 		
-			$content .= '</td></tr>';
-			$content .= '</table>';
 			return $content;
 		 
 		}

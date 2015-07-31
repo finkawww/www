@@ -1,10 +1,10 @@
-<span>
+<ul id="menu">
 {foreach from=$menuTop item=menuItem name=menuTop}
 	{if $menuItem->sel eq 1}
-		<a class="inactiveMenu" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a>
+		<li><a class="inactiveMenu" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a></li>
 	{else}
-		<a class="activeMenu" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a>
+		<li><a class="activeMenu" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a></li>
 	{/if}
 {/foreach}
-</span>
+</ul>
 
