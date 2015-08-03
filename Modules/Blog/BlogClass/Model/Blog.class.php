@@ -50,7 +50,17 @@ class Blog
     
     public function UpdateBlogItem($blogItemObj)
     {
-        
+        /*
+        $blogItem = new BlogItem();
+        $blogItem->LoadById($blogItemObj->id);
+        $blogItem->SetCategoryId($blogItemObj->GetCategoryId());
+        $blogItem->SetContent($blogItemObj->GetContent());
+        $blogItem->SetDate($blogItemObj->GetDate());
+        $blogItem->SetHeadline($)
+                . ''               
+         * 
+         */
+        $blogItemObj->Save();
     }
     
     
