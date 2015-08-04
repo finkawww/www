@@ -28,11 +28,10 @@ class BlogItemsAdminListView
 
         $modules = new ModulesMgr();
         $modules->loadModule('Blog');
-        $action = $modules->getModuleActionIdByName('AddBlogItem');
-        $editAction = $modules->getModuleActionIdByName('EditBlogItem');
-        $delAction = $modules->getModuleActionIdByName('DeleteBlogItem');
-        $upAction = $modules->getModuleActionIdByName('realUpAction');
-        $downAction = $modules->getModuleActionIdByName('realDownAction');
+        $action = $modules->getModuleActionIdByName('AddBlogItemAdmin');
+        $editAction = $modules->getModuleActionIdByName('EditBlogItemAdmin');
+        $delAction = $modules->getModuleActionIdByName('DeleteBlogItemAdmin');
+        
         unset($modules);
         $addTopButton = new button(buttonAddIcon, 'Dodaj wpis', $action, 0);
         $html .=$addTopButton->show(1);
