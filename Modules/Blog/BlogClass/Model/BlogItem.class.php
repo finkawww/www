@@ -13,10 +13,8 @@ class BlogItem
     private $name;
     private $title;
     private $headline;
-    private $content;
-    private $categoryId;
-    private $date;
-    //NonStored
+    private $content;    
+    private $date;    
     private $categoryName;
     
     public function Save()
@@ -69,9 +67,8 @@ class BlogItem
 
     public function LoadById($id)
     {
-        $query = " SELECT i.name, i.title, i.headline, i.content, i.categoryId, c.name AS categoryName "
-                . " FROM BlogItems i"
-                . " INNER JOIN BlogCategories c ON i.categoryId = c.id "
+        $query = " SELECT i.name, i.title, i.headline, i.content, i.categoryId, i.categoryName "
+                . " FROM BlogItems i"                
                 . " WHERE id=$id";
 
         $dbInt = DBSingleton::GetInstance();
@@ -90,9 +87,8 @@ class BlogItem
 
     public function LoadByName($name)
     {
-        $query = " SELECT i.id, i.name, i.title, i.headline, i.content, i.categoryId, c.name AS categoryName "
-                . " FROM BlogItems i"
-                . " INNER JOIN BlogCategories c ON i.categoryId = c.id "
+        $query = " SELECT i.id, i.name, i.title, i.headline, i.content, i.categoryId, i.categoryName "
+                . " FROM BlogItems i"                
                 . " WHERE name=$name";
 
         $dbInt = DBSingleton::GetInstance();
@@ -152,21 +148,16 @@ class BlogItem
     public function SetContent($content)
     {
         $this->content = $content;
-    }
-
-    public function GetCategoryId()
-    {
-        return $this->categoryId;
-    }
-
-    public function SetCategoryId($categoryId)
-    {
-        $this->categoryId = $categoryId;
-    }
+    }    
 
     public function GetCategory()
     {
         return $this->categoryName;
+    }
+    
+    public function SetCategory($name)
+    {
+        $this->categoryName = strtolower($name);
     }
 
     public function GetDate()

@@ -11,8 +11,101 @@
  *
  * @author pb
  */
-class BlogRouting
+class BlogRouting  extends moduleTemplate
 {
+    
+    private $blogController;
     //put your code here
+    public function __construct()
+    {
+        require_once './Modules/Blog/BlogClass/Controller/Blog.class.php';    
+        require_once './Modules/Blog/BlogClass/Model/BlogItem.class.php';    
+        require_once './Modules/Blog/BlogClass/View/BlogItemEditAdminView.php';    
+        require_once './Modules/Blog/BlogClass/View/BlogItemView.php';    
+        require_once './Modules/Blog/BlogClass/View/BlogItemsAdminListView.php';    
+        require_once './Modules/Blog/BlogClass/View/BlogItemsListView.php';    
+        $thid->blogController = new Blog();
+    }
+    
+    public function executeAction($actionName, $l, $varArray)
+    {
+        if ($actionName == 'GetBlogItemAdmin')
+        {            
+            $name = $_REQUEST['name'];
+            return $this->GetBlogItem($name);            
+        }
+        else if ($actionName == 'GetBlogItemsAdmin')
+        {
+            $name = $_REQUEST['name'];
+            $this->GetBlogItemsAdmin($name);
+                    
+        }
+        else if ($actionName == 'AddBlogItemAdmin')
+        {
+            $logItemObj = new BlogItem();
+            $logItemObj->SetCategoryId($_POST["categoryId"]);
+            $logItemObj->SetContent($_POST["content"]);
+            $logItemObj->SetDate($_POST['date']);
+            $logItemObj->SetHeadline($_POST['headline']);
+            $logItemObj->SetName($_POST['name']);
+            $logItemObj->SetTitle($_POST['title']);
+            
+            $this->AddBlogItemAdmin($logItemObj);
+        }
+        else if($actionName == 'DeleteBlogItemAdmin')        
+        {
+            $id = $_REQUEST['id'];
+            $this->DeleteBlogAdmin($id);
+        }
+        else if($actionName == 'UpdateBlogItemAdmin')
+        {
+            
+        }
+        else if ($actionName == 'GetBlogItem')
+        {           
+            
+            $name = strtolower($varArray[0]);
+            
+            return $this->GetBlogItem($name);            
+        }
+        else if ($actionName == 'GetBlogItems')
+        {
+            
+            $category = strtolower($varArray[0]);
+            $this->GetBlogItems($category);
+        }
+        else
+        {
+            return "Brak akcji modułu Blog";
+        }
+        
+    }
+    
+    private function GetBlogItemAdmin($name)
+    {
+        
+    }
+    
+    private function GetBlogItemsAdmin($name)
+    {
+        return $this->blogController->
+    }
+    
+    private function AddBlogItemAdmin($logItemObj)
+    {
+        return $this->blogController->AddBlogItem($logItemObj);
+    }
+    
+    private function DeleteBlogAdmin($id)
+    {
+        return $this->blogController->DeleteBlogItem();
+    }
+    
+    private function GetBlogItems($categoryId)
+    {
+        return $this->blogController->GetBlogItems($categoryId);
+    }
+    
+    
     
 }

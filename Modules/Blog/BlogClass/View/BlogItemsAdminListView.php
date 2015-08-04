@@ -54,10 +54,12 @@ class BlogItemsAdminListView
         $realListGrid->setGridAlign('center');
     	$realListGrid->setGridWidth(790);
     	
-    	$realListGrid->addColumn("opis", 'Opis realizacji', 250, false, false, 'left');
-    	$realListGrid->addColumn("kolejnosc", 'Kolejność wyświetlania', 80, false, false, 'left');
-    	$realListGrid->addColumn('slowa_kluczowe', 'Słowa kluczowe (wyszukiwanie)', 150, false, false,  'center');
-    	$realListGrid->addColumn('priorytet', 'Priorytet (wyszukiwanie)', 100, false, false,  'center');
+    	
+    	$realListGrid->addColumn("name", 'Nazwa', 80, false, false, 'left');
+        $realListGrid->addColumn("title", 'Tytuł', 80, false, false, 'left');        
+    	$realListGrid->addColumn('categoryName', 'Kateogria', 150, false, false,  'left');
+    	$realListGrid->addColumn("headline", 'Nagłówek', 250, false, false, 'left');
+        $realListGrid->addColumn('priorytet', 'Priorytet (wyszukiwanie)', 100, false, false,  'center');
     	$realListGrid->addColumn('ileZdjec', 'Ilość zdjęć', 100, false, false,  'left');
     	$realListGrid->addColumn("id", "", 200, true, false, 'right');
     	$realListGrid->enabledDelAction($delAction);

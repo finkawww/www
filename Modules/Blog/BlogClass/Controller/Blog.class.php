@@ -34,6 +34,7 @@ class Blog
             $blogItem->LoadById($arrItem);
             $blogItems[]= $blogItem;
         }
+        
         return $blogItems;
     }
     
@@ -41,6 +42,7 @@ class Blog
     {
         $blogItem.Save();    
     }
+    
     public function DeleteBlogItem($blogId)
     {
         $blogItem = new BlogItem();
@@ -51,18 +53,15 @@ class Blog
     public function UpdateBlogItem($blogItemObj)
     {
         /*
-        $blogItem = new BlogItem();
-        $blogItem->LoadById($blogItemObj->id);
-        $blogItem->SetCategoryId($blogItemObj->GetCategoryId());
-        $blogItem->SetContent($blogItemObj->GetContent());
-        $blogItem->SetDate($blogItemObj->GetDate());
-        $blogItem->SetHeadline($)
+            $blogItem = new BlogItem();
+            $blogItem->LoadById($blogItemObj->id);
+            $blogItem->SetCategoryId($blogItemObj->GetCategoryId());
+            $blogItem->SetContent($blogItemObj->GetContent());
+            $blogItem->SetDate($blogItemObj->GetDate());
+            $blogItem->SetHeadline($)
                 . ''               
          * 
          */
         $blogItemObj->Save();
     }
-    
-    
-    
 }
