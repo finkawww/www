@@ -9,7 +9,7 @@
 class BlogItemsAdminListView
 {
 
-    public function Show()
+    public function Render()
     {
         $query = "SELECT i.id, i.name, i.title, i.headline, i.content, i.categoryId, c.name AS categoryName "
                 . " FROM BlogItems i"

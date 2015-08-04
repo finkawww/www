@@ -8,5 +8,22 @@
 
 class BlogItemView
 {
-    
+    public function Render($name)
+    {
+        $blogItemObj = new BlogItem();
+        $blogItemObj->LoadByName($name);
+        
+        $moduleTmp = new ModulesMgr();
+        $moduleTmp->loadModule('Blog');
+        $bckCategoryAction = $moduleTmp->getModuleActionIdByName('GetBlogItems');
+        $category = $blogItemObj->GetCategory();
+        
+        //$bckCategoryAction = 
+        //$bck
+        $smarty = new mySmarty();
+        $smarty->assign('backCategoryAction', $bckCategoryAction);	
+        $smarty->assign('parentCategory', $category);	
+	$smarty->assign('blogItem', $blogItemObj);	
+	return $smarty->fetch('modules/BlogItemView.tpl');
+    }
 }

@@ -6,7 +6,16 @@
  * and open the template in the editor.
  */
 
-class BlogItemListView
+class BlogItemsListView
 {
-    public 
+    public function Render($blogItemsArr)
+    {
+        $moduleTmp = new ModulesMgr();
+        $moduleTmp->loadModule('Blog');
+        $itemViewAction = $moduleTmp->getModuleActionIdByName('GetBlogItem');                
+        $smarty = new mySmarty();        
+	$smarty->assign('blogItemsArray', $blogItemsArr);	
+        $smarty->assign('itemViewAction', $itemViewAction);	
+	return $smarty->fetch('modules/BlogItemsListView.tpl');
+    }
 }

@@ -9,5 +9,14 @@
 
 class BlogItemEditAdminView
 {
-    
+    public function __construct()
+    {
+        
+    }
+    public function Render($id)
+    {
+        $blogItem = new BlogItem();
+        $blogItem->LoadById($id);
+        
+    }
 }
