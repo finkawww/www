@@ -11,9 +11,10 @@ class BlogItemsAdminListView
 
     public function Render()
     {
-        $query = "SELECT i.id, i.name, i.title, i.headline, i.content, i.categoryId, c.name AS categoryName "
-                . " FROM BlogItems i"
-                . " INNER JOIN BlogCategories c ON i.categoryId = c.id ";
+        
+        $query = "SELECT i.date, i.id, i.name, i.title, i.headline, i.categoryName "
+                . " FROM blogitems i ORDER BY i.date";
+               
                 
 
         $html = '<table class="Grid" align="center" cellspacing=0>';
@@ -27,7 +28,7 @@ class BlogItemsAdminListView
         $html .= '<tr><td align="right" colspan="2"><hr/>';
 
         $modules = new ModulesMgr();
-        $modules->loadModule('Blog');
+        $modules->loadModule('BlogRouting');
         $action = $modules->getModuleActionIdByName('AddBlogItemAdmin');
         $editAction = $modules->getModuleActionIdByName('EditBlogItemAdmin');
         $delAction = $modules->getModuleActionIdByName('DeleteBlogItemAdmin');
@@ -49,27 +50,26 @@ class BlogItemsAdminListView
         {
             $realListGrid->setTitle("List wpisów blog");
         }
-        
+
         $realListGrid->setGridAlign('center');
     	$realListGrid->setGridWidth(790);
     	
-    	
+    	$realListGrid->addColumn("date", 'Data', 80, false, false, 'center');
     	$realListGrid->addColumn("name", 'Nazwa', 80, false, false, 'left');
         $realListGrid->addColumn("title", 'Tytuł', 80, false, false, 'left');        
     	$realListGrid->addColumn('categoryName', 'Kateogria', 150, false, false,  'left');
-    	$realListGrid->addColumn("headline", 'Nagłówek', 250, false, false, 'left');
-        $realListGrid->addColumn('priorytet', 'Priorytet (wyszukiwanie)', 100, false, false,  'center');
-    	$realListGrid->addColumn('ileZdjec', 'Ilość zdjęć', 100, false, false,  'left');
+    	$realListGrid->addColumn("headline", 'Nagłówek', 250, false, false, 'left');            	
     	$realListGrid->addColumn("id", "", 200, true, false, 'right');
     	$realListGrid->enabledDelAction($delAction);
     	$realListGrid->enabledEditAction($editAction);
     	
     	$html .= $realListGrid->renderHtmlGrid(1);
-    	$html .= '</td></tr>';
+    	echo "1";
+        $html .= '</td></tr>';
     	$html .= '<tr><td align="left"></td><td align="right">';
-    	$addTopButton = new button(buttonAddIcon, 'Dodaj realizację', $action, $galeriaId);
+    	$addTopButton = new button(buttonAddIcon, 'Dodaj wpis', $action, $galeriaId);
     	$html .=$addTopButton->show(1);
-    		
+    	
     	$html .= '</td></tr>';
     	
     	$html .= '</table>';

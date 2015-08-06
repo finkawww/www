@@ -40,7 +40,7 @@ class BlogItemEditAdminView
         $form->applyFilter('__ALL__', 'trim');
         $myForm->setStyle(2);
 
-        if ($OfertaForm->validate())
+        if ($form->validate())
         {
             
         }
@@ -48,8 +48,8 @@ class BlogItemEditAdminView
         {
             $html .= $form->toHtml();
             $moduleTmp = new ModulesMgr();
-            $moduleTmp->loadModule('Blog');
-            $actionBack = $moduleTmp->getModuleActionIdByName('BlogItemsAdminListView');            
+            $moduleTmp->loadModule('BlogRouting');
+            $actionBack = $moduleTmp->getModuleActionIdByName('GetBlogItemsAdmin');            
             unset($moduleTmp);
             $html .= '</td></tr><tr><td>
 				  <table width = "100%" class="Grid" >';

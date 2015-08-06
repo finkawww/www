@@ -16,6 +16,12 @@ class Blog
         return $blogItemObj;
     }
     
+    public function GetBlogItemsAdmin()
+    {
+        $view = new BlogItemsAdminListView();
+        return $view->Render();
+    }
+    
     public function GetBlogItems($category)
     {
         $query = "";
@@ -49,7 +55,9 @@ class Blog
     
     public function AddBlogItem($blogItem)
     {
-        $blogItem.Save();    
+        //$blogItem.Save();    
+        $view = new BlogItemEditAdminView();
+        return $view->Render(0);
     }
     
     public function DeleteBlogItem($blogId)
