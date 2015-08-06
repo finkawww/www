@@ -83,12 +83,12 @@ class BlogRouting  extends moduleTemplate
     
     private function GetBlogItemAdmin($name)
     {
-        
+        return $this->blogController->GetBlogItem($name);
     }
     
-    private function GetBlogItemsAdmin($name)
+    private function GetBlogItemsAdmin()
     {
-        return $this->blogController->
+        return $this->blogController->GetBlogItems("");
     }
     
     private function AddBlogItemAdmin($logItemObj)

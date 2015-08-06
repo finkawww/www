@@ -16,9 +16,18 @@ class Blog
         return $blogItemObj;
     }
     
-    public function GetBlogItems($categoryId)
+    public function GetBlogItems($category)
     {
-        $query = "SELECT id FROM BlogItems WHERE categoryId=$categoryId";
+        $query = "";
+        if ($category == "") //admin
+        {
+            $query = "SELECT id FROM BlogItems ORDER BY categoruName, date";
+        }
+        else
+        {
+            $query = "SELECT id FROM BlogItems WHERE categoryName='$category' ORDER BY date";
+        }
+        
         $dbInt = DBSingleton::GetInstance();
         $dbResult = $dbInt->ExecQuery($query);
         $blogItemsId = array();
@@ -51,17 +60,7 @@ class Blog
     }
     
     public function UpdateBlogItem($blogItemObj)
-    {
-        /*
-            $blogItem = new BlogItem();
-            $blogItem->LoadById($blogItemObj->id);
-            $blogItem->SetCategoryId($blogItemObj->GetCategoryId());
-            $blogItem->SetContent($blogItemObj->GetContent());
-            $blogItem->SetDate($blogItemObj->GetDate());
-            $blogItem->SetHeadline($)
-                . ''               
-         * 
-         */
+    {        
         $blogItemObj->Save();
     }
 }
