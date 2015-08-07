@@ -34,7 +34,23 @@ class BlogItemEditAdminView
         $form->addElement('header', ' hdrTest', $txt);
         $form->addElement('hidden', 'a', $action, null);
         $valId = $form->addElement('hidden', 'id', $id);
+                
+        //private $name;
+        $txtName = $form->addElement('text', 'txtName', 'Nazwa techniczna' , array('size' => 90, 'maxlength'=> 255));        
+        //private $title;
+        $txtTitle = $form->addElement('text', 'txtTitle', 'Tytuł',array('size' => 90, 'maxlength'=> 255));                
+        //private $headline;
+        $txtHeadline = $form->addElement('textarea', 'txtHeadline', 'Nagłówek',  array('cols'=>80, 'rows'=>10));        
+        //private $content;    
+        $txtContent = $form->addElement('textarea', 'txtContent', 'Treść',  array('cols'=>80, 'rows'=>15));                
+        //private $date;    
+        $dateOptions = array('language' => 'pl', 'format' => 'dMY', 'minYear' => 2005, 'maxYear' => 2050);
+        $date = $form->addElement('date', 'data', 'Data', $dateOptions);        
+        //private $categoryName;
+        $txtCategory = $form->addElement('text', 'txtCategory', 'Kategoria',array('size' => 90, 'maxlength'=> 255));                
 
+        
+        
         $form->addElement('reset', 'btnReset', 'Wyczyść');
         $form->addElement('submit', 'btnSubmit', 'Zapisz');
         $form->applyFilter('__ALL__', 'trim');
