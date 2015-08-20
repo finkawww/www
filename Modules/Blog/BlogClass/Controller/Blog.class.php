@@ -57,6 +57,7 @@ class Blog
     {
         //$blogItem.Save();    
         $view = new BlogItemEditAdminView();
+        
         return $view->Render(0);
     }
     
@@ -69,6 +70,9 @@ class Blog
     
     public function UpdateBlogItem($blogItemObj)
     {        
-        $blogItemObj->Save();
+        //$blogItemObj->Save();
+        $view = new BlogItemEditAdminView();
+        $id = $blogItemObj->GetId();
+        return $view->Render($id);
     }
 }

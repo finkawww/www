@@ -109,6 +109,11 @@ class BlogItem
     {
         return $this->id;
     }
+    
+    public function SetId($id)
+    {
+        $this->id= $id;
+    }
 
     public function GetName()
     {

@@ -32,6 +32,18 @@ class BlogItemEditAdminView
         $form = null;
         $form = $myForm->getFormInstance();
         $form->addElement('header', ' hdrTest', $txt);
+        $module = new ModulesMgr();
+        $module->loadModule('Blog');
+        
+        if ($id == 0)
+        {
+		$action = $module->getModuleActionIdByName('AddBlogItemAdmin');
+	}
+	else
+	{
+		$action = $module->getModuleActionIdByName('UpdateBlogItemAdmin');
+	}
+        unset($module);
         $form->addElement('hidden', 'a', $action, null);
         $valId = $form->addElement('hidden', 'id', $id);
                 
@@ -57,11 +69,29 @@ class BlogItemEditAdminView
         $myForm->setStyle(2);
 
         if ($form->validate())
-        {
+        {           
             
+            $blogItem->SetCategory($txtCateogry->GetValue());
+            $blogItem->SetDate($date->GetValue());
+            $blogItem->SetContent($txtContent->GetValue());
+            $blogItem->SetHeadline($txtHeadline->GetValue());
+            $blogItem->SetTitle($txtTitle->GetValue());
+            $blogItem->SetName($txtName->GetValue());
+            $blogItem->Save();
         }
         else
         {
+            if($id!=0)
+            {
+                $txtCategory->setValue($blogItem->GetCategory());
+                $date->setValue($blogItem->GetDate());
+                $txtContent->setValue($blogItem->GetContent());
+                $txtHeadline->setValue($blogItem->GetHeadline());
+                $txtTitle->setValue($blogItem->GetTitle());
+                $txtName->setValue($blogItem->GetName());
+                
+            }
+            
             $html .= $form->toHtml();
             $moduleTmp = new ModulesMgr();
             $moduleTmp->loadModule('BlogRouting');
