@@ -13,13 +13,13 @@
 		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
     	<title>{$title}</title>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>		
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
 	</head>
 	<body>
@@ -69,8 +69,8 @@
 
 					<tr><td width="210px">{$menuRight}</td></tr>
 					<tr><td>
-					<br><a href="/index.php?mp=47"><img src="./FrontPage/Files/Img/baner_promocje.png" border="0"></a><br><br>
-					<a href="/index.php?mp=45"><img src="./FrontPage/Files/Img/baner_demo.png" border="0"></a><BR><BR>
+					<br><a href="/promocje/"><img src="/FrontPage/Files/Img/baner_promocje.png" border="0"></a><br><br>
+					<a href="/wersje-probne/"><img src="/FrontPage/Files/Img/baner_demo.png" border="0"></a><BR><BR>
 				</td></tr>
 				</table>
 			</td>
@@ -81,7 +81,7 @@
 	<table>	
 	</center>
 </td></tr>
-<tr><td width="100%" align="center"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></td></tr>
+<tr><td width="100%" align="center"><a href="http://www.payu.pl" rel="nofollow"><img src="/./images/banki.jpg" border="0" alt="payu"></td></tr>
 </table>
 </center>
 </div>

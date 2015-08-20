@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-07-31 10:59:05
+<?php /* Smarty version 2.6.17, created on 2015-08-04 10:10:27
          compiled from default_bez_niczego.tpl */ ?>
 <!DOCTYPE HTML>
 <html lang="PL-pl">
@@ -97,7 +97,7 @@ aaa</title>
 <td colspan="2" width="*" align="center"><br><?php echo $this->_tpl_vars['menuBottom']; ?>
 </td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></a></td></tr>
 </table>
 </center>
 <?php echo '

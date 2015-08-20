@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-07-31 08:56:12
+<?php /* Smarty version 2.6.17, created on 2015-08-06 14:17:14
          compiled from default_z_nasi_klienci.tpl */ ?>
 ﻿<!DOCTYPE HTML>
 <html lang="PL-pl">
@@ -21,13 +21,13 @@
 		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
     	<title><?php echo $this->_tpl_vars['title']; ?>
 </title>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
 	</head>
 	<body>
@@ -75,12 +75,12 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 					<tr><td>
 						<div class="font_sm_left_small">	
 							<center><big><b>Zapewniamy:</b></big></center><br/>
-								<img src="./FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;bieżące aktualizacje</br>
-								<img src="./FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;rozwój funkcjonalności</br>
-								<img src="./FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;wsparcie techniczne <br/>i merytoryzne</br>
-								<img src="./FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;zintegrowaną współpracę <br/>programów FINKA</br>
-								<img src="./FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;wdrożenia i szkolenia<br/>
-								<img src="./FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;program w kilku pakietach<br/>
+								<img src="/FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;bieżące aktualizacje</br>
+								<img src="/FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;rozwój funkcjonalności</br>
+								<img src="/FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;wsparcie techniczne <br/>i merytoryzne</br>
+								<img src="/FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;zintegrowaną współpracę <br/>programów FINKA</br>
+								<img src="/FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;wdrożenia i szkolenia<br/>
+								<img src="/FrontPage/Files/Img/ptaszek.png" border="0">&nbsp;program w kilku pakietach<br/>
 								
 								
 												
@@ -89,9 +89,9 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 					</td></tr>
 					<tr><td>
 						<div class="font_sm_left">	
-						<img src="./FrontPage/Files/Img/ikona_firma.png" border="0" hspace="0" vspace="0">&nbsp; &nbsp;<a class="jump" href="./Uslugi_abonamentowe.htm">  Opieka posprzedażna </a><br/>
-						<img src="./FrontPage/Files/Img/ikona_firma.png" border="0" hspace="0" vspace="0">&nbsp; &nbsp; <a class="jump" href="./O_firmie.htm"> O firmie TIK-SOFT</a></br>
-						 <img src="./FrontPage/Files/Img/ikona_kontakt.png" border="0" hspace="0" vspace="0">&nbsp;  &nbsp;<a class="jump" href="./KontaktONAS.htm"> Kontakt z Konsultantem</a></br>
+						<img src="/FrontPage/Files/Img/ikona_firma.png" border="0" hspace="0" vspace="0">&nbsp; &nbsp;<a class="jump" href="/strefa-uzytkownika/uslugi-abonamentowe/">  Opieka posprzedażna </a><br/>
+						<img src="/FrontPage/Files/Img/ikona_firma.png" border="0" hspace="0" vspace="0">&nbsp; &nbsp; <a class="jump" href="/o-firmie/"> O firmie TIK-SOFT</a></br>
+						 <img src="/FrontPage/Files/Img/ikona_kontakt.png" border="0" hspace="0" vspace="0">&nbsp;  &nbsp;<a class="jump" href="/o-firmie/kontakt/"> Kontakt z Konsultantem</a></br>
 						</div>
 						<br/>
 					</td></tr>
@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 						<div class="font_sm_left_small">
 						<center>
 						<big><b>Aktualne promocje</b><big><br/>	<br/>
-						<a href="./Promocje.htm"><img src="./FrontPage/Files/Img/baner_nowe_firmy.png" border="0" hspace="0" vspace="0"></a>
+						<a href="/promocje/"><img src="/FrontPage/Files/Img/baner_nowe_firmy.png" border="0" hspace="0" vspace="0"></a>
 						</center>
 						</div>
 					</td></tr>
@@ -123,7 +123,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 <td colspan="2" width="*" align="center"><br><?php echo $this->_tpl_vars['menuBottom']; ?>
 </td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></a></td></tr>
 </table>
 </div>
 	</div>

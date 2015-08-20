@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-07-31 10:07:29
+<?php /* Smarty version 2.6.17, created on 2015-08-04 10:39:55
          compiled from defaultRightMenu_bez_form.tpl */ ?>
 <!DOCTYPE HTML>
 <html lang="PL-pl">
@@ -83,8 +83,8 @@
 					<tr><td width="210px"><?php echo $this->_tpl_vars['menuRight']; ?>
 </td></tr>
 					<tr><td>
-					<br><a href="/index.php?mp=47"><img src="./FrontPage/Files/Img/baner_promocje.png" border="0"></a><br><br>
-					<a href="/index.php?mp=45"><img src="./FrontPage/Files/Img/baner_demo.png" border="0"></a><BR><BR>
+					<br><a href="/promocje/"><img src="/FrontPage/Files/Img/baner_promocje.png" border="0"></a><br><br>
+					<a href="/wersje-probne/"><img src="/FrontPage/Files/Img/baner_demo.png" border="0"></a><BR><BR>
 				</td></tr>
 				</table>
 			</td>
@@ -96,7 +96,7 @@
 	<table>	
 	</center>
 </td></tr>
-<tr><td width="100%" align="center"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></td></tr>
+<tr><td width="100%" align="center"><a href="http://www.payu.pl" rel="nofollow"><img src="/./images/banki.jpg" border="0" alt="payu"></td></tr>
 </table>
 </center>
 </div>

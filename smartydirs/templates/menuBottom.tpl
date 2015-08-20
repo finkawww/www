@@ -21,7 +21,7 @@
 {/literal}
 	<div id="bottom-wrap">
 			<div class="granat-bottom">
-			<img src="./FrontPage/Files/Img/logo_tiksoft.jpg">&nbsp;&nbsp;
+			<img src="/./FrontPage/Files/Img/logo_tiksoft.jpg">&nbsp;&nbsp;
 			E-mail: <a href="mailto:finka@finka.pl">finka@finka.pl</a>&nbsp;&nbsp; 
 			tel.22 408 48 00&nbsp;&nbsp;
 			Copyright 1990-2015&nbsp;&nbsp;<br>

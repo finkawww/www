@@ -203,7 +203,7 @@ class FrontPage
 		$this->pageId = $this->menuMgr->getMenuPage($this->m);
 		$pageSql = "SELECT
 						id, PageName, ShortName, Active, Admin, AuthorizedOnly, MenuTop,
-						MenuRight, MenuLeft, MenuBottom, TemplateId
+						MenuRight, MenuLeft, MenuBottom, TemplateId, PageTitle, PageDescription, PageKeywords
 					FROM 
 						cmsPages
 					Where
@@ -219,6 +219,9 @@ class FrontPage
 			$this->shortName = $recData['ShortName'];
 			$this->active = $recData['Active'];
 			$this->admin = $recData['Admin'];
+			$this->PageTitle = $recData['PageTitle'];
+			$this->PageDescription = $recData['PageDescription'];
+			$this->PageKeywords = $recData['PageKeywords'];
 			$this->authorizedOnly = $recData['AuthorizedOnly'];
 			$this->printMenuTop = $recData['MenuTop'];
 			$this->printMenuLeft = $recData['MenuLeft'];
@@ -277,13 +280,29 @@ class FrontPage
 				
 			$params = array();
 				
-
-			$smarty->assign('keywords', $this->keyWords);
+			if($this->PageTitle != null) {
+				$smarty->assign('title', $this->PageTitle);
+			}
+			else {
+				$smarty->assign('title', $this->title);
+			}
+			if($this->PageDescription != null) {
+				$smarty->assign('desc', $this->PageDescription);
+			}
+			else {
+				$smarty->assign('desc', $this->description);
+			}
+			if($this->PageKeywords != null) {
+				$smarty->assign('keywords', $this->PageKeywords);
+			}
+			else {
+				$smarty->assign('keywords', $this->keyWords);
+			}
+			
 			$smarty->assign('author', $this->author);
 			$smarty->assign('robots', $this->robots);
 			$smarty->assign('cache', $this->cache);
-			$smarty->assign('title', $this->title);
-			$smarty->assign('desc', $this->description);
+			
 			//	TODO Dodać css oraz ikone
 
 			if ($this->printMenuTop == 'T')

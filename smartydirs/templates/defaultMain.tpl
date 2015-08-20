@@ -1,5 +1,10 @@
-﻿<!DOCTYPE HTML>
-<html lang="PL-pl">
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<!--[if IE 7]><html lang="pl" class="ie7"><![endif]-->
+	<!--[if IE 8]><html lang="pl" class="ie8"><![endif]-->
+	<!--[if IE 9]><html lang="pl" class="ie9"><![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><html lang="pl"><![endif]-->
+	<!--[if !IE]><html lang="pl-PL"><![endif]-->
 	<head>
 		<meta charset="UTF-8">
     	<meta name="keywords" content="{$keywords}" />
@@ -7,13 +12,14 @@
     	<meta name="robots" content="{$robots}" />
     	<meta http-equiv="pragma" content="{$cache}" />
     	<meta name="description" content="{$desc}" />
+		<meta name=viewport content="width=device-width, initial-scale=1">
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
     	<link rel="stylesheet" href="/FrontPage/Style/newstyle.css" type="text/css" />
     	<title>{$title}</title>
-		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 	</head>
 	<body>
 		{literal}
@@ -52,9 +58,9 @@
 		<div id="slider-box">
 			<div id="slider">
 				<div id="banerSlider">
-					<a href="./Promocje.htm"><img src="/FrontPage/Files/Img/baner_nowe_firmy_big.png" width="800" border="0"/></a>		
-					<a href="./Programy.htm"><img src="/FrontPage/Files/Img/baner_gora1.jpg" width="800" border="0"/></a>
-					<a href="./WersjeProbne.htm"><img src="/FrontPage/Files/Img/baner_gora3.jpg" width="800" border="0"/></a>
+					<a href="./Promocje.htm" rel="nofollow"><img src="/FrontPage/Files/Img/baner_nowe_firmy_big.png" width="800" border="0"/></a>		
+					<a href="./Programy.htm" rel="nofollow"><img src="/FrontPage/Files/Img/baner_gora1.jpg" width="800" border="0"/></a>
+					<a href="./WersjeProbne.htm" rel="nofollow"><img src="/FrontPage/Files/Img/baner_gora3.jpg" width="800" border="0"/></a>
 				</div>
 			</div>
 			<div id="slider-kontakt">
@@ -72,7 +78,7 @@
 			{$menuBottom}
 		</div>
 		<div id="payment-img">
-			<a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0">
+			<a href="http://www.payu.pl" rel="nofollow"><img src="/./images/banki.jpg" border="0" alt="payu">
 		</div>
 	</div>
 	{literal}

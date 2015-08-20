@@ -318,12 +318,32 @@ class menuRenderer
 			else
 			{
 				$menuItem->menuRenderText = dnsPath.'?mp='.$menuItem->id;
-			} 				 
+			} 		
+			
+			$sql_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $menuItem->id 	AND Active = 'T' AND Submenu = 'T'";
+			$query_child = $this->dbInt->ExecQuery($sql_child);
+
+			$menuItem->child = array();
+			while ($childItem = $query_child->fetchRow(DB_FETCHMODE_ASSOC)){
+				$childId = $childItem['id'];
+
+				
+				$second_parent_id = $childId;
+				$sql_second_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $second_parent_id 	AND Active = 'T'";
+				$query_second_child = $this->dbInt->ExecQuery($sql_second_child);
+				
+				
+					$childItem['child'] = array();
+					while ($secondChildItem = $query_second_child->fetchRow(DB_FETCHMODE_ASSOC)){
+						array_push($childItem['child'], $secondChildItem);
+					}
+				array_push($menuItem->child, $childItem);				
+			}
+			
 			//echo $this->menuMgr->getMenuCaption($menuItem->id, $_SESSION['langp']);			
- 			$menuTop[] = @$menuItem;
- 			 			 			
+ 			$menuTop[] = @$menuItem; 			
  		}
- 		
+
  		$smarty = new mySmarty();
 		$smarty->assign('menuTop', $menuTop);
 		$res = $smarty->fetch('menuTop.tpl');

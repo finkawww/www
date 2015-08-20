@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2013-12-16 17:27:51
+<?php /* Smarty version 2.6.17, created on 2015-08-05 14:24:33
          compiled from menuLeft.tpl */ ?>
 <table class="leftMenuContainer">
 <?php $this->assign('tmpGroup', 'X'); ?>
@@ -15,7 +15,7 @@ if ($this->_foreach['menuLeft']['total'] > 0):
 		<?php if ($this->_tpl_vars['menuItem']->level == 1): ?>
 		
 		<?php elseif ($this->_tpl_vars['menuItem']->level == 2): ?>
-		<span minwidth="100px" align="right"><img src="../Cms/Files/Img/corner-dots.gif" border="0"></span>
+		<span minwidth="100px" align="right"><img src="/../Cms/Files/Img/corner-dots.gif" border="0"></span>
 		<?php endif; ?>
 		<?php if ($this->_tpl_vars['menuItem']->sel == 1): ?>
 			<a class="inactiveMenuLeft" href="<?php echo $this->_tpl_vars['menuItem']->menuRenderText; ?>
@@ -37,7 +37,7 @@ if ($this->_foreach['menuLeft']['total'] > 0):
 			<?php if ($this->_tpl_vars['activeMenu']->level == 1): ?>
 			
 			<?php elseif ($this->_tpl_vars['activeMenu']->level == 2): ?>
-			<span minwidth="100px" align="right"><img src="../Cms/Files/Img/corner-dots.gif" border="0"></span>
+			<span minwidth="100px" align="right"><img src="/../Cms/Files/Img/corner-dots.gif" border="0"></span>
 		<?php endif; ?>
 		
 		<?php if ($this->_tpl_vars['menuItem']->sel == 1): ?>

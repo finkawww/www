@@ -236,7 +236,8 @@ class PagesClass
 		
 		$elementDesc = $pageAdd_form->addElement('textarea', 'Opis', 'Opis', array('cols'=>30, 'rows'=>3));
 		
-		$elementPageTitle = $pageAdd_form->addElement('text', 'txtPageTitle', 'Tytuł do Meta', array('size' => 25, 'maxlength'=> 255));		
+		$elementPageTitle = $pageAdd_form->addElement('text', 'txtPageTitle', 'Tytuł do Meta', array('size' => 75, 'maxlength'=> 255));		
+		$elementPageKeywords = $pageAdd_form->addElement('text', 'txtPageKeywords', 'Słowa kluczowe', array('size' => 75, 'maxlength'=> 255));		
 		$elementPageDescription = $pageAdd_form->addElement('textarea', 'txtPageDescription', 'Opis do Meta', array('cols'=>30, 'rows'=>3));
 		
 		$elementId = $pageAdd_form->addElement('hidden', 'id', 'id');
@@ -292,7 +293,7 @@ class PagesClass
 				$mb = 'N';
 				
 			$this->addPageSave($elementId->getValue(), $elementName->getValue(), $elementShortName->getValue(),
-								$activeArray[0], 'N', $authArray[0],$elementDesc->getValue(), $templateId, $mt, $ml, $mr, $mb, $elementPageTitle->getValue(), $elementPageDescription->getValue());
+								$activeArray[0], 'N', $authArray[0],$elementDesc->getValue(), $templateId, $mt, $ml, $mr, $mb, $elementPageTitle->getValue(), $elementPageDescription->getValue(), $elementPageKeywords->getValue());
 			
 			$module = new ModulesMgr();
 			$module->loadModule('Pages');
@@ -338,7 +339,7 @@ class PagesClass
 				$queryEdit = "
 					SELECT
 						`PageName`, `ShortName`, `Active`, `Admin`, `AuthorizedOnly`, `Desc`,
-						`MenuTop`, `MenuLeft`,`MenuRight`,`MenuBottom`, `PageDescription`, `PageTitle`
+						`MenuTop`, `MenuLeft`,`MenuRight`,`MenuBottom`,  `PageTitle`, `PageDescription`, `PageKeywords`
 					FROM
 						cmsPages
 					WHERE
@@ -360,7 +361,8 @@ class PagesClass
 				$elementMB->setValue(($moduleRec['MenuBottom']=='T'));
 				
 				$elementPageTitle->setValue($moduleRec['PageTitle']); 
-				$elementPageDescription->setValue($moduleRec['PageDesciption']);
+				$elementPageDescription->setValue($moduleRec['PageDescription']);
+				$elementPageKeywords->setValue($moduleRec['PageKeywords']);
 			}
 			else
 			{
@@ -426,17 +428,17 @@ class PagesClass
 		return $html;
 	}
 	
-	public function addPageSave($id, $pageName, $shortName, $active, $admin, $authorizedOnly, $desc, $template, $mt, $ml, $mr, $mb, $pageTitle, $pageDecription)
+	public function addPageSave($id, $pageName, $shortName, $active, $admin, $authorizedOnly, $desc, $template, $mt, $ml, $mr, $mb, $pageTitle, $pageDescription, $pageKeywords)
 	{
 		$tmpMenuMgr = new PagesMgr();
 				
 		if ($id == 0)
 		{
-			return $tmpMenuMgr->addPage($pageName, $shortName, $active, $admin , $authorizedOnly, $desc, $template, $mt, $ml, $mr, $mb, $pageTitle, $pageDescription);
+			return $tmpMenuMgr->addPage($pageName, $shortName, $active, $admin , $authorizedOnly, $desc, $template, $mt, $ml, $mr, $mb, $pageTitle, $pageDescription, $pageKeywords);
 		}
 		else
 		{
-			return $tmpMenuMgr->modifyPage($id, $pageName, $shortName, $active, $admin , $authorizedOnly, $desc, $template, $mt, $ml, $mr, $mb,$pageTitle, $pageDescription);			
+			return $tmpMenuMgr->modifyPage($id, $pageName, $shortName, $active, $admin , $authorizedOnly, $desc, $template, $mt, $ml, $mr, $mb,$pageTitle, $pageDescription, $pageKeywords);			
 		}
 		unset($tmpMenuMgr);
 	}

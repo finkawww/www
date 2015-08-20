@@ -11,17 +11,18 @@
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
     	<LINK REL="Stylesheet" HREF="/FrontPage/Style/style.css" TYPE="text/css" />
     	<TITLE>{$title}</TITLE>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
+		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
 		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
 
-		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
     	<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
-<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>	
+	
 
     </HEAD>
 	<BODY  bgcolor="white">
@@ -102,9 +103,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</td></tr>
 					<tr><td align="left">
 						<div class="font_sm">	
-						<a align="left" class="jump" href="./Uslugi_abonamentowe.htm"> <img src="./FrontPage/Files/Img/ikona_firma.png">Opieka posprzedażna więcej</a></br>
-						<a align="left" class="jump" href="./O_firmie.htm"> <img src="./FrontPage/Files/Img/ikona_firma.png">O firmie TIK-SOFT</a></br>
-						<a align="left" class="jump" href="./KontaktONAS.htm"> <img src="./FrontPage/Files/Img/ikona_kontakt.png">Kontakt z Konsultantem</a></br>
+						<a align="left" class="jump" href="./Uslugi_abonamentowe.htm"> <img src="/FrontPage/Files/Img/ikona_firma.png">Opieka posprzedażna więcej</a></br>
+						<a align="left" class="jump" href="./O_firmie.htm"> <img src="/FrontPage/Files/Img/ikona_firma.png">O firmie TIK-SOFT</a></br>
+						<a align="left" class="jump" href="./KontaktONAS.htm"> <img src="/FrontPage/Files/Img/ikona_kontakt.png">Kontakt z Konsultantem</a></br>
 						</FONT>
 						</div>
 				</table>		
@@ -124,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <tr>
 <td colspan="2" width="*" align="center"><br>{$menuBottom}</td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="/./images/banki.jpg" border="0"></a></td></tr>
 </table>
 </center>
 {literal}
@@ -243,7 +244,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <tr>
 <td colspan="2" width="*" align="center"><br>{$menuBottom}</td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></a></td></tr>
 </table>
 </center>
 {literal}

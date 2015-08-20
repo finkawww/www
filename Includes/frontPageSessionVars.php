@@ -36,7 +36,7 @@ if (!isset($_SESSION["ap"]))
 
 if (!isset($_GET["mp"]))
 {
-	$m = $_SESSION['mp'];
+	$m = 43;
 }
 else
 {

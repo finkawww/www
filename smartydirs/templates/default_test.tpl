@@ -57,9 +57,9 @@
 				{$leftMenu}
 				</td></tr>
 				<tr><Td>
-					<br><br><a href="/index.php?mp=103"><img src="./images/twarz_finki.png" border="0"></a><br>					<!--<a href="http://tiksoft.idhost.pl/index.php?mp=95"><img src="./images/search.jpg" border="0"></a><br>--><br>
-					<a href="/index.php?mp=49"><img src="./images/oferta_wstep1.png" border="0"></a><br><br>
-					<a href="/index.php?mp=48"><img src="./images/oferta_wstep2.png" border="0"></a>
+					<br><br><a href="/index.php?mp=103"><img src="/images/twarz_finki.png" border="0"></a><br>					<!--<a href="http://tiksoft.idhost.pl/index.php?mp=95"><img src="./images/search.jpg" border="0"></a><br>--><br>
+					<a href="/index.php?mp=49"><img src="/images/oferta_wstep1.png" border="0"></a><br><br>
+					<a href="/index.php?mp=48"><img src="/images/oferta_wstep2.png" border="0"></a>
 					
 				</td></tr>
 				</table>
@@ -80,7 +80,7 @@
 <td colspan="2" width="*" align="center"><br>{$menuBottom}</td>
 <td colspan="2" width="*" align="center"><br>{$Newsletter}</td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></a></td></tr>
 </table>
 </center>
    	</BODY>

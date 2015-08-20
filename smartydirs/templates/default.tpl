@@ -9,17 +9,17 @@
     	<meta name="description" content="{$desc}" />
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
     	<link rel="stylesheet" href="/FrontPage/Style/newstyle.css" type="text/css" />
-		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
-    	<title>{$title}aaa</title>
+    	<title>{$title}</title>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
+		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
 	</head>
 	<body>
 		{literal}
@@ -94,7 +94,7 @@
 <tr>
 <td colspan="2" width="*" align="center"><br>{$menuBottom}</td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></a></td></tr>
 </table>
 </center>
 	{literal}

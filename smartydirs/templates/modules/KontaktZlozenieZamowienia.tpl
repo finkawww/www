@@ -12,7 +12,7 @@
 	<tr>
 		<td width="250" align="left">{$txtNazwaTow}</td><td width="83" align="right">{$txtCenaTow}</td><td width="83" align="right">{$txtIloscStan}</td><td width="83" align="right">{$txtIloscFirm}</td>
 	</tr>
-        {foreach from=$pozycjeZam item=ZamowieniaItems name=pozycjeZam}
+{foreach from=$pozycjeZam item=ZamowieniaItems name=pozycjeZam}
 	<tr>
 		<td width="250" align="left">{$ZamowieniaItems->nazwaTowaru}</td>
 		<td width="83" align="right">{$ZamowieniaItems->cena_poz}</td>

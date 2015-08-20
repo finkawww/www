@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-07-31 10:46:44
+<?php /* Smarty version 2.6.17, created on 2015-08-06 14:19:45
          compiled from default.tpl */ ?>
 <!DOCTYPE HTML>
 <html lang="PL-pl">
@@ -16,18 +16,18 @@
 " />
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
     	<link rel="stylesheet" href="/FrontPage/Style/newstyle.css" type="text/css" />
-		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
     	<title><?php echo $this->_tpl_vars['title']; ?>
-aaa</title>
+</title>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
+		<link rel="stylesheet" href="/FrontPage/JS/css/lightbox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
 	</head>
 	<body>
 		<?php echo '
@@ -109,7 +109,7 @@ aaa</title>
 <td colspan="2" width="*" align="center"><br><?php echo $this->_tpl_vars['menuBottom']; ?>
 </td>
 </tr>
-<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></a></td></tr>
+<tr><td width="100%" align="center" colspan="2"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></a></td></tr>
 </table>
 </center>
 	<?php echo '

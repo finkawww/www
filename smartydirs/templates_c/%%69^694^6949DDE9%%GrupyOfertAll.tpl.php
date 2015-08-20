@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2012-03-01 16:00:24
+<?php /* Smarty version 2.6.17, created on 2015-08-04 11:24:31
          compiled from modules/GrupyOfertAll.tpl */ ?>
 <br/>
 
@@ -21,7 +21,7 @@ if ($this->_foreach['grupyOfert']['total'] > 0):
 </td></tr>
 		<tr><td colspan="2" align="right"><a href="?a=<?php echo $this->_tpl_vars['actionPokazOferte']; ?>
 &idGrupy=<?php echo $this->_tpl_vars['grupy']->id; ?>
-"><img src="./images/buy.png" border="0"></a></td></tr>
+"><img src="/images/buy.png" border="0"></a></td></tr>
 	</table>
 	</td>
 <?php endforeach; endif; unset($_from); ?>

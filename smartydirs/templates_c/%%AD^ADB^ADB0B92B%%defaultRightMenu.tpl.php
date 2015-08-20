@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-07-30 14:31:22
+<?php /* Smarty version 2.6.17, created on 2015-08-06 15:28:34
          compiled from defaultRightMenu.tpl */ ?>
 <!DOCTYPE HTML>
 <html lang="PL-pl">
@@ -21,13 +21,13 @@
 		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
     	<title><?php echo $this->_tpl_vars['title']; ?>
 </title>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
 	</head>
 	<body>
@@ -96,7 +96,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 					<tr><td width="210px"><?php echo $this->_tpl_vars['menuRight']; ?>
 </td></tr>
 					<tr><td>
-					<br><a href="/index.php?mp=45"><img src="./FrontPage/Files/Img/baner_demo.png" border="0"></a><BR><BR>
+					<br><a rel="nofollow" href="/wersje-probne/"><img src="/FrontPage/Files/Img/baner_demo.png" border="0"></a><BR><BR>
 				</td></tr>
 				</table>
 			</td>
@@ -108,7 +108,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 	<table>	
 	</center>
 </td></tr>
-<tr><td width="100%" align="center"><a href="http://www.payu.pl"><img src="./images/banki.jpg" border="0"></td></tr>
+<tr><td width="100%" align="center"><a href="http://www.payu.pl" rel="nofollow"><img src="/images/banki.jpg" border="0" alt="payu"></td></tr>
 </table>
 </center>
 </div>

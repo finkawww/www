@@ -18,7 +18,7 @@ class pagesMgr
    			$exc->writeException();   	   	
 		}	
 	}
-	public function modifyPage($id, $name, $shortName, $active, $admin , $authorizedOnly, $desc, $template, $mt='T', $ml='T', $mr='N', $mb='T', $pageTitle='', $pageDescription='')
+	public function modifyPage($id, $name, $shortName, $active, $admin , $authorizedOnly, $desc, $template, $mt='T', $ml='T', $mr='N', $mb='T', $pageTitle='', $pageDescription='', $pageKeywords='')
 	{
 		Try
   		{
@@ -28,7 +28,7 @@ class pagesMgr
 					`PageName` = '$name', `ShortName` = '$shortName', `Active` = '$active',
 					`Admin` = '$admin', `AuthorizedOnly` = '$authorizedOnly', `Desc` = '$desc', `TemplateId`=$template,
 					`MenuTop` = '$mt', `MenuLeft` = '$ml', `MenuRight`='$mr', `MenuBottom`='$mb', `PageTitle`='$pageTitle',
-					`PageDescription`='$pageDescription'
+					`PageDescription`='$pageDescription', `PageKeywords` ='$pageKeywords'
 				WHERE
 					id = $id
 					";
@@ -42,19 +42,19 @@ class pagesMgr
 		}
 	}
 	
-  	public function addPage($name, $shortName, $active, $admin , $authorizedOnly, $desc, $template=0, $mt='T', $ml='T', $mr='N', $mb='T', $pageTitle='', $pageDescription='')
+  	public function addPage($name, $shortName, $active, $admin , $authorizedOnly, $desc, $template=0, $mt='T', $ml='T', $mr='N', $mb='T', $pageTitle='', $pageDescription='', $pageKeywords='')
   	{
   		Try
   		{
   			
   			if ($template == 0)
 				$ddlPageAdd = "Insert Into cmsPages (`PageName`, `ShortName`, `Active`, `Admin`, `AuthorizedOnly`, `Desc`, `TemplateId`,
-  												`MenuTop`, `MenuLeft`, `MenuRight`, `MenuBottom`, `PageTitle`, `PageDescription`) Values
-									('$name', '$shortName', '$active', '$admin', '$authorizedOnly', '$desc', null, '$mt', '$ml', '$mr', '$mb', '$pageTitle', '$pageDescription')";  				
+  												`MenuTop`, `MenuLeft`, `MenuRight`, `MenuBottom`, `PageTitle`, `PageDescription`, `PageKeywords`) Values
+									('$name', '$shortName', '$active', '$admin', '$authorizedOnly', '$desc', null, '$mt', '$ml', '$mr', '$mb', '$pageTitle', '$pageDescription', '$pageKeywords')";  				
   			else
   				$ddlPageAdd = "Insert Into cmsPages (`PageName`, `ShortName`, `Active`, `Admin`, `AuthorizedOnly`, `Desc`, `TemplateId`,
-  												`MenuTop`, `MenuLeft`, `MenuRight`, `MenuBottom`, `PageTitle`, `PageDescription`) Values
-									('$name', '$shortName', '$active', '$admin', '$authorizedOnly', '$desc', $template, '$mt', '$ml', '$mr', '$mb', '$pageTitle', '$pageDescription')";
+  												`MenuTop`, `MenuLeft`, `MenuRight`, `MenuBottom`, `PageTitle`, `PageDescription`, `PageKeywords`) Values
+									('$name', '$shortName', '$active', '$admin', '$authorizedOnly', '$desc', $template, '$mt', '$ml', '$mr', '$mb', '$pageTitle', '$pageDescription', '$pageKeywords')";
   				
   			$this->dbInt->ExecQuery($ddlPageAdd);
   			
