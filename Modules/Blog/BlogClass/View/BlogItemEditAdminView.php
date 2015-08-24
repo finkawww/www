@@ -71,13 +71,24 @@ class BlogItemEditAdminView
         if ($form->validate())
         {           
             
-            $blogItem->SetCategory($txtCateogry->GetValue());
+            $blogItem->SetCategory($txtCategory->GetValue());
             $blogItem->SetDate($date->GetValue());
             $blogItem->SetContent($txtContent->GetValue());
             $blogItem->SetHeadline($txtHeadline->GetValue());
             $blogItem->SetTitle($txtTitle->GetValue());
             $blogItem->SetName($txtName->GetValue());
-            $blogItem->Save();
+            if($blogItem->Save())
+            {
+                $respHtml = "Zrobione";
+                
+                return $respHtml;
+            }
+            else
+            {
+                $respHtml = "bąłd w zapisie";
+                
+                return $respHtml;
+            }
         }
         else
         {

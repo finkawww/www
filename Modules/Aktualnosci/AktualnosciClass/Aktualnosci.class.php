@@ -309,11 +309,11 @@ class AktualnosciClass
 					FROM
 					Aktualnosci
 					WHERE id = $id";
-					$qResult = $this->dbInt->ExecQuery($query);
+					$qResult = $this->dbInt->ExecQuery($query);                                        
 					$dataQ = $qResult->fetchRow(DB_FETCHMODE_ASSOC);
 					$dataAkt = $dataQ['Data'];
 					$tytul = $dataQ['Tytul'];
-					$tresc = $dataQ['Tresc'];
+                                    	$tresc = $dataQ['Tresc'];
 
 					$dataArr = explode('-', $dataAkt);
 					$dataArrFinal = array('Y'=>$dataArr[0], 'M'=>$dataArr[1], 'd'=>$dataArr[2]);
@@ -356,8 +356,7 @@ class AktualnosciClass
 			}
 
 			$html .= '</td></tr></table>';
-
-			return $html;
+                        return $html;
 
 
 

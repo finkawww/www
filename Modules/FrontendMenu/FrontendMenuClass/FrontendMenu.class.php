@@ -470,6 +470,8 @@
      	$grupa = $menuForm->addElement('text', 'txtGrupa', 'Grupa');
      	$idElement = $menuForm->addElement('hidden', 'id' ,'id');
      	
+        $childMenu = $menuForm->addElement('checkbox', 'childMenu', 'Podelement górnego menu', null, null);
+        
      	//daje onclick -> wyswietlam okno z wyborem -> a tam w onEnter wpisuje na Parent->txtXx
      	$menuForm->addElement('reset', 'btnReset', 'Wyczyść');
       	$menuForm->addElement('submit', 'btnSubmit', 'Zapisz');
@@ -510,6 +512,7 @@
         		$menuShortName = $shortName->getValue();
 				$renderName = $menuRenderName->getValue();
         		$grupaVal = $grupa->getValue();
+                        $childMenuVal = $childMenu->GetValue();
         	
 	        	if ($page->getValue() == 'Brak')
         		{
@@ -545,7 +548,7 @@
         		$activeArray = $active->getValue();
         		$menuActive = $activeArray[0]; 
 	        	
-        		$this->addMenuItem($menuName, $menuShortName, $menuPage, $menuParentItem, $menuIndex, $menuPosition, $menuActive, $grupaVal, $renderName);
+        		$this->addMenuItem($menuName, $menuShortName, $menuPage, $menuParentItem, $menuIndex, $menuPosition, $menuActive, $grupaVal, $renderName, $childMenuVal==1);
         		
         		$menuId = 0;
         		$menuIdVal = $tmpMenuMgr->getMenuIdByName($shortName->getValue());
@@ -596,7 +599,7 @@
         		$query = "
         			SELECT 
         				`Name`, `ShortName`, `FK_PageId`, `FK_ParentMenuItem`, `Index`, grupa,
-        				`Position`, `Active`, `MenuLinkText` 
+        				`Position`, `Active`, `MenuLinkText`, `Submenu`
         			FROM
         				`cmsMenu`
         			WHERE
@@ -612,7 +615,7 @@
         		$nameArray = $rec['Name'];
         		
         		$name->setValue($nameArray);
-        		
+        		$childMenu->setValue($rec['Submenu']=='T');
         		$shortName->setValue($rec['ShortName']);
         		$pageId = $rec['FK_PageId'];
         		$parentMenuItem = $rec['FK_ParentMenuItem'];
@@ -695,7 +698,7 @@
  	 * @access public
  	 * @author Piotr Brodziński
  	 */
-	public function addMenuItem($name, $shortName, $menuPage = 0, $parentMenuId = 0, $index, $position, $active, $grupa='', $renderName)
+	public function addMenuItem($name, $shortName, $menuPage = 0, $parentMenuId = 0, $index, $position, $active, $grupa='', $renderName, $child)
  	{
  		
  		if ($menuPage == 0)
@@ -730,16 +733,23 @@
  				//echo 'Page:'.$pageName;
  			unset($pagesMgr);
  				
- 			$this->objMenu->addMenuItem($parentMenuName, $name, $shortName, $pageName, $index, 'N', $position, $active, $grupa, $renderName);
+ 			$this->objMenu->addMenuItem($parentMenuName, $name, $shortName, $pageName, $index, 'N', $position, $active, $grupa, $renderName, $child);
  		 
 		}
  		else
  		{
+                    $childTxt = "";
+                    if($child)
+                    {
+                        $childTxt = ", `Submenu` = 'T' ";
+                    }
+                    
+                    
 			$query = "
 				UPDATE `cmsMenu`
 				SET `Name`='$name', `ShortName`='$shortName', `FK_PageId`=$menuPageTxt, 
 					`FK_ParentMenuItem`=$parentMenuIdTxt, `Index` = $index, `Position` = '$position', grupa = '$grupa',
-					`AdminMenu`='N', `Active`='$active', `MenuLinkText`='$renderName'
+					`AdminMenu`='N', `Active`='$active', `MenuLinkText`='$renderName' $childTxt
 				WHERE
 					id = $this->id;
 					";

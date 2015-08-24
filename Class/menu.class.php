@@ -62,12 +62,18 @@ class menuMgr
 	}
 	
 	//dodaje nowy MenuItem
-	public function addMenuItem($parentMenuName, $name, $shortName, $pageName, $index, $isAdmin, $position, $active='T', $menuLinkText='')
+	public function addMenuItem($parentMenuName, $name, $shortName, $pageName, $index, $isAdmin, $position, $active='T', $menuLinkText='', $childMenu = false)
 	{
 		Try
-		{
-			$dmlMenu = "INSERT INTO `cmsMenu`(`Name`, `ShortName`, `Index`, `AdminMenu`, `Position`, `Active`, `MenuLinkText`) 
-						Values ('$name', '$shortName', $index, '$isAdmin', '$position', '$active', '$menuLinkText');";
+		{       $childTxtCol = ""; $childTxtVal = "";
+                        if(childMenu)
+                        {
+                            $childTxtCol = ", `Submenu`";
+                            $childTxtVal = ", 'T'";
+                        }
+                        
+			$dmlMenu = "INSERT INTO `cmsMenu`(`Name`, `ShortName`, `Index`, `AdminMenu`, `Position`, `Active`, `MenuLinkText` $childTxtCol) 
+						Values ('$name', '$shortName', $index, '$isAdmin', '$position', '$active', '$menuLinkText' $childTxtVal);";
 			
 			$this->dbInt->ExecQuery($dmlMenu);
 						

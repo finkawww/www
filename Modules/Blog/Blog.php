@@ -13,6 +13,7 @@
  */
 class Blog  extends moduleTemplate
 {    
+    
     private $blogController;
     //put your code here
     public function __construct()

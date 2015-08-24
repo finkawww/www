@@ -279,6 +279,7 @@ class menuRenderer
 		$menuTop = array();
 		$res = '';
 		//wczytuje wszystkie rekordy TopMenu (wszelkie parametry) do tablicy
+                
 		$sql = "
 			SELECT 
 				id, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText 
@@ -320,16 +321,14 @@ class menuRenderer
 				$menuItem->menuRenderText = dnsPath.'?mp='.$menuItem->id;
 			} 		
 			
-			$sql_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $menuItem->id 	AND Active = 'T' AND Submenu = 'T'";
+			$sql_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $menuItem->id 	AND Active = 'T' AND Submenu = 'T' ORDER BY `Index`";
 			$query_child = $this->dbInt->ExecQuery($sql_child);
 
 			$menuItem->child = array();
 			while ($childItem = $query_child->fetchRow(DB_FETCHMODE_ASSOC)){
-				$childId = $childItem['id'];
-
-				
+				$childId = $childItem['id'];				
 				$second_parent_id = $childId;
-				$sql_second_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $second_parent_id 	AND Active = 'T'";
+				$sql_second_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $second_parent_id 	AND Active = 'T' ORDER BY `Index`";
 				$query_second_child = $this->dbInt->ExecQuery($sql_second_child);
 				
 				

@@ -25,7 +25,8 @@ class BlogItem
             if ($id <= 0)
             {
                 $query = "INSERT INTO BlogItems(name, title, headline, content, categoryId, date)"
-                        . "VALUES ('$this->name', '$this->title', '$this->headline', '$this->content', '$this->categoryId', '$this->date')";
+                        . "VALUES ('$this->name', '$this->title', '$this->headline', '$this->content', $this->categoryId, '$this->date')";
+                
             }
             else
             {
@@ -38,7 +39,7 @@ class BlogItem
                         . " date = '$this->date'"
                         . " WHERE id=$this->id";
             }
-
+            echo "zapytanie $query";
             $dbInt = DBSingleton::GetInstance();
             $dbInt->ExecQuery($query);        
             return true;
