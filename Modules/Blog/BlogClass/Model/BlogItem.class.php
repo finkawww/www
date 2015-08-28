@@ -24,19 +24,19 @@ class BlogItem
             $query = "";
             if ($id <= 0)
             {
-                $query = "INSERT INTO BlogItems(name, title, headline, content, categoryId, date)"
-                        . "VALUES ('$this->name', '$this->title', '$this->headline', '$this->content', $this->categoryId, '$this->date')";
+                $query = "INSERT INTO `blogitems`(`name`, `title`, `headline`, `content`, `categoryName`, `itemdate`)"
+                        . "VALUES ('$this->name', '$this->title', '$this->headline', '$this->content', '$this->categoryName', '$this->date')";
                 
             }
             else
             {
-                $query = "UPDATE BlogItems SET "
-                        . " name = '$this->name', "
-                        . " title='$this->title', "
-                        . " headline = '$this->headline', "
-                        . " content = '$this->content', "
-                        . " categoryId = '$this->categoryId', "
-                        . " date = '$this->date'"
+                $query = "UPDATE blogitems SET "
+                        . " `name` = '$this->name', "
+                        . " `title`='$this->title', "
+                        . " `headline` = '$this->headline', "
+                        . " `content` = '$this->content', "
+                        . " `categoryName` = '$this->categoryName', "
+                        . " `itemdate` = '$this->date'"
                         . " WHERE id=$this->id";
             }
             echo "zapytanie $query";
@@ -68,9 +68,9 @@ class BlogItem
 
     public function LoadById($id)
     {
-        $query = " SELECT i.name, i.title, i.headline, i.content, i.categoryId, i.categoryName "
-                . " FROM BlogItems i"                
-                . " WHERE id=$id";
+        $query = " SELECT i.name, i.title, i.headline, i.content, i.categoryName, i.itemdate "
+                . " FROM blogitems i"                
+                . " WHERE i.id=$id";
 
         $dbInt = DBSingleton::GetInstance();
         $dbResult = $dbInt->ExecQuery($query);
@@ -80,15 +80,14 @@ class BlogItem
         $this->name = $recData['name'];
         $this->title = $recData['title'];
         $this->headline = $recData['headline'];
-        $this->content = $recData['content'];
-        $this->categoryId = $recData['categoryId'];
-        $this->date = $recData['date'];
-        $this->categoryName = $recData['date'];
+        $this->content = $recData['content'];        
+        $this->date = $recData['itemdate'];
+        $this->categoryName = $recData['categoryName'];
     }
 
     public function LoadByName($name)
     {
-        $query = " SELECT i.id, i.name, i.title, i.headline, i.content, i.categoryId, i.categoryName "
+        $query = " SELECT i.id, i.name, i.title, i.headline, i.content,  i.categoryName, i.itemdate "
                 . " FROM BlogItems i"                
                 . " WHERE name=$name";
 
@@ -100,10 +99,9 @@ class BlogItem
         $this->name = $recData['name'];
         $this->title = $recData['title'];
         $this->headline = $recData['headline'];
-        $this->content = $recData['content'];
-        $this->categoryId = $recData['categoryId'];
-        $this->date = $recData['date'];
-        $this->categoryName = $recData['date'];
+        $this->content = $recData['content'];        
+        $this->date = $recData['itemdate'];
+        $this->categoryName = $recData['categoryName'];
     }
 
     public function GetId()

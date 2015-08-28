@@ -12,8 +12,8 @@ class BlogItemsAdminListView
     public function Render()
     {
         
-        $query = "SELECT i.date, i.id, i.name, i.title, i.headline, i.categoryName "
-                . " FROM blogitems i ORDER BY i.date";
+        $query = "SELECT i.itemdate, i.id, i.name, i.title, i.headline, i.categoryName "
+                . " FROM blogitems i ORDER BY i.itemdate";
                
                 
 
@@ -54,7 +54,7 @@ class BlogItemsAdminListView
         $realListGrid->setGridAlign('center');
     	$realListGrid->setGridWidth(790);
     	
-    	$realListGrid->addColumn("date", 'Data', 80, false, false, 'center');
+    	$realListGrid->addColumn("itemdate", 'Data', 80, false, false, 'center');
     	$realListGrid->addColumn("name", 'Nazwa', 80, false, false, 'left');
         $realListGrid->addColumn("title", 'Tytuł', 80, false, false, 'left');        
     	$realListGrid->addColumn('categoryName', 'Kateogria', 150, false, false,  'left');

@@ -72,20 +72,45 @@ class BlogItemEditAdminView
         {           
             
             $blogItem->SetCategory($txtCategory->GetValue());
-            $blogItem->SetDate($date->GetValue());
+            
+            $dataTmp = $date->getValue();
+            $dataVal = $dataTmp['Y'][0].'-'.$dataTmp['M'][0].'-'.$dataTmp['d'][0];
+                                
+            $blogItem->SetDate($dataVal);
+            
+            
+            
             $blogItem->SetContent($txtContent->GetValue());
             $blogItem->SetHeadline($txtHeadline->GetValue());
             $blogItem->SetTitle($txtTitle->GetValue());
             $blogItem->SetName($txtName->GetValue());
             if($blogItem->Save())
-            {
-                $respHtml = "Zrobione";
-                
+            {                
+                $module = new ModulesMgr();
+		$module->loadModule('Blog');
+		$okAction = $module->getModuleActionIdByName('GetBlogItemsAdmin');
+			
+		$dialog = new dialog('Info', 'Operacja wykonana prawidłowo', 'Info', 300, 150);
+		$dialog->setAlign('center');
+		$dialog->setOkCaption('Ok');
+		$dialog->setOkAction($okAction);
+		$respHtml = $dialog->show(1);
+			
                 return $respHtml;
             }
             else
             {
-                $respHtml = "bąłd w zapisie";
+                $module = new ModulesMgr();
+		$module->loadModule('Blog');
+		$okAction = $module->getModuleActionIdByName('GetBlogItemsAdmin');
+			
+		$dialog = new dialog('Error', 'Błąd w zapisie. Post nie został dodany', 'Info', 300, 150);
+		$dialog->setAlign('center');
+		$dialog->setOkCaption('Ok');
+		$dialog->setOkAction($okAction);
+		$resHtml = $dialog->show(1);
+			
+                
                 
                 return $respHtml;
             }
