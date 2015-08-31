@@ -21,9 +21,18 @@ class BlogItemView
         //$bckCategoryAction = 
         //$bck
         $smarty = new mySmarty();
-        $smarty->assign('backCategoryAction', $bckCategoryAction);	
+        $smarty->assign('bckAction', $bckCategoryAction);	
         $smarty->assign('parentCategory', $category);	
 	$smarty->assign('blogItem', $blogItemObj);	
+        if (isset($_GET["mp"]))
+        {
+            $mpTxt = $_GET['mp'];
+            $smarty->assign('mpId', "&mp=$mpTxt");	
+        }
+        else
+        {
+            $smarty->assign('mpId', "");	
+        }
 	return $smarty->fetch('modules/BlogItemView.tpl');
     }
 }

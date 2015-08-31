@@ -16,16 +16,17 @@ class BlogItem
     private $content;    
     private $date;    
     private $categoryName;
+    private $contentIsLink;
     
     public function Save()
     {
         try
         {
             $query = "";
-            if ($id <= 0)
+            if ($this->id == 0)
             {
-                $query = "INSERT INTO `blogitems`(`name`, `title`, `headline`, `content`, `categoryName`, `itemdate`)"
-                        . "VALUES ('$this->name', '$this->title', '$this->headline', '$this->content', '$this->categoryName', '$this->date')";
+                $query = "INSERT INTO `blogitems`(`name`, `title`, `headline`, `content`, `categoryName`, `itemdate`, `contentIsLink`)"
+                        . "VALUES ('$this->name', '$this->title', '$this->headline', '$this->content', '$this->categoryName', '$this->date', $this->contentIsLink)";
                 
             }
             else
@@ -36,10 +37,11 @@ class BlogItem
                         . " `headline` = '$this->headline', "
                         . " `content` = '$this->content', "
                         . " `categoryName` = '$this->categoryName', "
-                        . " `itemdate` = '$this->date'"
+                        . " `itemdate` = '$this->date',"
+                        . " `contentIsLink` = $this->contentIsLink"
                         . " WHERE id=$this->id";
             }
-            echo "zapytanie $query";
+            
             $dbInt = DBSingleton::GetInstance();
             $dbInt->ExecQuery($query);        
             return true;
@@ -52,7 +54,7 @@ class BlogItem
     
     public function Delete()
     {
-        $query = "DELETE BlogItems WHERE id=$this->id";
+        $query = "DELETE FROM blogitems WHERE id=$this->id";
         $dbInt = DBSingleton::GetInstance();
         $dbInt->ExecQuery($query);        
         return true;       
@@ -68,7 +70,7 @@ class BlogItem
 
     public function LoadById($id)
     {
-        $query = " SELECT i.name, i.title, i.headline, i.content, i.categoryName, i.itemdate "
+        $query = " SELECT i.name, i.title, i.headline, i.content, i.categoryName, i.itemdate, i.contentIsLink "
                 . " FROM blogitems i"                
                 . " WHERE i.id=$id";
 
@@ -83,13 +85,14 @@ class BlogItem
         $this->content = $recData['content'];        
         $this->date = $recData['itemdate'];
         $this->categoryName = $recData['categoryName'];
+        $this->contentIsLink = $recData['contentIsLink'];
     }
 
     public function LoadByName($name)
     {
-        $query = " SELECT i.id, i.name, i.title, i.headline, i.content,  i.categoryName, i.itemdate "
-                . " FROM BlogItems i"                
-                . " WHERE name=$name";
+        $query = " SELECT i.id, i.name, i.title, i.headline, i.content,  i.categoryName, i.itemdate, i.contentIsLink "
+                . " FROM blogitems i"                
+                . " WHERE name='$name'";
 
         $dbInt = DBSingleton::GetInstance();
         $dbResult = $dbInt->ExecQuery($query);
@@ -112,6 +115,16 @@ class BlogItem
     public function SetId($id)
     {
         $this->id= $id;
+    }
+    
+    public function GetContentIsLink()
+    {
+        return $this->contentIsLink;
+    }
+    
+    public function SetContentIsLink($contentIsLink)
+    {
+        $this->contentIsLink = $contentIsLink;
     }
 
     public function GetName()
@@ -166,7 +179,8 @@ class BlogItem
 
     public function GetDate()
     {
-        return $this->date;
+        //date_format($date,"Y/m/d H:i:s");
+        return date_format(date_create($this->date), "d-m-Y");
     }
 
     public function SetDate($date)

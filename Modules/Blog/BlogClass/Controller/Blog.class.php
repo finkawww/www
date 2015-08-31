@@ -11,8 +11,10 @@ class Blog
         
     public function GetBlogItem($name)
     {
-        $blogItemObj = new BlogItem();
-        $blogItemObj->LoadByName($name);
+        
+        $view = new BlogItemView();
+        return $view->Render($name);
+        
         return $blogItemObj;
     }
     
@@ -25,19 +27,22 @@ class Blog
     public function GetBlogItems($category)
     {
         $query = "";
+        
         if ($category == "") //admin
         {
-            $query = "SELECT id FROM BlogItems ORDER BY categoruName, date";
+            $query = "SELECT id FROM blogitems ORDER BY categoryName, itemdate";
         }
         else
         {
-            $query = "SELECT id FROM BlogItems WHERE categoryName='$category' ORDER BY date";
+            $query = "SELECT id FROM blogitems WHERE categoryName='$category' ORDER BY itemdate";
         }
-        
-        $dbInt = DBSingleton::GetInstance();
+                
+        $dbInt = DBSingleton::GetInstance();                
         $dbResult = $dbInt->ExecQuery($query);
+                       
         $blogItemsId = array();
  	$blogItems = array();
+        
         while($recData = $dbResult->fetchRow(DB_FETCHMODE_ASSOC))
         {            
             $blogItemsId[]= $recData['id'];
@@ -50,7 +55,10 @@ class Blog
             $blogItems[]= $blogItem;
         }
         
-        return $blogItems;
+        $view = new BlogItemsListView();
+        return $view->Render($blogItems);
+        
+        
     }
     
     public function AddBlogItem($blogItem)
@@ -64,8 +72,32 @@ class Blog
     public function DeleteBlogItem($blogId)
     {
         $blogItem = new BlogItem();
-        $blogItem->LoadById($id);
-        $blogItem->Delete();
+        $blogItem->LoadById($blogId);
+        if ($blogItem->Delete())
+        {
+            $module = new ModulesMgr();
+	    $module->loadModule('Blog');
+	    $okAction = $module->getModuleActionIdByName('GetBlogItemsAdmin');
+			
+	    $dialog = new dialog('Ok', 'Usunięto rekord', 'Info', 300, 150);
+            $dialog->setAlign('center');
+            $dialog->setOkCaption('Ok');
+            $dialog->setOkAction($okAction);
+            return $dialog->show(1);
+        }   
+        else
+        {
+            $module = new ModulesMgr();
+            $module->loadModule('Blog');
+            $okAction = $module->getModuleActionIdByName('GetBlogItemsAdmin');
+
+            $dialog = new dialog('Error', 'Błąd. Dane nie zostały usunięte.', 'Info', 300, 150);
+            $dialog->setAlign('center');
+            $dialog->setOkCaption('Ok');
+            $dialog->setOkAction($okAction);
+            return $dialog->show(1);
+        }
+        
     }
     
     public function UpdateBlogItem($blogItemObj)

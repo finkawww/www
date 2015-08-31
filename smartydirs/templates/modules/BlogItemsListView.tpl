@@ -1,18 +1,26 @@
 <div class="blog">
-    {foreach}
+    {foreach from=$blogItemsArray item=blogItem name=blogItemsArray}
     <div class="blogItem">
         <div class="blogItemHeader">
-            <div class="title">{$title}</div>
+            <h1>{$blogItem->GetTitle()}</h1>
+            <small>Data publikacji: {$blogItem->GetDate()}</small>
         </div>
         <div class="blogItemContent">
-            {$content}
+            <p>{$blogItem->GetHeadline()}</p>
         </div>
         <div class="blogItemFooter">
-            <small>{$author}</small>
+           
+            {if ($blogItem->GetContentIsLink())}
+               <small><a href="/{$blogItem->GetContent()}">Więcej..</a></small>
+            {else}
+               <small><a href="/?a={$itemViewAction}&name={$blogItem->GetName()}{$mpId}">Więcej..</a></small>
+            {/if}
+           
         </div>
         <div class="toolbar">
-            {$bckAction}
+            
         </div>
     </div>
+            <hr/>
     {/foreach}
 </div>

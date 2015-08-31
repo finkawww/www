@@ -42,7 +42,18 @@ class BlogRouting  extends moduleTemplate
         }
         else if ($actionName == 'AddBlogItemAdmin')
         {
-            return $this->AddBlogItemAdmin(new BlogItem()); 
+            $id = $_REQUEST["id"];
+            
+            if($id == 0)
+            {            
+                return $this->AddBlogItemAdmin(new BlogItem()); 
+            }
+            else
+            {
+                
+                return $this->UpdateBlogItemAdmin($id);
+            }
+            
         }
         else if($actionName == 'DeleteBlogItemAdmin')        
         {
@@ -51,27 +62,27 @@ class BlogRouting  extends moduleTemplate
         }
         else if($actionName == 'UpdateBlogItemAdmin')
         {
-            $logItemObj = new BlogItem();
-            $logItemObj->SetCategory($_POST["category"]);
-            $logItemObj->SetContent($_POST["content"]);
-            $logItemObj->SetDate($_POST['date']);
-            $logItemObj->SetHeadline($_POST['headline']);
-            $logItemObj->SetName($_POST['name']);
-            $logItemObj->SetTitle($_POST['title']);
+            $id= $_REQUEST["id"];
             
-            return $this->AddBlogItemAdmin($logItemObj); 
+            return $this->UpdateBlogItemAdmin($id); 
         }
         else if ($actionName == 'GetBlogItem')
-        {           
-            
-            $name = strtolower($varArray[0]);
+        {   
+            $name = $_REQUEST["name"];
             
             return $this->GetBlogItem($name);            
         }
         else if ($actionName == 'GetBlogItems')
-        {
+        {        
+            if(isset($_REQUEST["category"]))
+            {
+                $category = $_REQUEST["category"];
+            }
+            else
+            {
+                $category = strtolower($varArray[0]);            
+            }
             
-            $category = strtolower($varArray[0]);
             return $this->GetBlogItems($category);
         }
         else
@@ -97,14 +108,27 @@ class BlogRouting  extends moduleTemplate
         return $this->blogController->AddBlogItem($logItemObj);
     }
     
+    private function UpdateBlogItemAdmin($id)
+    {
+         $blog = new BlogItem();
+          $blog->LoadById($id);
+          
+        return $this->blogController->UpdateBlogItem($blog);
+    }
+    
     private function DeleteBlogAdmin($id)
     {
-        return $this->blogController->DeleteBlogItem();
+        return $this->blogController->DeleteBlogItem($id);
     }
     
     private function GetBlogItems($categoryId)
     {
         return $this->blogController->GetBlogItems($categoryId);
+    }
+    
+    private function GetBlogItem($name)
+    {
+        return $this->blogController->GetBlogItem($name);
     }
     
     

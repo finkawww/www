@@ -10,12 +10,24 @@ class BlogItemsListView
 {
     public function Render($blogItemsArr)
     {
+        
         $moduleTmp = new ModulesMgr();
         $moduleTmp->loadModule('Blog');
         $itemViewAction = $moduleTmp->getModuleActionIdByName('GetBlogItem');                
+        $backAction = $moduleTmp->getModuleActionIdByName('GetBlogItems');
         $smarty = new mySmarty();        
 	$smarty->assign('blogItemsArray', $blogItemsArr);	
-        $smarty->assign('itemViewAction', $itemViewAction);	
+        $smarty->assign('itemViewAction', $itemViewAction);	        
+        $smarty->assign('bckAction', $backAction);	        
+        if (isset($_GET["mp"]))
+        {
+            $mpTxt = $_GET['mp'];
+            $smarty->assign('mpId', "&mp=$mpTxt");	
+        }
+        else
+        {
+            $smarty->assign('mpId', "");	
+        }
 	return $smarty->fetch('modules/BlogItemsListView.tpl');
     }
 }

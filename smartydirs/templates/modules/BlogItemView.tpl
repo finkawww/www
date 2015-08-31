@@ -1,14 +1,14 @@
 <div class="blogItem">
     <div class="blogItemHeader">
-        <div class="title">{$title}</div>
+        <div class="title">{$blogItem->GetTitle()}</div>
+        <small>Data publikacji: {$blogItem->GetDate()}</small>
     </div>
     <div class="blogItemContent">
-        {$content}
-    </div>
+        <p>
+        {$blogItem->GetContent()}
+        </p>
+    </div>    
     <div class="blogItemFooter">
-        <small>{$author}</small>
-    </div>
-    <div class="toolbar">
-        {$bckAction}
+        <a href="?a={$bckAction}&category={$blogItem->GetCategory()}{$mpId}">Powrót</a>
     </div>
 </div>

@@ -22,6 +22,7 @@ class BlogItemEditAdminView
         $txt = "Dodawanie wpisu blog";
         if ($id != 0)
         {
+            
             $blogItem->LoadById($id);
             $txt = "Edycja wpisu blog";
         }
@@ -60,7 +61,8 @@ class BlogItemEditAdminView
         $date = $form->addElement('date', 'data', 'Data', $dateOptions);        
         //private $categoryName;
         $txtCategory = $form->addElement('text', 'txtCategory', 'Kategoria',array('size' => 90, 'maxlength'=> 255));                
-
+        
+        $contentIsLink = $form->addElement('checkbox', 'contentIsLink', "Treść jest linkiem", null, null);
         
         
         $form->addElement('reset', 'btnReset', 'Wyczyść');
@@ -69,7 +71,12 @@ class BlogItemEditAdminView
         $myForm->setStyle(2);
 
         if ($form->validate())
-        {           
+        {   
+            
+            if($valId->GetValue()!=0)
+            {
+                $blogItem->LoadById($id);            
+            }
             
             $blogItem->SetCategory($txtCategory->GetValue());
             
@@ -84,6 +91,15 @@ class BlogItemEditAdminView
             $blogItem->SetHeadline($txtHeadline->GetValue());
             $blogItem->SetTitle($txtTitle->GetValue());
             $blogItem->SetName($txtName->GetValue());
+            if ($contentIsLink->GetValue())
+            {
+                $blogItem->SetContentIsLink(1);
+            }
+            else
+            {
+                $blogItem->SetContentIsLink(0);
+            }
+            
             if($blogItem->Save())
             {                
                 $module = new ModulesMgr();
@@ -125,6 +141,8 @@ class BlogItemEditAdminView
                 $txtHeadline->setValue($blogItem->GetHeadline());
                 $txtTitle->setValue($blogItem->GetTitle());
                 $txtName->setValue($blogItem->GetName());
+                
+                $contentIsLink->SetValue($blogItem->GetContentIsLink()==1);
                 
             }
             

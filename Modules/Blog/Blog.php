@@ -60,25 +60,25 @@ class Blog  extends moduleTemplate
         else if($actionName == 'UpdateBlogItemAdmin')
         {
             $logItemObj = new BlogItem();
-            
-            if(isset($_POST["id"]))
+            $id = 0;
+            if(isset($_REQUEST["id"]))
             {
-                $logItemObj->SetId($_POST["categoryId"]);
+                $id = $_REQUEST["id"];
             }
-            $logItemObj->SetCategoryId($_POST["categoryId"]);
+            /*$logItemObj->SetCategoryId($_POST["categoryId"]);
             $logItemObj->SetContent($_POST["content"]);
             $logItemObj->SetDate($_POST['date']);
             $logItemObj->SetHeadline($_POST['headline']);
             $logItemObj->SetName($_POST['name']);
-            $logItemObj->SetTitle($_POST['title']);
+            $logItemObj->SetTitle($_POST['title']);*/
+            $logItemObj->Load($id);
             
-            $this->AddBlogItemAdmin($logItemObj);
+            return "add3";//$this->AddBlogItemAdmin($logItemObj);
         }
         else if ($actionName == 'GetBlogItem')
         {           
             
-            $name = strtolower($varArray[0]);
-            
+            $name = strtolower($varArray[0]);            
             return $this->GetBlogItem($name);            
         }
         else if ($actionName == 'GetBlogItems')
@@ -106,7 +106,16 @@ class Blog  extends moduleTemplate
     
     private function AddBlogItemAdmin($logItemObj)
     {
-        return $this->blogController->AddBlogItem($logItemObj);
+        if ($logItemObj->id == 0)
+        {
+            
+            return "add";//return $this->blogController->AddBlogItem($logItemObj) + "add";
+        }
+        else
+        {
+            
+            return "adit";//return $this->blogController->UpdateBlogItem($logItemObj)+"edit";
+        }
     }
     
     private function DeleteBlogAdmin($id)

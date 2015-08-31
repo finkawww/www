@@ -30,7 +30,7 @@ class BlogItemsAdminListView
         $modules = new ModulesMgr();
         $modules->loadModule('BlogRouting');
         $action = $modules->getModuleActionIdByName('AddBlogItemAdmin');
-        $editAction = $modules->getModuleActionIdByName('EditBlogItemAdmin');
+        $editAction = $modules->getModuleActionIdByName('UpdateBlogItemAdmin');
         $delAction = $modules->getModuleActionIdByName('DeleteBlogItemAdmin');
         
         unset($modules);
@@ -59,12 +59,12 @@ class BlogItemsAdminListView
         $realListGrid->addColumn("title", 'Tytuł', 80, false, false, 'left');        
     	$realListGrid->addColumn('categoryName', 'Kateogria', 150, false, false,  'left');
     	$realListGrid->addColumn("headline", 'Nagłówek', 250, false, false, 'left');            	
-    	$realListGrid->addColumn("id", "", 200, true, false, 'right');
-    	$realListGrid->enabledDelAction($delAction);
+    	$realListGrid->addColumn('id', '', 10, true, false, 'right');
+        $realListGrid->enabledDelAction($delAction);
     	$realListGrid->enabledEditAction($editAction);
     	
     	$html .= $realListGrid->renderHtmlGrid(1);
-    	echo "1";
+    	
         $html .= '</td></tr>';
     	$html .= '<tr><td align="left"></td><td align="right">';
     	$addTopButton = new button(buttonAddIcon, 'Dodaj wpis', $action, $galeriaId);
