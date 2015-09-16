@@ -2054,4 +2054,3 @@ class HTML_QuickForm_Error extends PEAR_Error {
 
     // }}}
 } // end class HTML_QuickForm_Error
-?>

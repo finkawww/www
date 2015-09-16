@@ -72,4 +72,3 @@ class adminLog
 		//TODO Dorobic czyszczenie loga
 	}
 }
-?>

@@ -2,13 +2,13 @@
 /*
 -----------------------
 Module xmlParser
-Author: P. Brodziñski
+Author: P. Brodziï¿½ski
 Created: 21.08.2007
 Mod: 21.08.2007
 -----------------------
 */  
 
-//XXX !!!!Na razie zarzucone, aplikacja bêdzie wykorzystywaæ SimpleXML
+//XXX !!!!Na razie zarzucone, aplikacja bï¿½dzie wykorzystywaï¿½ SimpleXML
 /*include '../Includes/paths.inc.php';
 
 class xmlParser
@@ -29,7 +29,7 @@ class xmlParser
 			$this->docXml = new DOMDocument();
 			$this->docXml->load($this->xmlFile);
 			//if (!$xmlObject = DOMDocument::load($this->xmlFile))
-		//		throw new Exception('Nie mo¿na za³adowaæ pliku '.$this->xmlFile);
+		//		throw new Exception('Nie moï¿½na zaï¿½adowaï¿½ pliku '.$this->xmlFile);
 		}
 	}
 	public function GetElementByTagName($name)
@@ -38,4 +38,3 @@ class xmlParser
 	}
 	
 }*/
-?>

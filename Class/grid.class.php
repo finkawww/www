@@ -849,4 +849,3 @@ class gridRenderer extends gridSettings
 	}
 }
 
-?>

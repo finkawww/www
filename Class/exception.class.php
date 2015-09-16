@@ -51,4 +51,3 @@ class ExceptionClass
 	//	$e->GetMessage().'\n'.$e->getCode().'\n'.$e->getFile().'\n'.$e.getTrace();
 	}
 }
-?>

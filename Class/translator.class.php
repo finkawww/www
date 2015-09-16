@@ -100,4 +100,3 @@ http://www.eioba.pl/a74722/simplexml_nadchodzi
  		return $result;
  	}
  }
-?>

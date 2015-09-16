@@ -50,4 +50,3 @@ class mySmarty extends Smarty
 		$this->caching = 0;
 	}
 }
-?>
