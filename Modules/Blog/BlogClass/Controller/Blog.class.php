@@ -30,11 +30,11 @@ class Blog
         
         if ($category == "") //admin
         {
-            $query = "SELECT id FROM blogitems ORDER BY categoryName, itemdate";
+            $query = "SELECT id FROM blogitems ORDER BY itemdate desc";
         }
         else
         {
-            $query = "SELECT id FROM blogitems WHERE categoryName='$category' ORDER BY itemdate";
+            $query = "SELECT id FROM blogitems WHERE categoryName='$category' ORDER BY itemdate desc";
         }
                 
         $dbInt = DBSingleton::GetInstance();                

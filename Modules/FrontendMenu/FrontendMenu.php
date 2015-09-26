@@ -259,5 +259,3 @@ class FrontendMenu extends moduleTemplate
 	
 	//-----------Metody prytwatne - pomocnicze
 }
-
-?>

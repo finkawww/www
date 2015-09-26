@@ -326,7 +326,9 @@ class menuRenderer
 
 			$menuItem->child = array();
 			while ($childItem = $query_child->fetchRow(DB_FETCHMODE_ASSOC)){
-				$childId = $childItem['id'];				
+				$childId = $childItem['id'];
+
+				
 				$second_parent_id = $childId;
 				$sql_second_child = "SELECT id, Name, ShortName, Fk_PageId, Fk_ParentMenuItem, `Index`, grupa,MenuLinkText  FROM `cmsMenu` WHERE FK_ParentMenuItem = $second_parent_id 	AND Active = 'T' ORDER BY `Index`";
 				$query_second_child = $this->dbInt->ExecQuery($sql_second_child);
@@ -625,3 +627,4 @@ class menuRenderer
 		return $result;
 	}
 }
+?>

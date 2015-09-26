@@ -109,3 +109,4 @@ class dialog
 			echo $result;
 	}
 }
+?>

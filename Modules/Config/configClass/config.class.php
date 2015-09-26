@@ -545,4 +545,3 @@ class configClass
     	return $result;
 	}
 }
-?>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 //klaa kontener na potrzeby wyswieltnia Frontend
 final class AktualnosciItem
@@ -452,4 +452,3 @@ class AktualnosciClass
 			return $this->Show('full');
 		}
 }
-?>

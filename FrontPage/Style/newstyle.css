@@ -1,0 +1,742 @@
+﻿@CHARSET "UTF-8";
+
+body {
+	background-color:white;
+	padding:0;
+	margin:0;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding:0;
+	width: 1000px;
+	background: #ffffff;
+}
+
+/* LOGO + FACEBOOK */
+
+#logo {
+	margin-top:10px;
+	float:left;
+	width:100%;
+}
+
+#main-logo {
+	float:left;
+	text-align:left;
+	width:850px;
+	padding:0;
+	margin:0;
+}
+
+#facebook-top {
+	float:left;
+	text-align:right;
+	width:150px;
+	padding:0;
+	margin: 20px 0 0;
+	
+}
+
+/* MENU GŁÓWNE + STATUS KOSZYKA */
+
+#menu-box {
+	width:1000px;
+	float:left;
+	margin-top:10px;
+}
+
+#topmenu {
+	color: #000000;
+	width: 920px;
+	float: left;
+	border: 0px solid #ccc;
+	height: 30px;
+	text-align: left;
+}
+
+#menu {
+	list-style-type:none;
+	display:inline-block;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+#menu > li {
+	float:left;
+}
+
+a.inactiveMenu {
+	color: #bc010a;
+    font-family: Tahoma;
+    font-size: 17px;
+    margin: 8px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a.activeMenu {
+    color: #474747;
+    font-family: Tahoma;
+    font-size: 17px;
+    margin: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+#topcart {
+	float:left;
+	width:80px;
+	padding:0;
+	margin:0;
+}
+
+/* SLIDER NA STRONIE GŁÓWNEJ + BOX KONTAKTOWY OBOK  SLIDERA */
+
+#slider-box {
+	width:100%;
+	float:left;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+
+#slider {
+	float:left;
+	width:80%;
+	margin:0;
+	padding:0;
+}
+
+#slider-kontakt {
+	float:left;
+	width:19%;
+	margin:0;
+	padding:0 0 0 1%;
+}
+
+#banerSlider > a {
+	height:290px !important;
+}
+
+
+.font_sm {
+    background-color: #d6e4e9;
+    border: 0 solid #000000;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 3%;
+    text-align: center;
+    vertical-align: middle;
+	width:94%;
+}
+
+/* CONTENT */
+
+#content {
+	width:100%;
+	margin:0;
+	padding:0;
+	float:left;
+	background:white;
+}
+
+#img-boxes {
+	float:left;
+	padding:0;
+	width:1000px;
+	margin-top:10px;
+}
+
+#img-boxes img {
+	width: 245px !important;
+}
+
+#text-boxes {
+	float:left;
+	padding:0;
+	margin:0;
+	width:1000px;
+	margin-top:15px;
+}
+
+#text-box-left  {
+	width:49%;
+	float:left;
+}
+
+#text-box-right {
+    float: left;
+    margin-left: 2%;
+    width: 49%;
+}
+
+.cennik_header_DOS {
+	background-color: #d6e4e9;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 20px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+span.granat {
+	clear: both;
+    color: #006097;
+    display: block;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 20px !important;
+    width: 100%;
+	margin-bottom:10px;
+}
+
+
+div.font {
+    color: #222121 !important;
+    font-family: Tahoma !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+#partners {
+	float:left;
+	margin-top:10px;
+	text-align:center;
+	width:100%;
+}
+
+#partners img {
+	width:97% !important;
+}
+
+/* DOLNE MENU */
+
+#bottomMenu {
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+A.menuItem {
+    color: #222121;
+    font-family: Tahoma;
+    font-size: 14px;
+    margin: 0;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+A.menuItem:hover {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: #e30606;
+	margin: 5px;
+}
+
+A.menuItem:visited {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: #222121;
+	margin: 5px;
+}
+
+#bottom-wrap {
+	float:left;
+	width:1000px;
+	margin-top:20px;
+}
+
+div.granat {
+	float:left;
+    color: #006097;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+	margin-left:30px;
+}
+
+div.granat-bottom {
+	float:left;
+    color: #006097;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+	margin-left:30px;
+}
+
+div.fb-like-box {
+	float:left;
+	margin-left:20px;
+}
+
+#payment-img {
+	float:left;
+	width:1000px;
+}
+
+/* PODSTRONY - PROMOCJE */
+#left-side {
+	float:left;
+	width:21%;
+	margin-top:25px;
+	padding:0;
+}
+
+#promo-content {
+	float:left;
+	width:100%;
+	padding:0;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+.promo-font_sm {
+    background-color: #d6e4e9;
+    border: 0 solid #000000;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 3%;
+    text-align: center;
+    vertical-align: middle;
+	width:94%;
+}
+
+.promo-font_kontakt {
+	background-color: #d6e4e9;
+    border: 0 solid #000000;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: 5px;
+    padding: 3%;
+    text-align: center;
+    vertical-align: middle;
+	width:94%;
+}
+
+div.promo-font {
+    color: #222121 !important;
+    font-family: Tahoma !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+div.bordo {
+    color: #bc010a !important;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+}
+
+.promo-img {
+	float:left;
+	margin:15px;
+}
+
+.promo-text-box {
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+.promo-font p {
+	text-align:justify;
+}
+
+div.promo-granat {
+	float:left;
+    color: #006097;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+}
+
+
+/* PODSTRONY - LEWE MENU  */
+
+table.leftMenuContainer {
+    background: #d6e4e9 none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
+	margin-bottom:15px;
+}
+
+a.activeMenuLeft {
+    color: #222121;
+    font-family: Tahoma;
+    font-size: 14px;
+    margin: 5px;
+}
+
+a.inactiveMenuLeft {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: bold;
+	color: #bc010a;
+	margin: 10px;
+} 
+
+span.activeMenu {
+    color: #454545;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* PODSTRONY - BAZA WIEDZY */
+
+.baza div.font_kontakt {
+    background-color: #d6e4e9;
+    border: 0 solid #113aa3;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.baza div.granat {
+	float:none;
+	margin:0;
+}
+
+div.baza-top-font {
+    color: #222121 !important;
+    font-family: Tahoma !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+	margin-bottom:25px;
+	width:96%;
+}
+
+.baza-text-box {
+	width:100%;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#baza-left-column {
+	float:left;
+	width:48%;
+	padding:0;
+	margin-right:2%;
+}
+
+#baza-right-column {
+	float:left;
+	width:48%;
+	padding:0;
+	margin-left:2%;
+}
+
+.baza-title {
+	float:left;
+    color: #006097;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+	background-color: #d6e4e9;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 20px;
+    padding: 6px 10px;
+    text-align: center;
+	width:90%;
+	margin-bottom:3px;
+}
+
+.baza-font {
+    color: #222121 !important;
+    font-family: Tahoma !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+.baza-font-img {
+	width:100%;
+	text-align:center;
+	height:55px;
+}
+
+/* OFERTA */
+
+
+div.font_sm_left_small {
+    background-color: #d6e4e9;
+    border: 0 solid #000000;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 13px;
+    list-style-type: square;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+div.font_sm_left {
+    background-color: #d6e4e9;
+    border: 0 solid #000000;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+A.jump {
+    color: blue;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+
+A.menuItem {
+    color: #222121;
+    font-family: Tahoma;
+    font-size: 14px;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+table.rightMenuContainer {
+    background: #d6e4e9 none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    border-radius: 10px 5px 10px 10px;
+    padding: 23px;
+    width: 210px;
+}
+
+
+a.activeMenuLeft {
+    color: #222121;
+    font-family: Tahoma;
+    font-size: 14px;
+    margin: 5px;
+}
+
+
+.oferta table.leftMenuContainer {
+    background: #d6e4e9 none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 3px;
+    width: 210px;
+}
+
+.oferta div.font_kontakt {
+    background-color: #d6e4e9;
+    border: 0 solid #113aa3;
+    border-radius: 10px;
+    color: #006097;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.oferta div.granat {
+	float:none;
+	margin:0;
+}
+
+.oferta-main div.granat {
+	float:none;
+	margin:0;
+}
+
+h1 {
+    color: #bc010a !important;
+    font-family: Tahoma !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 16px !important;
+}
+
+/* FAQ */
+
+A.faq {
+    color: #484848;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.cennik_header_WIN {
+    background-color: #d3e9f8;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 30px;
+    padding: 4px;
+    text-align: center;
+}
+
+/* SUBMENU */
+
+.submenu {
+	display:none;
+	margin:0;
+	padding:0 10px;
+	position:absolute;
+	z-index:5;
+	background-color: #ffffff;
+	list-style-type:none;
+	border-radius:10px 10px 10px 10px;
+	max-width: 668px;
+}
+
+.submenu li a {
+	display:block;
+	margin:0;
+	padding:5px 0;
+}
+
+
+.submenu a:hover {
+	color: #bc010a;
+}
+
+#menu li:hover ul {
+	display:block;
+}
+
+.next-submenu {
+	display:none;
+	margin:0;
+	padding:0;
+	background-color: #ffffff;
+	list-style-type:none;
+	border-radius:10px 10px 10px 10px;
+}
+
+.submenu a {
+ font-size:12px;
+}
+
+.next-submenu a {
+ font-size:13px;
+}
+
+.next-submenu > li {
+	border-top: 1px solid black;
+}
+
+
+.submenu-header {
+	font-size:13px;
+	font-weight:bold;
+}
+
+/* PODSTRONA SEO */
+
+#podstrona {
+	margin-top:20px;
+}
+
+#podstrona p {
+	text-align:justify;
+}
+
+span.activeMenu {
+	margin:0;
+	font-weight: normal;
+}
+
+#menu > li:first-child > a {
+	margin:0 0 0 5px;
+}
+
+.submenu > li {
+    float: left;
+    padding: 5px 0;
+    text-align: left;
+    width: 290px;
+}
+
+@media screen and (max-width: 480px) {
+    #wrapper {
+        max-width:100%;
+    }
+	
+	#main-logo {
+		width:100%;
+	}
+	
+	#main-logo img {
+		width:100%;
+	}
+	
+	#facebook-top {
+		width:100%;
+		text-align:center;
+	}
+	
+	#menu-box {
+		width:100%;
+		height: 200px;
+	}
+	
+	#topmenu {
+		width:100%;
+	}
+	
+	#menu > li {
+		float:none;
+	}
+}

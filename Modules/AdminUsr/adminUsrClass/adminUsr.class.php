@@ -981,5 +981,3 @@ class adminUsrClass
 
 	}
 }
-
-?>

@@ -117,4 +117,3 @@ class Aktualizacje extends moduleTemplate
   	}
   	
 }
-?>

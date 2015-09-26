@@ -22,3 +22,4 @@
   	abstract public function executeAction($actionName, $l, $varArray);
   }
   
+?>
