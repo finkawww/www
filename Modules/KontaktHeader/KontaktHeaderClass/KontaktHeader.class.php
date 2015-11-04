@@ -27,7 +27,7 @@ class KontaktHeaderClass
 	{
 		
 		$nazwa = htmlspecialchars($_GET["nazwa"]);
-		$nrTel = htmlspecialchars($_GET["nrtel"]);
+		$nrTel = htmlspecialchars($_GET["nrTel"]);
 		$email = htmlspecialchars($_GET["email"]);
 		$pytanie = htmlspecialchars($_GET["pytanie"]);
 		$msg="<html>
