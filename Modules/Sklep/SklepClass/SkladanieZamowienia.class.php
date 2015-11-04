@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
  1. Zloz zamowienie (function ZlozZamowienie)
  a) Pokaz formularz zamowiebnia - dane osobowe, ekran dostawy, platnosc, uwagi

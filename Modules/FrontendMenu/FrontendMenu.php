@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /**
 * Moduł MenuFrontend służy do zarządzania menu dla strony wynikowej.
@@ -259,3 +259,5 @@ class FrontendMenu extends moduleTemplate
 	
 	//-----------Metody prytwatne - pomocnicze
 }
+
+?>

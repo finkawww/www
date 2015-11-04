@@ -26,7 +26,7 @@
 			{if $activeMenu->level eq 1}
 			
 			{elseif $activeMenu->level eq 2}
-			<span minwidth="100px" align="right"><img src="/../Cms/Files/Img/corner-dots.gif" border="0"></span>
+			<span minwidth="100px" align="right"><img src="/Cms/Files/Img/corner-dots.gif" border="0"></span>
 		{/if}
 		
 		{if $menuItem->sel eq 1}

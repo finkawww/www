@@ -2,7 +2,7 @@
     {foreach from=$blogItemsArray item=blogItem name=blogItemsArray}
     <div class="blogItem">
         <div class="blogItemHeader">
-            <h1>{$blogItem->GetTitle()}</h1>
+            <h2 class="blog-list-header"><a href="/{$blogItem->GetContent()}">{$blogItem->GetTitle()}</a></h2>
             <small>Data publikacji: {$blogItem->GetDate()}</small>
         </div>
         <div class="blogItemContent">
@@ -11,9 +11,9 @@
         <div class="blogItemFooter">
            
             {if ($blogItem->GetContentIsLink())}
-               <small><a href="/{$blogItem->GetContent()}">Więcej..</a></small>
+               <small><a rel = "nofollow" href="/{$blogItem->GetContent()}">Więcej..</a></small>
             {else}
-               <small><a href="/?a={$itemViewAction}&name={$blogItem->GetName()}{$mpId}">Więcej..</a></small>
+               <small><a rel = "nofollow" href="/?a={$itemViewAction}&name={$blogItem->GetName()}{$mpId}">Więcej..</a></small>
             {/if}
            
         </div>

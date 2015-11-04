@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-08-03 11:00:39
+<?php /* Smarty version 2.6.17, created on 2015-10-27 09:09:28
          compiled from menuBottom.tpl */ ?>
 <hr/>
 <?php $_from = $this->_tpl_vars['menuBottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['menuBottom'] = array('total' => count($_from), 'iteration' => 0);
@@ -10,11 +10,11 @@ if ($this->_foreach['menuBottom']['total'] > 0):
 	<?php if ($this->_tpl_vars['menuItem']->sel == 1): ?>
 		<a class="menuItem" href="<?php echo $this->_tpl_vars['menuItem']->menuRenderText; ?>
 "><?php echo $this->_tpl_vars['menuItem']->caption; ?>
-</a>&nbsp;&nbsp;&nbsp;|
-	<?php else: ?>
+</a>&nbsp;&nbsp;&nbsp;<span id="kreska">| </span>	
+		<?php else: ?>
 		<a class="menuItem" href="<?php echo $this->_tpl_vars['menuItem']->menuRenderText; ?>
 "><?php echo $this->_tpl_vars['menuItem']->caption; ?>
-</a>&nbsp;&nbsp;&nbsp;|
+</a>&nbsp;&nbsp;&nbsp;<span id="kreska">| </span>
 	<?php endif; ?>
 	<?php endif; ?>
 <?php endforeach; endif; unset($_from); ?>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="TDokKsSymbol">
+		<xsd:annotation>
+			<xsd:documentation>Obowiązkowy, do 3 znaków, często wartość PK</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="3" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsRokMc">
+		<xsd:annotation>
+			<xsd:documentation>
+				Rok i miesiąc, liczba postaci yyyymm 
+				Obowiązkowe jest co najmniej jedno: rok i miesiąc albo data
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsData">
+		<xsd:annotation>
+			<xsd:documentation>
+				Data księgowania, Obowiązkowe jest co najmniej jedno: rok albo data
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="3" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsOpis">
+		<xsd:annotation>
+			<xsd:documentation>
+				Opis nieobowiązkowy
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	<xsd:simpleType name="TDokKsPozDokRodz">
+		<xsd:annotation>
+			<xsd:documentation>
+				Musi być tekst „I” (inne)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value = "I" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsOperStw">
+		<xsd:annotation>
+			<xsd:documentation>
+				Pierwsza litera:
+				N-nabycie
+				A-aktualizacja
+				Z-amortyzacja
+				Y-amortyzacja nie stanow. kosztów
+				S-skreślenie
+				R-kapitał rezerwowy z aktualizacji
+					lub koszt własny przy skreśleniu
+				W-zwiększenie wartości
+				M-zmniejszenie wartości
+				T-zmniejszenie wartości 
+					(księgowanie różnicy)
+					
+				Druga litera – M lub W (ma lub winien)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="([NAZYSRWMT]{1}[MW]{1})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsTytul">
+		<xsd:annotation>
+			<xsd:documentation>
+				Tytuł dokumentu - opcjonalne
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string" />		
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsPozOpis">
+		<xsd:annotation>
+			<xsd:documentation>
+				Opis nieobowiązkowy
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsPozKontoWn">
+		<xsd:annotation>
+			<xsd:documentation>
+				Konto WN (wartość Tagu Origid wewnątrz Tagu KONTO). Obowiązkowe jest albo WN, albo MA (mogą być obydwa)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" /> 
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsPozKontoMa">
+		<xsd:annotation>
+			<xsd:documentation>
+				Konto "Ma"
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" /> 
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKsPozWartosc">
+		<xsd:annotation>
+			<xsd:documentation>Kwota pozycji</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+
+</xsd:schema>

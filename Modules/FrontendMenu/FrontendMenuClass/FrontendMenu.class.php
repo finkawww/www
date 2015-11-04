@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Klasa obsługi FrontMenu
  *
@@ -965,4 +965,4 @@
 	}
  	
  }
- 
+ ?>

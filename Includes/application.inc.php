@@ -3,7 +3,7 @@ if (!DEFINED('rootPath'))
    DEFINE('rootPath', '/home4/finka/public_html/');
 
 if (!DEFINED('dnsPath'))
-   DEFINE('dnsPath', 'http://dev.finka.pl/');
+   DEFINE('dnsPath', 'http://finka.pl/');
 
 if (!DEFINED('buttonAddIcon'))
 	DEFINE('buttonAddIcon', dnsPath.'/Cms/Files/Img/add-16x16.png');

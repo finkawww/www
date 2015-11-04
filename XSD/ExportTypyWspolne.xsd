@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="TCommaCurr15">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[-+]?([0-9]){0,13}(\,[0-9]{1,2})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TCommaCurr12">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[-+]?([0-9]){0,10}(\,[0-9]{1,2})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	<xsd:simpleType name="TCommaCurr8">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[-+]?([0-9]){0,6}(\,[0-9]{1,8})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TCommaCurr6">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[-+]?([0-9]){0,4}(\,[0-9]{1,2})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	<xsd:simpleType name="TId">
+		<xsd:restriction base="xsd:positiveInteger" /> 
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TOrigId">
+		<xsd:annotation>
+			<xsd:documentation>
+				Identyfikator rekordu, obowiązkowe. W razie ponownego przysłania danych tego samego konta IORIGID musi mieć tę samą wartość.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:positiveInteger" /> 
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TExtSrcId">
+		<xsd:annotation>
+			<xsd:documentation>
+				Identyfikator zewnętrzny, jeśli dane klienta pochodzą z jeszcze innego programu niż wysyłający
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" /> 
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TExtSrcOrigId">
+		<xsd:annotation>
+			<xsd:documentation>
+				Identyfikator zewnętrzny, jeśli dane klienta pochodzą z jeszcze innego programu niż wysyłający
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" /> 
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TExtSrcData">
+		<xsd:annotation>
+			<xsd:documentation>
+				Unikalne oznaczenie bazy źródłowej, tylko jeśli występuje EXTSRCID
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"> 
+			<xsd:maxLength value="30" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TSrcSystem">
+		<xsd:annotation>
+			<xsd:documentation>
+				Oznaczenie programu źródłowego, tylko jeśli występuje EXTSRCID
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"> 
+			<xsd:maxLength value="30" />
+		</xsd:restriction>
+	</xsd:simpleType>		
+	
+	<xsd:simpleType name="TExtSrcSystem">
+		<xsd:annotation>
+			<xsd:documentation>
+				Oznaczenie programu źródłowego, tylko jeśli występuje EXTSRCID
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"> 
+			<xsd:maxLength value="30" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDosKod">
+		<xsd:annotation>
+			<xsd:documentation>
+				Pola używane tylko w danych pochodzących z programów FINKA dla Dos
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>		
+	
+	<xsd:simpleType name="TDosBufKod">
+		<xsd:annotation>
+			<xsd:documentation>
+				Pola używane tylko w danych pochodzących z programów FINKA dla Dos
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>		
+	
+	<xsd:simpleType name="TFormattedDate">
+		<xsd:annotation>
+			<xsd:documentation>
+				Data formatowana np 12.06.2010
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="([0-9][0-9])\.([0-1][0-9])\.([0-9][0-9][0-9][0-9])"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	
+</xsd:schema>

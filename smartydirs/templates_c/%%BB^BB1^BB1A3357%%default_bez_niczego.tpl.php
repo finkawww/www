@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.17, created on 2015-08-04 10:10:27
+<?php /* Smarty version 2.6.17, created on 2015-10-27 11:12:23
          compiled from default_bez_niczego.tpl */ ?>
 <!DOCTYPE HTML>
 <html lang="PL-pl">
@@ -20,13 +20,13 @@
 		<link rel="stylesheet" type="text/css" href="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.css" /> 
     	<title><?php echo $this->_tpl_vars['title']; ?>
 aaa</title>
+		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scripts.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/prototype.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/scriptaculous.js?load=effects,builder"></script>
 		<script type="text/javascript" src="/FrontPage/JS/lightbox.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="/FrontPage/JS/jquery.cycle.all.pack.js"></script>
 		<script type="text/javascript" src="/FrontPage/JS/cookies.js"></script>
 	</head>
 	<body>

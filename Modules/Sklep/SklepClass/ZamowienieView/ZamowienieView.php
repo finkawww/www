@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*require_once 'HTML/QuickForm/Controller.php';
  class ActionProcess extends HTML_QuickForm_Action

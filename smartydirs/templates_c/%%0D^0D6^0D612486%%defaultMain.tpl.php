@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.17, created on 2015-08-14 12:09:23
+<?php /* Smarty version 2.6.17, created on 2015-11-02 14:19:42
          compiled from defaultMain.tpl */ ?>
 ﻿<!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 	<!--[if IE 7]><html lang="pl" class="ie7"><![endif]-->
 	<!--[if IE 8]><html lang="pl" class="ie8"><![endif]-->
 	<!--[if IE 9]><html lang="pl" class="ie9"><![endif]-->
@@ -22,6 +22,7 @@
 		<meta name=viewport content="width=device-width, initial-scale=1">
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
     	<link rel="stylesheet" href="/FrontPage/Style/newstyle.css" type="text/css" />
+    	<link rel="stylesheet" href="/FrontPage/Style/responsive.css" type="text/css" />
     	<title><?php echo $this->_tpl_vars['title']; ?>
 </title>
 		<script type="text/javascript" src="/FrontPage/JS/jquery-1.7.1.min.js"></script>
@@ -69,9 +70,9 @@
 		<div id="slider-box">
 			<div id="slider">
 				<div id="banerSlider">
-					<a href="./Promocje.htm" rel="nofollow"><img src="/FrontPage/Files/Img/baner_nowe_firmy_big.png" width="800" border="0"/></a>		
-					<a href="./Programy.htm" rel="nofollow"><img src="/FrontPage/Files/Img/baner_gora1.jpg" width="800" border="0"/></a>
-					<a href="./WersjeProbne.htm" rel="nofollow"><img src="/FrontPage/Files/Img/baner_gora3.jpg" width="800" border="0"/></a>
+					<a href="/promocje/" rel="nofollow"><img src="/FrontPage/Files/Img/promo_RABAT 15.png" width="800" border="0"/></a>		
+					<a href="/oferta/" rel="nofollow"><img src="/FrontPage/Files/Img/baner_gora1.jpg" width="800" border="0"/></a>
+					<a href="/wersje-probne/" rel="nofollow"><img src="/FrontPage/Files/Img/baner_gora3.jpg" width="800" border="0"/></a>
 				</div>
 			</div>
 			<div id="slider-kontakt">
@@ -96,8 +97,12 @@
 		</div>
 	</div>
 	<?php echo '
-		<script type="text/javascript">$(\'#banerSlider\').cycle({fx:\'fade\',random:1,delay:-300,width:800,height:266});</script> 
+		<script type="text/javascript">$(\'#banerSlider\').cycle({fx:\'fade\',random:1,delay:-300,width:800,height:266, fit:1});</script> 
 	'; ?>
 
-	</body>
+	<script type='text/javascript'>
+		var src = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+		new Image().src = src+'adsearch.adkontekst.pl/deimos/tracking/?tid=103377&reid=1387&expire=720&nc='+new Date().getTime();
+	</script>
+</body>
 </html>

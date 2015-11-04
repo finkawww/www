@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * 
  * Modul zarządzania użytkownikami systemu CMS

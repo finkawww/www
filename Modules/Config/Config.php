@@ -137,3 +137,4 @@ class Config extends moduleTemplate
   		return $this->objConfig->printLangGrid();
   	}  	
 }
+?>

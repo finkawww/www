@@ -10,9 +10,9 @@ ini_set('display_errors',1);
 require_once('DB.php');
 
 if (!DEFINED('rootPath'))
-   DEFINE('rootPath', '/home4/finka/public_html/dev');
+   DEFINE('rootPath', '/home4/finka/public_html/');
 
-require_once '/home4/finka/public_html/dev/Includes/application.inc.php';
+require_once '/home4/finka/public_html/Includes/application.inc.php';
 
 
 require_once rootPath.'/Modules/Sklep/SklepClass/PrzegladanieKoszyka.class.php';

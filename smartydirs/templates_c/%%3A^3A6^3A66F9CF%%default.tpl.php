@@ -1,6 +1,6 @@
-<?php /* Smarty version 2.6.17, created on 2015-08-06 14:19:45
+<?php /* Smarty version 2.6.17, created on 2015-10-27 11:00:29
          compiled from default.tpl */ ?>
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="PL-pl">
 	<head>
 		<meta charset="UTF-8">
@@ -117,6 +117,10 @@
 	'; ?>
 
 	</div>
-	</div>
+	</div><script type='text/javascript'>
+var src = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+new Image().src = src+'adsearch.adkontekst.pl/deimos/tracking/?tid=103377&reid=1387&expire=720&nc='+new Date().getTime();
+</script>
+
 	</body>
 </html>

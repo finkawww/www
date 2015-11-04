@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 //ta klasa sluz do zarzadzania modulami9 - to przez nia wywolujemy metody modulow (nazwa modulu, nazwa funkcji).
 //Klasa wykorzystuje bd do pozyskania informacji o modulach

@@ -1,0 +1,183 @@
+@media screen and (min-width: 480px) {
+	#menu {
+		display:block !important;
+	}
+	
+	#menu-box {
+		height: auto !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	body {
+		padding: 7px;
+	}
+
+    #wrapper {
+        max-width:100%;
+    }
+	
+	#main-logo {
+		width:100%;
+	}
+	
+	#main-logo img {
+		width:100%;
+	}
+	
+	#facebook-top {
+		width:100%;
+		text-align:center;
+	}
+	
+	#mobile-button {
+		display:block;
+		float:left;
+		width:100%;
+		color:#065D94;
+		background-color:#D6E3E9;
+		height:40px;
+		border-radius:15px;
+		text-align:center;
+		line-height:40px;
+		font-weight:bold;
+	}
+	
+	#menu-box {
+		width:100%;
+		height: 40px;
+	}
+	
+	#topmenu {
+		width:100%;
+	}
+	
+	#menu {
+		display:none;
+	}
+	
+	#kreska {
+		display:none;
+	}
+	
+	#menu > li {
+		background-color: #d6e3e9;
+		border-radius: 15px;
+		float: none;
+		margin: 5px 0;
+		padding: 5px 0;
+	}
+	
+	#menu li:first-child {
+		margin-top: 45px;
+	}
+	
+	#menu li:hover ul {
+		display:none;
+	}
+	
+	#topcart {
+		display: none;
+	}
+	
+	#slider-box {
+		margin:5px 0;
+	}
+	
+	#slider {
+		width:100%;
+	}
+	
+	#banerSlider {
+		width:100% !important;
+		height: 100px !important;
+	}
+	
+	#banerSlider > a {
+		width: 100% !important;
+		height: 100px !important';
+	}
+	
+	#banerSlider img {
+		width: 100% !important;
+	}
+	
+	#slider-kontakt {
+		padding: 18% 10% 1% 10%;
+		width: 80%;
+	}
+	
+	#img-boxes {
+		width:100%;
+		text-align:center;
+	}
+	
+	#img-boxes img {
+		width:140px !important;
+	}
+	
+	.KontaktHeaderRow {
+		padding: 5px 0;
+	}
+	
+	#text-boxes {
+		width:100%;
+	}
+	
+	#text-box-left {
+		padding: 0 1%;
+		width: 98%;
+	}
+	
+	#text-box-left img {
+		width: 110px !important;
+	}
+	
+	#text-box-right {
+		padding: 2% 1%;
+		width: 98%;
+		margin: 0;
+	}
+	
+	#text-box-right a {
+		display:block;
+	}
+	
+	#partners {
+		padding: 0 1%;
+		width: 98%;
+	}
+	
+	#bottom-wrap {
+		width: 100%;
+		margin-top: 0;
+	}
+	
+	#payment-img {
+		width:100%;
+	}
+	
+	#payment-img img {
+		width:100%;
+	}
+	
+	#politykacookie {
+    height: auto !important;
+	position: static !important;
+	}
+	
+	#politykacookie > div {
+    width: 100% !important;
+	margin:0 !important;
+	}
+	
+	#bottomMenu .menuItem {
+		display:block;
+	}
+	
+	div.fb-like-box {
+		margin:0;
+	}
+	
+}

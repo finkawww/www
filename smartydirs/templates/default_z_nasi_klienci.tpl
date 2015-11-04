@@ -88,7 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div class="font_sm_left_small">
 						<center>
 						<big><b>Aktualne promocje</b><big><br/>	<br/>
-						<a href="/promocje/"><img src="/FrontPage/Files/Img/baner_nowe_firmy.png" border="0" hspace="0" vspace="0"></a>
+						<a href="/promocje/"><img src="/FrontPage/Files/Img/baner_promocje_15.png" border="0" hspace="0" vspace="0"></a>
 						</center>
 						</div>
 					</td></tr>
@@ -116,7 +116,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	{literal}
 		<script type="text/javascript">$('#banerSlider').cycle({fx:'fade',random:1,delay:-300,width:800,height:266});</script> 
 	{/literal}
-	</body>
+	<script type='text/javascript'>
+var src = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+new Image().src = src+'adsearch.adkontekst.pl/deimos/tracking/?tid=103377&reid=1387&expire=720&nc='+new Date().getTime();
+</script>
+</body>
 </html>
 
 

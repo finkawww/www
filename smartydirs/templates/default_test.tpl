@@ -8,6 +8,7 @@
     	<META NAME="Robots" CONTENT="{$robots}" />
     	<META HTTP-EQUIV="Pragma" CONTENT="{$cache}" />
     	<META NAME="Description" CONTENT="{$desc}" />
+		<meta name=viewport content="width=device-width, initial-scale=1">
     	<link rel="shortcut icon" href="/images/ico/favico.ico" type="image/x-icon" />
     	<LINK REL="Stylesheet" HREF="/FrontPage/Style/style.css" TYPE="text/css" />
     	<TITLE>{$title}</TITLE>

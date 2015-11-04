@@ -183,3 +183,15 @@ function roundNumber(num, dec)
 	
 	return formattedRes;
 }
+
+$(document).ready(function(){
+	$('#mobile-button').click(function(){
+		$('#menu').slideToggle(300, function(){
+			var menu = $("#menu");
+			if(menu.is(':visible'))
+				$('#menu-box').css('height', '350px')
+			else
+				$('#menu-box').css('height', '40px')
+		});
+	});
+});

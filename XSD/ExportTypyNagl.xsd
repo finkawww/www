@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:simpleType name="TNaglProgramZrodlowy">
+		<xsd:annotation>
+			<xsd:documentation>Nazwa programu eksportującego. Przy kolejnych eksportach z tego samego zestawu danych pole to nie powinno się zmieniać.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30" />			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglUnikalneOznaczenieBazyDancyh">
+		<xsd:annotation>
+			<xsd:documentation>Oznaczenie unikalne np w stylu CLSID, przypisane do bazy źródłowej</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30" />			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglDataEksportu">
+		<xsd:annotation>
+			<xsd:documentation>Data dd.mm.yyyy</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglGodzinaEksportu">
+		<xsd:annotation>
+			<xsd:documentation>Godzina hh:mm:ss</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:time" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglNazwaFirmy">
+		<xsd:annotation>
+			<xsd:documentation>Skrócona nazwa firmy, której dane dotyczą</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200" />			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglRokObrotowy">
+		<xsd:annotation>
+			<xsd:documentation>Symbol roku np 2008</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:gYear" />			
+	</xsd:simpleType>	
+	
+	<xsd:simpleType name="TNaglUzytkownikEksportujacy">
+		<xsd:annotation>
+			<xsd:documentation>Login lub inne oznaczenie użytkownika</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30" /> 
+		</xsd:restriction>
+	</xsd:simpleType>
+		
+	<xsd:simpleType name="TNaglDataOd">
+		<xsd:annotation>
+			<xsd:documentation>Zakres dat, z jakich eksportowane są dokumenty</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglDataDo">
+		<xsd:annotation>
+			<xsd:documentation>Zakres dat, z jakich eksportowane są dokumenty</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TNaglDokumentWybrany">
+		<xsd:annotation>
+			<xsd:documentation>Rodzaj dokumentu np FV, DOK.KASOWE (znaczenie komentarzowe)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string" />	
+	</xsd:simpleType>
+	
+</xsd:schema>

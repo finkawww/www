@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 class adminUsrClass
 {
@@ -981,3 +981,5 @@ class adminUsrClass
 
 	}
 }
+
+?>

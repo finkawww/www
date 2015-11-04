@@ -1,7 +1,7 @@
 <?php
 include rootPath.'/Includes/frontPageSessionVars.php';
 if (!DEFINED('dnsPath'))
-   DEFINE('dnsPath', 'http://dev.finka.pl/');
+   DEFINE('dnsPath', 'http://finka.pl/');
 
 require_once(rootPath.'/Includes/frontPagePaths.inc.php');
 require_once(rootPath.'/Includes/db.conf.php');

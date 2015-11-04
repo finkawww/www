@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TKontrNazwa">
+		<xsd:annotation>
+			<xsd:documentation>
+				Nazwa kontrahenta, obowiązkowe. Może zawierać znaki nowego wiersza CR LF
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TKliKorNazwa">
+		<xsd:annotation>
+			<xsd:documentation>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="120"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TKontrNazSkrot">
+		<xsd:annotation>
+			<xsd:documentation>
+				Nazwa skrócona
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrNIP">
+		<xsd:annotation>
+			<xsd:documentation>
+				NIP, może zawierać kreski
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TKontrKliNIPStd">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TKontrRegon">
+		<xsd:annotation>
+			<xsd:documentation>
+				Regon
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="14"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrPesel">
+		<xsd:annotation>
+			<xsd:documentation>
+				Pesel
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="11"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrDowOsob">
+		<xsd:annotation>
+			<xsd:documentation>
+				Nr dowodu osobistego. Potrzebne tylko przy fakturach RR
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="12"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrWydPrzez">
+		<xsd:annotation>
+			<xsd:documentation>
+				Dowód wydany przez...
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrWydData">
+		<xsd:annotation>
+			<xsd:documentation>Data wydania dowodu</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrTel1">
+		<xsd:annotation>
+			<xsd:documentation>
+				Numer telefonu
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrTel2">
+		<xsd:annotation>
+			<xsd:documentation>
+				Numer telefonu 2
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrFax">
+		<xsd:annotation>
+			<xsd:documentation>
+				FAX
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrMail">
+		<xsd:annotation>
+			<xsd:documentation>e-mail</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="80"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrWWW">
+		<xsd:annotation>
+			<xsd:documentation>Adres WWW</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKontoB">
+		<xsd:annotation>
+			<xsd:documentation>Konto bankowe, może być z kreskami i spacjami</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="45"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrUwagi">
+		<xsd:annotation>
+			<xsd:documentation>Uwagi</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="550"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrUlica">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrNrDomu">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrNrLok">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKod">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="9"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrMiejsc">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="54"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrWojew">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKraj">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKliRabat">
+		<xsd:annotation>
+			<xsd:documentation>Typowy procent rabatu dla klienta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr6" />
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKliDebet">
+		<xsd:annotation>
+			<xsd:documentation>Dopuszczalny debet klienta w PLN</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr12" />
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKliTPlat">
+		<xsd:annotation>
+			<xsd:documentation>Typowy termin płatności klienta w dniach</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:nonNegativeInteger"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="TKontrKliStatus">
+		<xsd:annotation>
+			<xsd:documentation>
+				Litery oznaczające status kontrahenta: 
+					K-kontrahent, 
+					P-pracownik, 
+					Z-zleceniobiorca, 
+					W-właściciel/wspólnik, 
+					I-inna osoba 
+					Pole nieobowiązkowe, domyślnie przyjmowany jest status K.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="(([KPZWI]){0,5})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

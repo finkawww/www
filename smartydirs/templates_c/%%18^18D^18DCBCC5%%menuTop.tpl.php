@@ -1,5 +1,6 @@
-<?php /* Smarty version 2.6.17, created on 2015-08-17 10:12:18
+<?php /* Smarty version 2.6.17, created on 2015-10-26 16:22:38
          compiled from menuTop.tpl */ ?>
+<div id="mobile-button">MENU</div>
 <ul id="menu">
 <?php $_from = $this->_tpl_vars['menuTop']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['menuTop'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['menuTop']['total'] > 0):
@@ -10,7 +11,7 @@ if ($this->_foreach['menuTop']['total'] > 0):
 		<?php if ($this->_tpl_vars['menuItem']->parentMenu == NULL): ?>
 		<li><a class="activeMenu" href="<?php echo $this->_tpl_vars['menuItem']->menuRenderText; ?>
 "><?php echo $this->_tpl_vars['menuItem']->caption; ?>
-</a><span class="activeMenu"> |</span>
+</a><span class="activeMenu" id="kreska"> |</span>
 		<?php if ($this->_tpl_vars['menuItem']->child): ?>
 			<ul class="submenu">
 			<?php $_from = $this->_tpl_vars['menuItem']->child; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['childItem'] = array('total' => count($_from), 'iteration' => 0);

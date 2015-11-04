@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 //Nieuzywane
 $ddlDBDrop= "DROP DATABASE IF EXISTS ``";

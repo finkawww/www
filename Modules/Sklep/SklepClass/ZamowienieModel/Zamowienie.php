@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class ZamowienieItem
 {
 	public $idPozycji, $towarId, $ilosc, $iloscFirm, $iloscStanowisk, $wartoscPozycji, $wartoscPozycjiNetto,$procRabatu;

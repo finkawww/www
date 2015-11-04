@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class AdministracjaOferta
 {
 	private $oferta = null;

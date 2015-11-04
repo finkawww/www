@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 ------------------------------------
 Klasa dziedzicz�ca po Smarty.

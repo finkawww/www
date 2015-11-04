@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  *
  * Klasa config realizuje funcjonalność ustawień konfiguacyjnych strony.
@@ -545,3 +545,4 @@ class configClass
     	return $result;
 	}
 }
+?>

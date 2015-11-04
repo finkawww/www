@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class Klient
 {
 	private $imie, $nazwisko, $idKraj, $miasto, $ulica, $nrDomu, $nrMieszkania, 

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 //FIXME: Klasa do refaktiryzacji - formularze przenisc do widoku
 

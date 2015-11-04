@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	 <xsd:simpleType name="TDokRodz">
+		<xsd:annotation>
+			<xsd:documentation>Rodzaj dokumentu; S-sprzedaż, Z-zakup, I-inny, R - rachunek</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="S" />
+			<xsd:enumeration value="Z" />
+			<xsd:enumeration value="I" />
+			<xsd:enumeration value="K" />
+			<xsd:enumeration value="R" />
+		</xsd:restriction>
+	 </xsd:simpleType>
+	 
+	 <xsd:simpleType name="TDokUnia">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kod transakcji tylko dla DOKRODZ=S lub DOKRODZ=Z. W razie pominięcia domyślne jest Y dla zakupów i X dla sprzedaży.
+				Y - Zakup krajowy
+				K - Wewnątrzwspólnotowe nabycie towarów
+				F - Zakup usług uznanych za świadczone poza krajem 
+				L - Import usług
+				M - Nabycie towarów, gdy podatnikiem jest nabywca
+				N - Import spełniający warunki art 33a ustawy”
+				I - Import towarów spoza UE
+				X - Sprzedaż krajowa
+				B - Eksport towarów poza UE
+				C - Wewnątrzwspólnotowa dostawa towarów
+				D - Eksport usług
+				E - VAT należny od wewnątrzwspólnotowego nabycia towarów [tu uwaga: taki zapis jest tworzony automatycznie, zwykle się go nie przekazuje]
+				G - VAT należny od importu usług [uwaga jak dla E]
+				H - VAT należny od nabycia towarów, gdy podatnikiem jest nabywca [uwaga jak dla E]
+				P - Opodatkowane świadczenie nieodpłatne
+				R - Zakup RR
+				T - VAT marża
+				Z - Taxi
+				J - 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="Y" />
+			<xsd:enumeration value="K" />
+			<xsd:enumeration value="F" />
+			<xsd:enumeration value="L" />
+			<xsd:enumeration value="M" />
+			<xsd:enumeration value="N" />
+			<xsd:enumeration value="I" />
+			<xsd:enumeration value="J" />
+			<xsd:enumeration value="X" />
+			<xsd:enumeration value="B" />
+			<xsd:enumeration value="C" />
+			<xsd:enumeration value="D" />
+			<xsd:enumeration value="E" />
+			<xsd:enumeration value="G" />			
+			<xsd:enumeration value="H" />
+			<xsd:enumeration value="P" />
+			<xsd:enumeration value="R" />
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="Z" />
+		</xsd:restriction>
+	 </xsd:simpleType>
+	
+	<xsd:simpleType name="TDokNr">
+		<xsd:annotation>
+			<xsd:documentation>Numer dokumentu np. FV0001/AB/2008</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokNrEx">
+		<xsd:annotation>
+			<xsd:documentation>
+				Prefix i ew postfiks numeru, np. FV/AB, obowiązkowe dla wszystkich dokumentów prócz kasowych. 
+				Dokumenty z wspólnym DOKNR_EX mają współny sposób księgowania
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokOpis">
+		<xsd:annotation>
+			<xsd:documentation>
+				Opis zdarzenia gospodarczego; jeśli niepodany - możliwy do określenia w parametrach programu odbierającego
+				Dla dokumentów handlowych i ewidencji VAT maksymalna długość pola wynosi 60 znaków.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="100" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokPKWIU">
+		<xsd:annotation>
+			<xsd:documentation>				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name= "TDataDok">
+		<xsd:annotation>
+			<xsd:documentation>Data dokumentu, obowiązkowe</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokDataSprz">
+		<xsd:annotation>
+			<xsd:documentation>Data sprzedaży</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokDataKpr">
+		<xsd:annotation>
+			<xsd:documentation></xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokDataZak">
+		<xsd:annotation>
+			<xsd:documentation>Data zakupu</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokDataVat">
+		<xsd:annotation>
+			<xsd:documentation>Data obowiązku podatkowego VAT</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokPlat">
+		<xsd:annotation>
+			<xsd:documentation>Termin płatności (data), tylko dla RODZ=S lub Z</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKliId">
+		<xsd:annotation>
+			<xsd:documentation>
+				Identyfikator kontrahenta, odesłanie do tagu KONTRAHENCI, obowiązkowy dla RODZ=S lub Z
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKliOrigId">
+		<xsd:annotation>
+			<xsd:documentation>
+				Identyfikator kontrahenta, odesłanie do tagu KONTRAHENCI, obowiązkowy dla RODZ=S lub Z
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokMag">
+		<xsd:annotation>
+			<xsd:documentation>
+				Oznaczenie magazynu (nieobowiązkowe)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokMag2">
+		<xsd:annotation>
+			<xsd:documentation>
+				Oznaczenie drugiego magazynu (tylko dla MM)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokWartosc">
+		<xsd:annotation>
+			<xsd:documentation>
+				Wartość w PLN, obowiązkowe dla RODZ=S lub Z lub K
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokWartMag">
+		<xsd:annotation>
+			<xsd:documentation>
+				Wartość magazynowa (gdy dokument jest jednocześnie sprzedażą i wydaniem z magazynu)
+				Obowiązkowe jest podanie co najmniej jednej z kwot: WARTSC i/lub WARTMAG
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokWaluta">
+		<xsd:annotation>
+			<xsd:documentation>
+				3-literowe oznaczenie waluty, jeśli dokument dewizowy albo podany w dewizach i PLN
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="3" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKurs">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kurs waluty. Numeric z max. 8 cyframi po kropce.  
+				Dla walut o małej cenie wartość podzielona przez mnożnik, np. 100 JPY = 3,3913 PLN -> KURS=0.033913
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr8" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokWartoscDew">
+		<xsd:annotation>
+			<xsd:documentation>
+				Wartość w dewizach, obowiązkowe jeśli określono WALUTA
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokWartMagDew">
+		<xsd:annotation>
+			<xsd:documentation>
+				Wartość magazynowa w dewizach
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	 <xsd:simpleType name="TDokZaliczka">
+		<xsd:annotation>
+			<xsd:documentation>
+				Typ zaliczki
+				‘E’ dla faktury końcowej (po poprzednich zaliczkach)
+					lub zaliczki na 100% wartości
+					lub zaliczki dopełniającej do 100% 
+				‘A’ dla 1 zaliczkowej
+				'B' dla kolejnych zaliczek
+				'' Puste (lub brak Tagu) dla innych dokumentów
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="E" />
+			<xsd:enumeration value="A" />
+			<xsd:enumeration value="B" />
+			<xsd:enumeration value="" />			
+			<xsd:enumeration value=" " />			
+		</xsd:restriction>
+	 </xsd:simpleType>
+	 
+	<xsd:simpleType name="TDokMDPrzedplSumPozNetto">
+		<xsd:annotation>
+			<xsd:documentation>
+				Dla faktur zaliczkowych oraz faktury końcowej po wcześniejszych zaliczkach = wartość netto pozycji dokumentu.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokEwiStw">
+		<xsd:annotation>
+			<xsd:documentation>
+				A Zakup zwykły
+				B Środektrwały ponad 15000
+				C Środek trwały = 15000
+				D Nieruchomość ponad 15000
+				E Nieruchomość mniej lub 15000
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="A" />
+			<xsd:enumeration value="B" />
+			<xsd:enumeration value="C" />
+			<xsd:enumeration value="D" />
+			<xsd:enumeration value="E" />			
+			<xsd:enumeration value="F" />			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokEwiSpStw">
+		<xsd:annotation>
+			<xsd:documentation>
+				T – jeśli sprzedaż środka trwałego –tylko dla dokumentów sprzedażowych czyli DOKRODZ=’S’
+				W pozostałych przypadkach N lub ‘’
+
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="T" />									
+			<xsd:enumeration value="N" />			
+			<xsd:enumeration value="I" />			
+			<xsd:enumeration value=" " />			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+	<xsd:simpleType name="TDokEwiZakupDot">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="A" />
+			<xsd:enumeration value="B" />
+			<xsd:enumeration value="C" />
+			<xsd:enumeration value="D" />
+			<xsd:enumeration value="E" />	
+			<xsd:enumeration value=" " />	
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKodOdliczenia">
+		<xsd:annotation>
+			<xsd:documentation>
+				Tryb odliczenia VAT - Proszę o wpisanie kodów i znaczenia + kodu domyślnego <!-- Do określenie -->
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="A" />
+			<xsd:enumeration value="B" />
+			<xsd:enumeration value="C" />
+			<xsd:enumeration value="D" />
+			<xsd:enumeration value="E" />	
+			<xsd:enumeration value=" " />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokVatBezOdl">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota VAT bez odliczeń (w PLN), obowiązkowa gdy KODODLICZENIA= ‘B’ lub ‘D’
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokVatOdl">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota VAT bez odliczeń (w PLN), obowiązkowa gdy KODODLICZENIA= ‘B’ lub ‘D’, jeśli występuje, to VATODL + VATBODL musi równać się kwocie VAT z tagów DET.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokRozrachunek">
+		<xsd:annotation>
+			<xsd:documentation>
+				Znacznik czy dokument wymaga zapłaty. Domyślnie T
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="N" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokCzyKpr">
+		<xsd:annotation>
+			<xsd:documentation>
+				Znacznik czy zapis w KPR
+				Wartość ‘N’ oznacza, że zapis z VAT lub dokumentu handlowego nie powinien być importowany  do KPR.	Domyslnie T
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="N" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="TDokCzyRyczalt">
+		<xsd:annotation>
+			<xsd:documentation>
+				Znacznik czy zapis w RYCZAŁCIE
+				Wartość ‘N’ oznacza, że zapis z VAT lub dokumentu handlowego nie powinien być importowany  do ryczałtu.	Domyslnie T
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="N" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="TDokInnyWtorny">
+		<xsd:annotation>
+			<xsd:documentation>
+				Znacznik czy dokument wtórny ma inne wartości
+				Znacznik wykorzystywane tylko dla zakupów 
+				Czyli tagu DOKRODZ=’Z’ oraz DOKUNIA zawierajacego symbole (K,L,M,N) oznacza, że w pliku powinna być pozycja z zapisami dokumentu wtórnego i tagiem ORIGIDPIERWOTNEGO=IORIGID tego dokumentu.
+				Dla dokumentu wtórnego znacznik INNY_WTORNY nie jest konieczna
+				Jeśli INNY_WTORNY=’T’ to podczas importu odpowiedniego typu dokumentu zakupu dane do ewidencji sprzedaży pobierane są z dokumentu znalezionego wg . ORIGIDPIERWOTNEGO
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="N" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokOrigidPierwotnego">
+		<xsd:annotation>
+			<xsd:documentation>
+				Zawiera identyfikator zapisu pierwotnego w ewidencji VAT i różna od 0 tylko dla takich zapisów
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:nonNegativeInteger" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokSposobVat">
+		<xsd:annotation>
+			<xsd:documentation>
+				Sposób naliczania VAT:
+					N – netto+VAT
+					T – brutto w tym VAT
+					B – wg struktury zakupu (wtedy VAT=0)
+						Np. dla zakupu od osoby fizycznej
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="N" />
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="B" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokWplata">
+		<xsd:annotation>
+			<xsd:documentation>
+				Określenie „wpłata” (znak ‘+’) czy „wypłata” (znak ‘-‘).  Obowiązkowe dla dokumentów kasowych
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" />
+			<xsd:enumeration value="+" />
+			<xsd:enumeration value="-" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKasa">
+		<xsd:annotation>
+			<xsd:documentation>
+				Określenie kasy lub konta bankowego – dotyczy wyłącznie dokumentów kasowych (DOKRODZ=’K’) i jest dla nich obowiązkowe.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>	
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKor">
+		<xsd:annotation>
+			<xsd:documentation>
+				Oznaczenie dokumentu korygowanego – tylko dla rodzajów S lub Z (korekty mogą być zmniejszające 
+				lub zwiększające, odpowiednio z polami WARTOSC, NETTO, VAT itp. ujemnymi lub dodatnimi.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokDataKor">
+		<xsd:annotation>
+			<xsd:documentation>Data dokumentu korygowanego – tylko dla rodzajów S lub Z</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TFormattedDate">		
+		</xsd:restriction>
+	</xsd:simpleType>
+		
+	
+	<xsd:simpleType name="TDokDetKind">
+		<xsd:annotation>
+			<xsd:documentation>
+				Może mieć wartości:
+				V – stawki VAT – powinny zawierać wartości netto, brutto, vat. Suma netto+vat=brutto, sumy brutto z tagów V równe wartości dokumentu. Podział na stawki obowiązkowy dla RODZ=S lub Z, dla innych nie występuje
+				T- podział na towary / usługi  - nieużywane
+				G- podział na grupy towarowe- nieużywane
+				TG – podział na towary/usługi oraz grupy- nieużywane
+				KPR  -  wartości w kolumnach KPR
+				RCZ  - podział na zapisy z różnymi % ryczałtu
+				Dla dokumentów z RODZ=S lub Z obowiązkowy jest podział na stawki VAT (DETKIND=V) z podaniem kwot netto, brutto i vat. 
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="3" /> 
+			<xsd:enumeration value="V" />			
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="G" />
+			<xsd:enumeration value="TG" />
+			<xsd:enumeration value="K" />
+			<xsd:enumeration value="R" />
+			<xsd:enumeration value="KPR" />
+			<xsd:enumeration value="RCZ" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokStawkaVAT">
+		<xsd:annotation>
+			<xsd:documentation>
+				Występuje (i obowiązkowe) gdy DETKIND=V. Zawiera: 22,7,0,ZW,NP., (nie podlega) , 
+				NPO (nie podlega, lecz z prawem do odliczenia)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="3" /> 
+			<xsd:enumeration value="23" />
+			<xsd:enumeration value="22" />	
+			<xsd:enumeration value="8" />
+			<xsd:enumeration value="7" />
+			<xsd:enumeration value="6" />
+			<xsd:enumeration value="5" />
+			<xsd:enumeration value="4" />
+			<xsd:enumeration value="3" />
+			<xsd:enumeration value="0" />
+			<xsd:enumeration value="ZW" />
+			<xsd:enumeration value="NP" />
+			<xsd:enumeration value="NPO" />
+			<xsd:enumeration value="BOD" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokDetOpisKlasyfikacji">
+		<xsd:annotation>
+			<xsd:documentation>
+				Opis klasyfikacji
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60" />
+		</xsd:restriction>
+	</xsd:simpleType>
+		
+	<xsd:simpleType name="TDokTowUsl">
+		<xsd:annotation>
+			<xsd:documentation>
+				Wartość T – towar, U-usługa. Wystęuje gdy DETKIND=T lub TG – nieużywane
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1" /> 
+			<xsd:enumeration value="T" />
+			<xsd:enumeration value="U" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokGRAS">
+		<xsd:annotation>
+			<xsd:documentation>
+				Oznaczenie grupy asortymentowej. Wystęuje gdy DETKIND=G lub TG – nieużywane
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20" /> 			
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokNetto">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota netto . Występuje tylko w dokumentach z RODZ=S lub Z
+				Uwaga. W serii tagów zawierającej podział kwot wg stawek VAT, czyli z DETKIND=V, występują kwoty Netto, Brutto oraz VAT (jeśli sa niezerowe). 
+				W serii tagów zawierającej podział wg grup asortymentowych lub tp. występują zwykle tylko kwoty Netto. Zaleca się, by zestaw kwot (np Netto tak, Brutto nie) był jednakowy dla wszystkich tagów z tym samym DETKIND
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokVat">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota vat . Występuje tylko w dokumentach z RODZ=S lub Z
+				Uwaga. W serii tagów zawierającej podział kwot wg stawek VAT, czyli z DETKIND=V, występują kwoty Netto, Brutto oraz VAT (jeśli sa niezerowe). 
+				W serii tagów zawierającej podział wg grup asortymentowych lub tp. występują zwykle tylko kwoty Netto. Zaleca się, by zestaw kwot (np Netto tak, Brutto nie) był jednakowy dla wszystkich tagów z tym samym DETKIND
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokBrutto">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota brutto . Występuje tylko w dokumentach z RODZ=S lub Z
+				Uwaga. W serii tagów zawierającej podział kwot wg stawek VAT, czyli z DETKIND=V, występują kwoty Netto, Brutto oraz VAT (jeśli sa niezerowe). 
+				W serii tagów zawierającej podział wg grup asortymentowych lub tp. występują zwykle tylko kwoty Netto. Zaleca się, by zestaw kwot (np Netto tak, Brutto nie) był jednakowy dla wszystkich tagów z tym samym DETKIND
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokNettoDew">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota netto w dewizach. Występuje tylko w dokumentach z RODZ=S lub Z
+				Uwaga. W serii tagów zawierającej podział kwot wg stawek VAT, czyli z DETKIND=V, występują kwoty Netto, Brutto oraz VAT (jeśli sa niezerowe). 
+				W serii tagów zawierającej podział wg grup asortymentowych lub tp. występują zwykle tylko kwoty Netto. Zaleca się, by zestaw kwot (np Netto tak, Brutto nie) był jednakowy dla wszystkich tagów z tym samym DETKIND
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokVatDew">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota vat w dewizach. Występuje tylko w dokumentach z RODZ=S lub Z
+				Uwaga. W serii tagów zawierającej podział kwot wg stawek VAT, czyli z DETKIND=V, występują kwoty Netto, Brutto oraz VAT (jeśli sa niezerowe). 
+				W serii tagów zawierającej podział wg grup asortymentowych lub tp. występują zwykle tylko kwoty Netto. Zaleca się, by zestaw kwot (np Netto tak, Brutto nie) był jednakowy dla wszystkich tagów z tym samym DETKIND
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokBruttoDew">
+		<xsd:annotation>
+			<xsd:documentation>
+				Kwota brutto w dewizach. Występuje tylko w dokumentach z RODZ=S lub Z
+				Uwaga. W serii tagów zawierającej podział kwot wg stawek VAT, czyli z DETKIND=V, występują kwoty Netto, Brutto oraz VAT (jeśli sa niezerowe). 
+				W serii tagów zawierającej podział wg grup asortymentowych lub tp. występują zwykle tylko kwoty Netto. Zaleca się, by zestaw kwot (np Netto tak, Brutto nie) był jednakowy dla wszystkich tagów z tym samym DETKIND
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="TCommaCurr15" />
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKolumna">
+		<xsd:annotation>
+			<xsd:documentation>
+				Numer kolumny w zapisie KPR
+				7 lub 8 dla sprzedaży
+				10,11,12,13 lub 15 - zakupy
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="7" />
+			<xsd:enumeration value="8" />
+			<xsd:enumeration value="10" />
+			<xsd:enumeration value="11" />
+			<xsd:enumeration value="12" />
+			<xsd:enumeration value="13" />
+			<xsd:enumeration value="15" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokKlasyfikacja">
+		<xsd:annotation>
+			<xsd:documentation>
+				Opis klasyfikacji
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TDokProcent">
+		<xsd:annotation>
+			<xsd:documentation>
+				% ryczałtu zapisu
+				dopuszczalne wartości: 3,5, 8,10,17,20
+				wartość 8 oznacza zapis dla stawki 8,5 %
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:integer">
+			<xsd:enumeration value="3" />
+			<xsd:enumeration value="5" />
+			<xsd:enumeration value="8" />
+			<xsd:enumeration value="10" />
+			<xsd:enumeration value="17" />
+			<xsd:enumeration value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+</xsd:schema>

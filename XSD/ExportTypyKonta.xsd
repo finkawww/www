@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:simpleType name="TKontoKonNr">
+		<xsd:annotation>
+			<xsd:documentation>
+				Numer konta w postaci np. 200-12345  obowiązkowe
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="100" />
+			<xsd:minLength value="1" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="TKontoKonNazwa">
+		<xsd:annotation>
+			<xsd:documentation>
+				Nazwa konta - nieobowiązkowe
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+</xsd:schema>

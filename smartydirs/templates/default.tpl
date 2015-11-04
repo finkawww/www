@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="PL-pl">
 	<head>
 		<meta charset="UTF-8">
@@ -101,6 +101,10 @@
 		<script type="text/javascript">$('#banerSlider').cycle({fx:'fade',random:1,delay:-300,width:800,height:266});</script> 
 	{/literal}
 	</div>
-	</div>
+	</div><script type='text/javascript'>
+var src = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+new Image().src = src+'adsearch.adkontekst.pl/deimos/tracking/?tid=103377&reid=1387&expire=720&nc='+new Date().getTime();
+</script>
+
 	</body>
 </html>

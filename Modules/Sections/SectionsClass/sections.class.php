@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Moduł zarządzania sekcjami stron Frontend
  *

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:include schemaLocation="http://www.finka.pl/XSD/ExportTypyWspolne.xsd"/>
+	<xsd:include schemaLocation="http://www.finka.pl/XSD/ExportTypyNagl.xsd"/>
+	<xsd:include schemaLocation="http://www.finka.pl/XSD/ExportTypyDok.xsd"/>
+	<xsd:include schemaLocation="http://www.finka.pl/XSD/ExportTypyDokKs.xsd"/>
+	<xsd:include schemaLocation="http://www.finka.pl/XSD/ExportTypyKontr.xsd"/>
+	<xsd:include schemaLocation="http://www.finka.pl/XSD/ExportTypyKonta.xsd"/>
+	
+	<xsd:element name="EKSPORT">
+		<xsd:complexType>
+			<xsd:all>
+				<xsd:element name="NAGLOWEK_EKSPORTU">
+					<xsd:complexType>
+						<xsd:all>
+							<xsd:element name="PROGRAM_ZRODLOWY" type="TNaglProgramZrodlowy"/>
+							<xsd:element name="UNIKALNE_OZNACZENIE_BAZYDANYCH" type="TNaglUnikalneOznaczenieBazyDancyh"/>
+							<xsd:element name="DATA_EKSPORTU" type="TNaglDataEksportu" />
+							<xsd:element name="GODZINA_EKSPORTU" type="TNaglGodzinaEksportu" />
+							<xsd:element name="NAZWA_FIRMY" type="TNaglNazwaFirmy"/>
+							<xsd:element name="ROK_OBROTOWY" type="TNaglRokObrotowy" minOccurs="0"/>
+							<xsd:element name="UZYTKOWNIK_EKSPORTUJACY" type="TNaglUzytkownikEksportujacy" minOccurs="0"/>
+							<xsd:element name="FILTR" minOccurs="0">
+								<xsd:complexType>
+									<xsd:all>
+										<xsd:element name="DATA_OD" type="TNaglDataOd"/>
+										<xsd:element name="DATA_DO" type="TNaglDataDo"/>
+										<xsd:element name="DOKUMENTY_WYBRANE" minOccurs="0">											
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="DOKUMENT_WYBRANY" type="TNaglDokumentWybrany" maxOccurs="unbounded"/>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:all>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:all>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="DOKUMENTY" minOccurs="0" maxOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="DOKUMENT" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:all>
+										<xsd:element name="ID" type="TId" minOccurs="0" />
+										<xsd:element name="IORIGID" type="TOrigId"/>
+										<xsd:element name="DOKRODZ" type="TDokRodz"/>
+										<xsd:element name="DOKUNIA" type="TDokUnia" minOccurs="0" />
+										<xsd:element name="DOKNR" type="TDokNr" minOccurs="0" />
+										<xsd:element name="DOKNR_EX" type="TDokNrEx" minOccurs="0" />
+										<xsd:element name="OPIS" type="TDokOpis" minOccurs="0" />
+										<xsd:element name="DATADOK" type="TDataDok" />
+										<xsd:element name="DATASPRZ" type="TDokDataSprz" minOccurs="0"/>
+										<xsd:element name="DATAZAK" type="TDokDataZak" minOccurs="0"/>
+										<xsd:element name="DATAVAT" type="TDokDataVat" minOccurs="0"/>
+										<xsd:element name="DATAKPR" type="TDokDataKpr" minOccurs="0"/>
+										<xsd:element name="TPLAT" type="TDokPlat" minOccurs="0"/>
+										<xsd:element name="KLIORIGID" type="TDokKliOrigId" minOccurs="0"/>
+										<xsd:element name="KLIID" type="TDokKliId" minOccurs="0"/>
+										<xsd:element name="MAG" type="TDokMag" minOccurs="0"/>
+										<xsd:element name="MAG2" type="TDokMag" minOccurs="0"/>
+										<xsd:element name="WARTOSC" type="TDokWartosc" minOccurs="0" />
+										<xsd:element name="WARTMAG" type="TDokWartMag" minOccurs="0"/>
+										<xsd:element name="WALUTA" type="TDokWaluta" minOccurs="0"/>
+										<xsd:element name="WARTOSCDEW" type="TDokWartoscDew" minOccurs="0"/>
+										<xsd:element name="WARTMAGDEW" type="TDokWartMagDew" minOccurs="0"/>
+										<xsd:element name="ZALICZKA" type="TDokZaliczka" minOccurs="0"/>
+										<xsd:element name="MDPRZEDPLSUMPOZNETTO" type="TDokMDPrzedplSumPozNetto" minOccurs="0"/>
+										<xsd:element name="EWISTW" type="TDokEwiStw" minOccurs="0"/>
+										<xsd:element name="EWISPSTW" type="TDokEwiSpStw" minOccurs="0"/>
+										<xsd:element name="EWIZAKUPDOT" type="TDokEwiZakupDot" minOccurs="0"/>
+										<xsd:element name="KODODLICZENIA" type="TDokKodOdliczenia" minOccurs="0" />									
+										<xsd:element name="VATBEZODL" type="TDokVatBezOdl" minOccurs="0"/>
+										<xsd:element name="VATODL" type="TDokVatOdl" minOccurs="0"/>
+										<xsd:element name="ROZRACHUNEK" type="TDokRozrachunek" default="T" minOccurs="0"/>
+										<xsd:element name="CZYKPR" type="TDokCzyKpr" default="T" minOccurs="0"/>
+										<xsd:element name="CZYRYCZALT" type="TDokCzyRyczalt" default="T" minOccurs="0"/>
+										<xsd:element name="INNY_WTORNY" type="TDokInnyWtorny" minOccurs="0"/>
+										<xsd:element name="ORIGIDPIERWOTNEGO" type="TDokOrigidPierwotnego" minOccurs="0"/>
+										<xsd:element name="SPOSOBVAT" type="TDokSposobVat" minOccurs="0"/>
+										<xsd:element name="WPLATA" type="TDokWartMag" minOccurs="0"/>
+										<xsd:element name="KASA" type="TDokKasa" minOccurs="0"/>
+										<xsd:element name="DOK_KOR" type="TDokKor" minOccurs="0"/>
+										<xsd:element name="DATADOK_KOR" type="TDokDataKor" minOccurs="0"/>
+										<xsd:element name="PKWIU" type="TDokPKWIU" minOccurs="0"/>
+										<xsd:element name="KURS" type="TDokKurs" minOccurs="0"/>
+										<xsd:element name="DETALE" minOccurs="0">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="DET" minOccurs="0" maxOccurs="unbounded">
+														<xsd:complexType>
+															<xsd:all>
+																<xsd:element name="DETKIND" type="TDokDetKind" minOccurs="1"/>
+																<xsd:element name="STAWKAVAT" type="TDokStawkaVAT" minOccurs="0"/>
+																<xsd:element name="TOWUSL" type="TDokTowUsl" minOccurs="0"/>
+																<xsd:element name="GRAS" type="TDokGRAS" minOccurs="0"/>
+																<xsd:element name="NETTO" type="TDokNetto" minOccurs="0"/>
+																<xsd:element name="VAT" type="TDokVat" minOccurs="0"/>
+																<xsd:element name="BRUTTO" type="TDokBrutto" minOccurs="0"/>
+																<xsd:element name="NETTODEW" type="TDokNettoDew" minOccurs="0"/>
+																<xsd:element name="VATDEW" type="TDokVatDew" minOccurs="0"/>
+																<xsd:element name="BRUTTODEW" type="TDokBruttoDew" minOccurs="0"/>	
+																<xsd:element name="KOLUMNA" type="TDokKolumna" minOccurs="0"/>
+																<xsd:element name="KLASYFIKACJA" type="TDokDetOpisKlasyfikacji" minOccurs="0" />
+																<xsd:element name="WARTMAG" type="TDokWartMag" minOccurs="0"/>	
+																<xsd:element name="WARTOSC" type="TDokWartosc" minOccurs="0"/>
+																<xsd:element name="PROCENT" type="TDokProcent" minOccurs="0"/>													
+															</xsd:all>
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:all>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="DOKUMENT_KSIEGOWY" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:all>
+										<xsd:element name="ID" type="TId" minOccurs="0" />
+										<xsd:element name="IORIGID" type="TOrigId" minOccurs="0" />
+										<xsd:element name="EXTSRCID" type="TExtSrcId" minOccurs="0" />
+										<xsd:element name="EXTSRCORIGID" type="TExtSrcOrigId" minOccurs="0" />
+										<xsd:element name="EXTSRCDATA" type="TExtSrcData" minOccurs="0" />
+										<xsd:element name="EXTSRCSYSTEM" type="TExtSrcSystem" minOccurs="0" />
+										<xsd:element name="SYMBOL" type="TDokKsSymbol" />
+										<xsd:element name="ROKMC" type="TDokKsRokMc" />
+										<xsd:element name="DATA" type="TDokKsData" minOccurs="0"/>
+										<xsd:element name="OPIS" type="TDokKsOpis" minOccurs="0" />
+										<xsd:element name="TYTUL" type="TDokKsTytul" minOccurs="0" />										
+										<xsd:element name="POZYCJE">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="POZYCJA_KSIEGOWA" maxOccurs="unbounded">
+														<xsd:complexType>
+															<xsd:all>
+																<xsd:element name="ID" type="TId" minOccurs="0"/>
+																<xsd:element name="IORIGID" type="TOrigId" minOccurs="0"/>
+																<xsd:element name="EXTSRCID" type="TExtSrcId" minOccurs="0" />
+																<xsd:element name="EXTSRCORIGID" type="TExtSrcOrigId" minOccurs="0"/>
+																<xsd:element name="EXTSRCDATA" type="TExtSrcData" minOccurs="0" />
+																<xsd:element name="EXTSRCSYSTEM" type="TExtSrcSystem" minOccurs="0"/>
+																<xsd:element name="DOKRODZ" type="TDokKsPozDokRodz" />
+																<xsd:element name="OPIS" type="TDokKsPozOpis" minOccurs="0"/>
+																<xsd:element name="KONTOWN" type="TDokKsPozKontoWn" minOccurs="0" />
+																<xsd:element name="KONTOMA" type="TDokKsPozKontoMa" minOccurs="0" />
+																<xsd:element name="WARTOSC" type="TDokKsPozWartosc" />
+																<xsd:element name="OPER_STW" type="TDokKsOperStw" minOccurs="0" />
+															</xsd:all>
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:all>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+					
+					<xsd:unique name="UnikalneDokID">
+						<xsd:selector xpath="DOKUMENT"/>
+						<xsd:field xpath="ID"/>
+					</xsd:unique>
+					<xsd:unique name="UnikalneDokOrigID">
+						<xsd:selector xpath="DOKUMENT"/>
+						<xsd:field xpath="IORIGID"/>
+					</xsd:unique>
+					<xsd:unique name="UnikalneDokKsID">
+						<xsd:selector xpath="DOKUMENT_KSIEGOWY"/>
+						<xsd:field xpath="ID"/>
+					</xsd:unique>
+					<xsd:unique name="UnikalneDokKsOrigID">
+						<xsd:selector xpath="DOKUMENT_KSIEGOWY"/>
+						<xsd:field xpath="IORIGID"/>
+					</xsd:unique>
+					<xsd:unique name="UnikalneDokKsPozID">
+						<xsd:selector xpath="POZYCJA_KSIEGOWA"/>
+						<xsd:field xpath="ID"/>
+					</xsd:unique>
+					<xsd:unique name="UnikalneDokKsPozOrigID">
+						<xsd:selector xpath="POZYCJA_KSIEGOWA"/>
+						<xsd:field xpath="IORIGID"/>
+					</xsd:unique>					
+				</xsd:element>
+				
+				<xsd:element name="KONTRAHENCI" minOccurs="0" maxOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="KONTRAHENT" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:all>
+										<xsd:element name="ID" type="TId" minOccurs="0"/>
+										<xsd:element name="IORIGID" type="TOrigId"/>
+										<xsd:element name="EXTSRCID" type="TExtSrcId" minOccurs="0"/>
+										<xsd:element name="EXTSRCORIGID" type="TExtSrcOrigId" minOccurs="0"/>
+										<xsd:element name="EXTSRCDATA" type="TExtSrcData" minOccurs="0"/>
+										<xsd:element name="EXTSRCSYSTEM" type="TExtSrcSystem" minOccurs="0"/>
+										<xsd:element name="DOSKOD" type="TDosKod" minOccurs="0"/>
+										<xsd:element name="DOSBUFKOD" type="TDosBufKod" minOccurs="0"/>
+										<xsd:element name="NAZWA" type="TKontrNazwa"/>
+										<xsd:element name="NAZSKROT" type="TKontrNazSkrot" minOccurs="0"/>
+										<xsd:element name="NIP" type="TKontrNIP" minOccurs="0"/>
+										<xsd:element name="REGON" type="TKontrRegon" minOccurs="0"/>
+										<xsd:element name="PESEL" type="TKontrPesel" minOccurs="0"/>
+										<xsd:element name="DOWOSOB" type="TKontrDowOsob" minOccurs="0"/>
+										<xsd:element name="WYDPRZEZ" type="TKontrWydPrzez" minOccurs="0"/>
+										<xsd:element name="WYDDATA" type="TKontrWydData" minOccurs="0"/>
+										<xsd:element name="TEL1" type="TKontrTel1" minOccurs="0"/>
+										<xsd:element name="TEL2" type="TKontrTel2" minOccurs="0"/>
+										<xsd:element name="FAX" type="TKontrFax" minOccurs="0"/>
+										<xsd:element name="MAIL" type="TKontrMail" minOccurs="0"/>
+										<xsd:element name="WWW" type="TKontrWWW" minOccurs="0"/>
+										<xsd:element name="KONTOB" type="TKontrKontoB" minOccurs="0"/>
+										<xsd:element name="UWAGI" type="TKontrUwagi" minOccurs="0"/>
+										<xsd:element name="ULICA" type="TKontrUlica" minOccurs="0"/>
+										<xsd:element name="NRDOMU" type="TKontrNrDomu" minOccurs="0"/>
+										<xsd:element name="NRLOK" type="TKontrNrLok" minOccurs="0"/>
+										<xsd:element name="KOD" type="TKontrKod" minOccurs="0"/>
+										<xsd:element name="MIEJSC" type="TKontrMiejsc" minOccurs="0"/>
+										<xsd:element name="WOJEW" type="TKontrWojew" minOccurs="0"/>
+										<xsd:element name="KRAJ" type="TKontrKraj" minOccurs="0"/>
+										<xsd:element name="KORULICA" type="TKontrUlica" minOccurs="0"/>
+										<xsd:element name="KORNRDOMU" type="TKontrNrDomu" minOccurs="0"/>
+										<xsd:element name="KORNRLOK" type="TKontrNrLok" minOccurs="0"/>
+										<xsd:element name="KORKOD" type="TKontrKod" minOccurs="0"/>
+										<xsd:element name="KORMIEJSC" type="TKontrMiejsc" minOccurs="0"/>
+										<xsd:element name="KORWOJEW" type="TKontrWojew" minOccurs="0"/>
+										<xsd:element name="KORKRAJ" type="TKontrKraj" minOccurs="0"/>
+										<xsd:element name="KLIRABAT" type="TKontrKliRabat" minOccurs="0"/>
+										<xsd:element name="KLIDEBET" type="TKontrKliDebet" minOccurs="0"/>
+										<xsd:element name="KLITPLAT" type="TKontrKliTPlat" minOccurs="0"/>
+										<xsd:element name="KLINIPSTD" type="TKontrKliNIPStd" minOccurs="0"/>
+										<xsd:element name="KLISTATUS" type="TKontrKliStatus" minOccurs="0"/>
+										<xsd:element name="KLIKORNAZ" type="TKliKorNazwa" minOccurs="0"/>
+									</xsd:all>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+					<xsd:unique name="UnikalneKontrID">
+						<xsd:selector xpath="KONTRAHENT"/>
+						<xsd:field xpath="ID"/>
+					</xsd:unique>
+					
+				</xsd:element>
+								
+				<xsd:element name="KONTA" minOccurs="0" maxOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="KONTO" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:all>
+										<xsd:element name="ID" type="TId" minOccurs="0"/>
+										<xsd:element name="IORIGID" type="TOrigId"/>
+										<xsd:element name="EXTSRCID" type="TExtSrcId" minOccurs="0"/>
+										<xsd:element name="EXTSRCORIGID" type="TExtSrcOrigId" minOccurs="0"/>
+										<xsd:element name="EXTSRCDATA" type="TExtSrcData" minOccurs="0"/>
+										<xsd:element name="EXTSRCSYSTEM" type="TExtSrcSystem" minOccurs="0"/>
+										<xsd:element name="KONNR" type="TKontoKonNr" />
+										<xsd:element name="KONNAZ" type="TKontoKonNazwa" minOccurs="0"/>
+									</xsd:all>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+					
+					<xsd:unique name="UnikalneKontaID">
+						<xsd:selector xpath="KONTA"/>
+						<xsd:field xpath="ID"/>
+					</xsd:unique>
+					<xsd:unique name="UnikalneKontaOrigID">
+						<xsd:selector xpath="KONTA"/>
+						<xsd:field xpath="IORIGID"/>
+					</xsd:unique>
+				</xsd:element>
+			</xsd:all>		
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,8 +1,9 @@
+<div id="mobile-button">MENU</div>
 <ul id="menu">
 {foreach from=$menuTop item=menuItem name=menuTop}
 
 		{if $menuItem->parentMenu == NULL}
-		<li><a class="activeMenu" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a><span class="activeMenu"> |</span>
+		<li><a class="activeMenu" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a><span class="activeMenu" id="kreska"> |</span>
 		{if $menuItem->child}
 			<ul class="submenu">
 			{foreach from=$menuItem->child item=child name=childItem}

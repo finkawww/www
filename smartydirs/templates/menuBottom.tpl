@@ -2,9 +2,9 @@
 {foreach from=$menuBottom item=menuItem name=menuBottom}
 	{if $menuItem->active}
 	{if $menuItem->sel eq 1}
-		<a class="menuItem" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a>&nbsp;&nbsp;&nbsp;|
-	{else}
-		<a class="menuItem" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a>&nbsp;&nbsp;&nbsp;|
+		<a class="menuItem" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a>&nbsp;&nbsp;&nbsp;<span id="kreska">| </span>	
+		{else}
+		<a class="menuItem" href="{$menuItem->menuRenderText}">{$menuItem->caption}</a>&nbsp;&nbsp;&nbsp;<span id="kreska">| </span>
 	{/if}
 	{/if}
 {/foreach}

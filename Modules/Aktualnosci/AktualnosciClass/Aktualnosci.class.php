@@ -452,3 +452,4 @@ class AktualnosciClass
 			return $this->Show('full');
 		}
 }
+?>

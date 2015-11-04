@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 //wczytuje klasy Model, View, Controller
 //echo rootPath;
 require_once rootPath.'/Modules/Sklep/SklepClass/AdministracjaTowar.php';
