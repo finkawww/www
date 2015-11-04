@@ -250,7 +250,7 @@ class KontaktClass
 		  	$mail->Send();
 		  	$html = '';
 		  	$html = '<center><div class="font_cm">Dziękujemy za wypełnienie formularza. Nasi konsultanci skontaktują się z Państwem. <br/><br/></div>';
-		  	$html .= '<a class="" href="http://tiksoft.h2.pl/FrontPage/index.php?mp=12">powrót</a></center>';
+		  	$html .= '<a class="" href="http://finka.pl/#">powrót</a></center>';
 		  	 
 		  	return $html;  
 		  	
@@ -535,4 +535,3 @@ class KontaktClass
 		return $html;
 	}
 }
-?>

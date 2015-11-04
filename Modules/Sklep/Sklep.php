@@ -1579,13 +1579,13 @@ class Sklep extends moduleTemplate
 			
 			$this->mailObj->SetFrom('finka@finka.pl');
 			$this->mailObj->Subject = 'Pytanie ze strony Finka.pl';
-    		$this->mailObj->MsgHTML($msg);
+                        $this->mailObj->MsgHTML($msg);
 			$this->mailObj->AltBody = $msg;
 			$this->mailObj->Send();
 
 		
 		
-			return '<div class="font">Dziękujemy za złożenie zapytania. Nasi Konsultanci z Działu Obsługi Kleinta skontaktują się z Państwem. <div>';
+			return '<div class="font" height="200px">Dziękujemy za złożenie zapytania. Nasi Konsultanci z Działu Obsługi Kleinta skontaktują się z Państwem. <div>';
 	}
         //rabat
         public function ShowRabatAdmin()
